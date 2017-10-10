@@ -2,7 +2,7 @@
 
 ## 下载SDK
 
-sdk下载链接模板:
+SDK下载链接模板:
 
 > [https://storage.googleapis.com/dart-archive/channels/&lt;stable/dev&gt;/release/&lt;release&gt;/sdk/dartsdk-&lt;platform&gt;-&lt;architecture&gt;-release.zip](https://storage.googleapis.com/dart-archive/channels/<stable/dev>/release/<release>/sdk/dartsdk-<platform>-<architecture>-release.zip)
 
@@ -16,7 +16,7 @@ sdk下载链接模板:
 
 * &lt;architecture&gt; - 系统架构，32位或64位，可选项：ia32，x64
 
-例子：
+示例：
 
 > [https://storage.googleapis.com/dart-archive/channels/stable/release/1.11.1/sdk/dartsdk-windows-ia32-release.zip](https://storage.googleapis.com/dart-archive/channels/stable/release/1.11.1/sdk/dartsdk-windows-ia32-release.zip)
 >
@@ -26,5 +26,5 @@ sdk下载链接模板:
 
 ## 安装
 
-下载完成后，将sdk的bin文件夹添加到系统环境变量即可。
+下载解压后，将sdk的bin文件夹添加到系统环境变量即可。
 
