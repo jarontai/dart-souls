@@ -1,6 +1,6 @@
 # The Little Dart Book
 
-一本介绍Dart编程的小书
+一本介绍Dart编程的小书，作者 - [Jaron Tai](https://github.com/jarontai)
 
 ## 目标
 
