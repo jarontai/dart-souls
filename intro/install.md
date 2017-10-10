@@ -14,7 +14,7 @@ choco install dart-sdk -version <版本号>
 
 ### 方式二
 
-使用社区维护的安装器：[www.gekorm.com/dart-windows](/www.gekorm.com/dart-windows)
+使用社区维护的安装器：[www.gekorm.com/dart-windows](http://www.gekorm.com/dart-windows/)
 
 ## mac
 
