@@ -6,9 +6,7 @@
 
 ### 方式一
 
-安装 [Chocolatey](https://chocolatey.org/)
-
-执行
+使用 [Chocolatey](https://chocolatey.org/)
 
 ```bash
 choco install dart-sdk -version <版本号>
@@ -20,7 +18,7 @@ choco install dart-sdk -version <版本号>
 
 ## mac
 
-使用[homebrew](https://brew.sh/)安装
+使用 [homebrew](https://brew.sh/) 安装
 
 ```bash
 # 安装
@@ -34,6 +32,19 @@ brew cleanup dart
 
 # 查看安装信息
 brew info dart
+```
+
+## linux
+
+ubuntu/debian使用apt-get安装，其他linux请手动安装。
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get install apt-transport-https
+$ sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+$ sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+$ sudo apt-get update
+$ sudo apt-get install dart
 ```
 
 
