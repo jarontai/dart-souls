@@ -14,5 +14,9 @@
 
 本书定位为归纳/总结型笔记，如果你想深入学习Dart，请查阅[Dart官网](https://www.dartlang.org/)或其他书籍。
 
+## 版权
 
+本书使用“[署名-非商业性使用 4.0 国际](http://creativecommons.org/licenses/by-nc/4.0/)”创作共用许可证。
+
+只要保持原作者署名和非商用，您可以自由地阅读、分享、修改本书。
 
