@@ -9,7 +9,8 @@
 安装 [Chocolatey](https://chocolatey.org/)
 
 执行
-```javascript
+
+```bash
 choco install dart-sdk -version <版本号>
 ```
 
@@ -19,9 +20,9 @@ choco install dart-sdk -version <版本号>
 
 ## mac
 
-使用[homebrew](https://brew.sh/)安装  
+使用[homebrew](https://brew.sh/)安装
 
-```javascript
+```bash
 # 安装
 brew tap dart-lang/dart
 brew install dart
@@ -34,3 +35,6 @@ brew cleanup dart
 # 查看安装信息
 brew info dart
 ```
+
+
+
