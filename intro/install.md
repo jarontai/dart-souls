@@ -1,6 +1,6 @@
 # 使用工具安装SDK
 
-注意：由于众所周知的原因，在中国大陆使用以下工具安装可能会失败；如果你无法突破网络封锁，请尝试手动安装。
+注意：由于众所周知的原因，在中国大陆使用以下工具安装可能会失败；如果你无法突破网络封锁，请尝试[手动安装](/intro/manual.md)。
 
 ## windows
 
@@ -36,7 +36,7 @@ brew info dart
 
 ## linux
 
-ubuntu/debian使用apt-get安装，其他linux请手动安装。
+ubuntu/debian使用apt-get安装，其他linux请[手动安装](/intro/manual.md)。
 
 ```bash
 $ sudo apt-get update
