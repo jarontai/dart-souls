@@ -12,7 +12,7 @@
 
 ## 注意
 
-本书定位为归纳/总结型笔记，如果你想深入学习Dart，请查阅[Dart官网](https://www.dartlang.org/)或其他书籍。
+本书定位为归纳型笔记，如果你想深入学习Dart，请查阅[Dart官网](https://www.dartlang.org/)或参阅其他进阶书籍。
 
 ## 版权
 
