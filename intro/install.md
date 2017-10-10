@@ -22,17 +22,17 @@ choco install dart-sdk -version <版本号>
 
 ```bash
 # 安装
-brew tap dart-lang/dart
-brew install dart            // 安装稳定版
-brew install dart --devel    // 安装dev版
+$ brew tap dart-lang/dart
+$ brew install dart            // 安装稳定版
+$ brew install dart --devel    // 安装dev版
 
 # 更新
-brew update
-brew upgrade dart
-brew cleanup dart
+$ brew update
+$ brew upgrade dart
+$ brew cleanup dart
 
-# 查看安装信息
-brew info dart
+# 查看安装路径等信息
+$ brew info dart
 ```
 
 ## linux
