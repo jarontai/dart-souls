@@ -10,9 +10,11 @@
 
 有其他编程语言经验，希望快速上手Dart的开发者
 
-## 注意
+## 作者
 
-本书定位为归纳型笔记，如果你想深入学习Dart，请查阅[Dart官网](https://www.dartlang.org/)或参阅其他进阶书籍。
+Dart语言爱好者 - [Jaron Tai](https://github.com/jarontai)
+
+水平有限，内容难免存在错误之处，欢迎指正。
 
 ## 版权
 
@@ -20,9 +22,7 @@
 
 只要保持原作者署名和非商用，您可以自由地阅读、分享、修改本书。
 
----
+## 注意
 
-水平有限，内容难免存在错误之处，欢迎指正。
-
-作者 - [Jaron Tai](https://github.com/jarontai)
+本书定位为归纳型笔记，如果你想深入学习Dart，请查阅[Dart官网](https://www.dartlang.org/)或参阅其他进阶书籍。
 
