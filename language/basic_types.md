@@ -11,7 +11,7 @@ var name = 'bob';
 另一种是指定类型
 
 ```dart
-String name = 'bob';  // 变量name为字符串类型
+String name = 'bob';  // name为字符串类型
 ```
 
 ## 基本数据类型
