@@ -4,7 +4,7 @@
 
 SDK下载链接模板:
 
-[https://storage.googleapis.com/dart-archive/channels/&lt;stable/dev&gt;/release/&lt;release&gt;/sdk/dartsdk-&lt;platform&gt;-&lt;architecture&gt;-release.zip](#)
+https://storage.googleapis.com/dart-archive/channels/&lt;stable/dev&gt;/release/&lt;release&gt;/sdk/dartsdk-&lt;platform&gt;-&lt;architecture&gt;-release.zip
 
 按照以下规则构造下载地址：
 
