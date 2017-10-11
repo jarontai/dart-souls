@@ -4,9 +4,9 @@
 
 SDK下载链接模板:
 
-> [https://storage.googleapis.com/dart-archive/channels/&lt;stable/dev&gt;/release/&lt;release&gt;/sdk/dartsdk-&lt;platform&gt;-&lt;architecture&gt;-release.zip](https://storage.googleapis.com/dart-archive/channels/<stable/dev>/release/<release>/sdk/dartsdk-<platform>-<architecture>-release.zip)
+[https://storage.googleapis.com/dart-archive/channels/&lt;stable/dev&gt;/release/&lt;release&gt;/sdk/dartsdk-&lt;platform&gt;-&lt;architecture&gt;-release.zip](#)
 
-按照说明构造下载地址：
+按照以下规则构造下载地址：
 
 * &lt;stable/dev&gt; - 选择稳定/开发版，可选项：stable，dev
 
@@ -16,7 +16,9 @@ SDK下载链接模板:
 
 * &lt;architecture&gt; - 系统架构，32位或64位，可选项：ia32，x64
 
-示例：
+
+
+地址示例：
 
 > [https://storage.googleapis.com/dart-archive/channels/stable/release/1.11.1/sdk/dartsdk-windows-ia32-release.zip](https://storage.googleapis.com/dart-archive/channels/stable/release/1.11.1/sdk/dartsdk-windows-ia32-release.zip)
 >
