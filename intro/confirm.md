@@ -1,6 +1,6 @@
-# 确认SDK安装成功
+# Hello World
 
-## 确认版本
+## 确认SDK安装成功
 
 在命令行中输入以下指令
 
@@ -15,6 +15,8 @@ Dart VM version: 1.24.2 (Thu Jun 22 08:42:17 2017) on "macos_x64"
 ```
 
 # 运行Hello World
+
+与C语言等类似，dart文件的入口是main函数。
 
 在编辑器中新建一个hello.dart文件，并输入以下代码
 

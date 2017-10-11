@@ -37,6 +37,22 @@ int age = 28;
 double percent = 0.23;
 ```
 
+数字对象具有多种属性与方法
+
+```dart
+int size = 9;
+print(size.isEven); // 是否偶数
+print(size.isOdd); // 是否奇数
+print(size.toRadixString(6)); // 转换为6进制字符串
+...
+
+double pi = 3.1415926;
+print(pi.ceil()); // 向上取整
+print(pi.toInt()); // 转成整形
+print(pi.toStringAsPrecision(2)); // 转换为固定精度字符串
+...
+```
+
 ### 字符串
 
 ### 布尔
