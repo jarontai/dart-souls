@@ -14,13 +14,28 @@ var name = 'bob';
 String name = 'bob';  // name为字符串类型
 ```
 
+Dart是完全面向对象语言，如果变量在声明时没有赋值，将被自动赋值为 null。
+
+```dart
+var name;
+print(name); // 使用print函数打印，输出为null
+```
+
 ## 基本数据类型
 
 ### 数字
 
-Dart的数字
 
-## 
+
+### 字符串
+
+
+
+### 布尔
+
+
+
+
 
 
 
