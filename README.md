@@ -2,8 +2,6 @@
 
 一本介绍Dart编程的小书，[在线阅读](https://jarontai.gitbooks.io/the-little-dart-book/content/)
 
-作者 - [Jaron Tai](https://github.com/jarontai)
-
 ## 目标
 
 用简单的文字归纳Dart的主要知识点
@@ -25,4 +23,6 @@
 ---
 
 水平有限，内容难免存在错误之处，欢迎指正。
+
+作者 - [Jaron Tai](https://github.com/jarontai)
 
