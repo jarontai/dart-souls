@@ -103,6 +103,7 @@ String name = 'bob';
 print(name.length); // 长度
 print(name.isEmpty); // 是否为空
 print(name.substring(1)); // 子字符串
+print(name.startsWith('b')); // 是否以某字符开头
 print(name.replaceAll('b', 'l')); // 替换所有
 ...
 ```
@@ -121,8 +122,6 @@ if (name) { // name被视为false，后续代码不再执行
   ...
 }
 ```
-
-
 
 
 
