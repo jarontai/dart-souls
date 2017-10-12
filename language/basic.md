@@ -20,7 +20,7 @@ String name = 'bob'; // 显式指明name为字符串
 
 ## 默认值
 
-Dart是纯面向对象的，在声明时没有赋值的变量，默认值为 null
+Dart是纯面向对象的，变量声明时如果没有赋值，其默认值为 null
 
 ```dart
 var name;
@@ -29,7 +29,7 @@ print(name); // 使用print函数打印，输出为null
 
 ## final与const
 
-变量内容如果不变，应当使用final或const。
+如果变量内容不会改变，鼓励使用final或const。
 
 final表示变量只能被赋值一次；const表示变量是编译时常量，const变量默认为final变量。
 
