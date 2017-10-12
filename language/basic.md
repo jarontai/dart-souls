@@ -31,7 +31,7 @@ print(name); // 使用print函数打印，输出为null
 
 如果变量内容不会改变，鼓励使用final或const。
 
-final表示变量只能被赋值一次；const表示变量是编译时常量，const变量默认为final变量。
+final表示变量只能被赋值一次；const表示变量是编译时常量，const变量默认为final变量
 
 ```dart
 final name = 'bob'; // 也可以这样写：final String name = 'bob';
