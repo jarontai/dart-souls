@@ -14,7 +14,7 @@
 
 Dart语言爱好者 - [Jaron Tai](https://github.com/jarontai)
 
-水平有限，内容难免存在错误之处，欢迎指正。
+水平有限，内容难免存在错误之处，欢迎[指正](https://github.com/jarontai/the-little-dart-book/issues/new)。
 
 ## 版权
 
