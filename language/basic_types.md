@@ -16,7 +16,11 @@ var name = 'bob'; // name变量指向一个内容为'bob'的字符串对象
 String name = 'bob'; // 显式指明name为字符串
 ```
 
-Dart是纯面向对象的，在声明时没有赋值的变量，其默认值为 null
+指定或不指定类型，由开发者自己决定；指定类型将获得更好的开发体验，比如：更多更全面的代码提示。
+
+## 默认值
+
+Dart是纯面向对象的，在声明时没有赋值的变量，默认值为 null
 
 ```dart
 var name;
@@ -27,7 +31,7 @@ print(name); // 使用print函数打印，输出为null
 
 变量内容如果不变，应当使用final或const。
 
-final表示变量只能被赋值一次；const表示变量是编译时常量，const变量默认就是final变量。
+final表示变量只能被赋值一次；const表示变量是编译时常量，const变量默认为final变量。
 
 ```dart
 final name = 'bob'; // 也可以这样写：final String name = 'bob';
@@ -53,7 +57,7 @@ int age = 28;
 double percent = 0.23;
 ```
 
-数字对象具有多种属性与方法
+数字对象具有多种数学计算相关的属性与方法
 
 ```dart
 int size = 9;
@@ -71,7 +75,54 @@ print(pi.toStringAsPrecision(2)); // 转换为固定精度字符串
 
 ### 字符串
 
+使用单引号或双引号创建字符串，支持使用 ${ } 进行插值
+
+```dart
+String name = 'bob';
+String message = 'Hi ${name.toUpperCase()}'; // Hi BOB
+message = 'Welcome $name'; // 直接使用变量时可以省略{}
+```
+
+多个相邻字符串将自动连接在一起，或者显式使用+；多行字符串则使用'''或"""来创建
+
+```dart
+String message1 = 'Hi'
+                 ' there'; // Hi there
+String message2 = 'Hi'
+                 + ' there'; // Hi there
+String multiMessage = '''
+Hello
+again!
+'''; // 多行字符串
+```
+
+字符串对象不可变，自带多种实用属性与方法
+
+```dart
+String name = 'bob';
+print(name.length); // 长度
+print(name.isEmpty); // 是否为空
+print(name.substring(1)); // 子字符串
+print(name.replaceAll('b', 'l')); // 替换所有
+...
+```
+
 ### 布尔
+
+布尔类型只有两个对象，true和false。
+
+true是唯一“正确”的值，所有非true的值都视为false
+
+```dart
+// 以下常见的JavaScript代码，在Dart中将失效
+var name = 'bob';
+if (name) { // name被视为false，后续代码不再执行
+  var message = 'hi' + name;
+  ...
+}
+```
+
+
 
 
 
