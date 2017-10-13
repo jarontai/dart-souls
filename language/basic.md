@@ -82,7 +82,7 @@ print(pi.toStringAsPrecision(2)); // 转换为固定精度字符串
 ```dart
 String name = 'bob';
 String message = 'Hi ${name.toUpperCase()}'; // Hi BOB
-message = 'Welcome $name'; // 直接使用变量时可以省略{}
+String text = 'Welcome $name'; // 直接使用变量时可以省略{}
 ```
 
 多个相邻字符串将自动连接在一起，或者显式使用+；多行字符串则使用'''或"""来创建
