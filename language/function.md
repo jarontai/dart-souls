@@ -16,6 +16,21 @@ int add(int a, int b) {
 int add(int a, int b) => a + b;
 ```
 
+## 函数对象
+
+函数是对象，可以赋给变量，可以作为参数，可以匿名；函数的类型是`Function`
+
+```dart
+// 将函数赋给变量，此函数最后一个参数是函数类型
+var adder = (int a, int b, Function printer) {
+  var result = a + b;
+  printer(result);
+};
+
+// 匿名函数作为参数
+adder(1, 3, (val) => print(val));
+```
+
 ## 可选参数
 
 函数参数有两种：必填参数和可选参数，可选参数只能出现在必填参数之后。
@@ -47,21 +62,6 @@ youSay('yah');
 youSay('yah', 'hoo');
 iSay(words: 'yah');
 iSay(words: 'yah', times: 6);
-```
-
-## 函数对象
-
-函数是对象，可以赋给变量，可以作为参数，可以匿名；函数的类型是`Function`
-
-```dart
-// 将函数赋给变量，此函数最后一个参数是函数类型
-var adder = (int a, int b, Function printer) {
-  var result = a + b;
-  printer(result);
-};
-
-// 匿名函数作为参数
-adder(1, 3, (val) => print(val));
 ```
 
 ## 词法作用域和闭包
@@ -97,6 +97,8 @@ main() {
   }
 }
 ```
+
+// TODO - 闭包
 
 ## main函数
 
