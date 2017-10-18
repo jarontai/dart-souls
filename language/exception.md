@@ -9,7 +9,7 @@
 * while、do-while 循环
 * break、continue
 * switch、case
-* assert（断言）
+* assert（断言）// TODO
 
 有编程经验的开发者，都应该接触过它们，这里不作过多讲解。
 
