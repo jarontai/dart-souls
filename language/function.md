@@ -98,7 +98,7 @@ main() {
 }
 ```
 
-闭包（_closure_）是指一个函数对象，即使它不在初始作用域中，仍然能够访问其作用域内的变量
+闭包（_closure_）是指一个函数对象，即使不在初始作用域中，仍然能够访问其作用域内的变量
 
 ```dart
 // 此函数生成一个将参数跟base相加的函数
@@ -109,7 +109,7 @@ Function makeAdder(int base) {
 main() {
   var add2 = makeAdder(2); // base为2
   var add4 = makeAdder(4); // base为4
-  
+
   // 不在makeAdder内，仍然可以访问base
   print(add2(3)); // 5
   print(add4(3)); // 7
