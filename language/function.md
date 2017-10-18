@@ -46,11 +46,20 @@ String iSay({String words, int times = 1}) {
 
 ## 函数对象
 
+函数是对象，可以赋给变量，可以匿名，函数的类型是Function
 
+```dart
+// 函数赋给变量，使用函数作为参数
+var adder = (int a, int b, Function printer) {
+  var result = a + b;
+  printer(result);
+};
+
+// 使用匿名函数
+adder(1, 3, (val) => print(val));
+```
 
 ## 词法作用域
-
-
 
 ## main函数
 
