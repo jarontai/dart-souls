@@ -4,7 +4,7 @@
 
 ## 集合
 
-常用的集合类型有：List，Map 和 Set。
+常用的集合类型有：`List`，`Map` 和 `Set`。
 
 ### List
 
@@ -14,7 +14,7 @@
 
 ## 日期/时间
 
-日期与时间运算主要涉及两个类：DateTime 和 Duration。
+日期与时间运算主要涉及两个类：`DateTime` 和 `Duration`。
 
 ### DateTime
 

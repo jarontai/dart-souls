@@ -15,13 +15,13 @@
 
 ## 异常处理
 
-异常处理涉及两个类：Exception 和 Error。
+异常处理涉及两个类：`Exception` 和 `Error`。
 
 ### Exception
 
 Exception类表示程序执行过程中的异常，它们如果没有被捕获，应用通常会挂起并中止执行。
 
-异常抛出使用throw，捕获使用try
+异常抛出使用`throw`，捕获使用`try`
 
 ```
 
