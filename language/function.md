@@ -59,7 +59,7 @@ var adder = (int a, int b, Function printer) {
 adder(1, 3, (val) => print(val));
 ```
 
-## 词法作用域
+## 词法作用域和闭包
 
 词法作用域（也称为静态作用域），表示变量的作用域在其定义时就已经确定。
 
@@ -74,14 +74,14 @@ main() {
   print(top); // OK
   print(inFn); // 错误，无法访问
   print(inIf); // 错误，无法访问
-  
+
   fn() {
     var inFn = 'fn';
     print(inFn); // OK
     print(inMain); // OK
     print(top); // OK
     print(inIf); // 错误，无法访问
-    
+
     if (top) {
       var inIf = 'if';
       print(inIf); // OK
@@ -92,6 +92,8 @@ main() {
   }
 }
 ```
+
+
 
 ## main函数
 
