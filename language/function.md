@@ -24,7 +24,7 @@ int add(int a, int b) => a + b;
 
 ```dart
 // 一个必填参数和一个位置可选参数
-youSay(String words, [String moreWords = 'yoo']) {
+youSay(String words, [String moreWords = 'yah']) {
   var result = 'You say $words';
   if (moreWords != null) {
     result += ' $moreWords';
@@ -43,10 +43,10 @@ iSay({String words, int times = 1}) {
   print(result);
 }
 
-youSay('yoo');
-youSay('yoo', 'hah');
-iSay(words: 'yoo');
-iSay(words: 'yoo', times: 6);
+youSay('yah');
+youSay('yah', 'hoo');
+iSay(words: 'yah');
+iSay(words: 'yah', times: 6);
 ```
 
 ## 函数对象
