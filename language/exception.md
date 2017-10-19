@@ -17,6 +17,8 @@
 
 异常处理涉及两个类：`Exception` 和 `Error`。
 
+
+
 ### Exception
 
 Exception类表示程序执行过程中的异常，它们如果没有被捕获，应用通常会挂起并中止执行。

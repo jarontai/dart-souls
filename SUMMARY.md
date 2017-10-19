@@ -9,6 +9,7 @@
 * [2. 语言基础](language/index.md)
   * [2.1 变量与基本类型](language/basic.md)
   * [2.2 函数](language/function.md)
+  * [2.5 类](language/class.md)
   * [2.3 流程控制与异常](language/exception.md)
   * [2.4 常用内置类型](language/commons.md)
 
