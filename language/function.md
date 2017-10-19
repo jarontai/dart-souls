@@ -120,7 +120,7 @@ main() {
 
 Dart应用都应该有一个顶层函数`main`，它是应用的入口。
 
-main函数的返回值是void，且拥有一个可选的泛型列表参数`List<String>` （`List`与泛型将在后续章节进行讲述）
+`main`函数的返回值是`void`，且拥有一个可选的泛型列表参数`List<String>` （`List`与泛型将在后续章节进行讲解）
 
 ```dart
 // 简单而完整的main函数
