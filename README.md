@@ -1,6 +1,8 @@
 # [The Little Dart Book](https://jarontai.gitbooks.io/the-little-dart-book/content/ "在线阅读")
 
-《Dart简易教程》一本介绍Dart的小书
+《Dart简易教程》一本介绍Dart的小书 (编写中...)
+
+[在线阅读](https://www.gitbook.com/read/book/jarontai/the-little-dart-book)，[pdf](https://www.gitbook.com/download/pdf/book/jarontai/the-little-dart-book)，[epub](https://www.gitbook.com/download/epub/book/jarontai/the-little-dart-book)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/the-little-dart-book)
 
 ## 目标
 
