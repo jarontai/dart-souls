@@ -24,5 +24,5 @@ Dart语言爱好者 - [Jaron Tai](https://github.com/jarontai)
 
 ## 注意
 
-本书定位为入门级总结笔记，想更深入学习Dart，你还需要查阅[Dart官网](https://www.dartlang.org/)或其他进阶书籍。
+本书定位为入门型笔记，想更深入学习Dart，你还需要查阅[Dart官网](https://www.dartlang.org/)或其他进阶书籍。
 
