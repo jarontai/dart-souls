@@ -1,5 +1,7 @@
 # Hello World
 
+按照惯例，编写一个Hello World。
+
 ## 确认SDK安装成功
 
 在命令行中输入以下指令

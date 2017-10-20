@@ -2,7 +2,7 @@
 
 使用具备Dart插件的编辑器，能让开发事半功倍；下面列举了部分Dart官网推荐的编辑器/IDE
 
-笔者使用较多的是VS Code
+笔者使用较多的是VS Code。
 
 ## Jetbrains家族
 

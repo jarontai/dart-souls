@@ -1,10 +1,12 @@
 # 手动安装SDK
 
+不能使用工具安装SDK时，可以手动安装。
+
 ## 下载SDK
 
 SDK下载链接模板:
 
-https://storage.googleapis.com/dart-archive/channels/&lt;stable/dev&gt;/release/&lt;release&gt;/sdk/dartsdk-&lt;platform&gt;-&lt;architecture&gt;-release.zip
+[https://storage.googleapis.com/dart-archive/channels/&lt;stable/dev&gt;/release/&lt;release&gt;/sdk/dartsdk-&lt;platform&gt;-&lt;architecture&gt;-release.zip](https://storage.googleapis.com/dart-archive/channels/<stable/dev>/release/<release>/sdk/dartsdk-<platform>-<architecture>-release.zip)
 
 按照以下规则构造下载地址：
 
@@ -15,8 +17,6 @@ https://storage.googleapis.com/dart-archive/channels/&lt;stable/dev&gt;/release/
 * &lt;platform&gt; - 平台，可选项：windows, macos, linux
 
 * &lt;architecture&gt; - 系统架构，32位或64位，可选项：ia32，x64
-
-
 
 地址示例：
 
