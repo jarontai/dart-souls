@@ -18,7 +18,7 @@ Dart语言爱好者 - [Jaron Tai](https://github.com/jarontai)
 
 ## 版权
 
-本书使用“[署名-非商业性使用 4.0 国际](http://creativecommons.org/licenses/by-nc/4.0/)”创作共用许可证。
+本书内容使用 [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/) （署名-非商业性使用 知识共享4.0许可协议）授权。
 
 只要保持原作者署名和非商用，你可以自由地阅读、分享、修改本书。
 
