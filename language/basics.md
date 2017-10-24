@@ -15,18 +15,20 @@ var name = 'bob'; // name变量指向一个内容为'bob'的字符串对象
 另一种是指定类型
 
 ```dart
-String name = 'bob'; // 显式指明name为字符串
+String name = 'bob'; // 显式指明name变量为字符串类型
 ```
 
 指定或不指定类型，由开发者自己决定；指定类型将获得更好的开发体验，比如：更多更全面的代码提示。
 
 ## 默认值
 
-Dart是纯面向对象的，变量声明时如果没有赋值，其默认值为`null`
+任意类型的变量，在声明时如果没有赋值，默认值都是`null`
 
 ```dart
-var name;
+var name; // 未指定类型的变量
+int age; // 指定类型的变量
 print(name); // 使用print函数打印，输出为null
+print(age); // 使用print函数打印，输出也为null
 ```
 
 ## final与const
