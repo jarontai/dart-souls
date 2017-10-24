@@ -43,6 +43,40 @@ const pi = 3.14;
 const area = pi * 2 * 2; // 由常量值计算得到的常量
 ```
 
+## 词法作用域
+
+Dart使用词法作用域（也称为静态作用域），表示变量（对象）的作用域在其定义时就已经确定。
+
+作用域由变量所处代码块（大括号）的层级决定，层次越深，作用域越小
+
+```dart
+var top = true;
+
+main() {
+  var inMain = 'main';
+  print(inMain); // OK
+  print(top); // OK
+  print(inFn); // 错误，无法访问
+  print(inIf); // 错误，无法访问
+
+  fn() {
+    var inFn = 'fn';
+    print(inFn); // OK
+    print(inMain); // OK
+    print(top); // OK
+    print(inIf); // 错误，无法访问
+
+    if (top) {
+      var inIf = 'if';
+      print(inIf); // OK
+      print(inFn); // OK
+      print(inMain); // OK
+      print(top); // OK
+    }
+  }
+}
+```
+
 ## 基本数据类型
 
 基本数据类型有三种：数字、字符串与布尔。

@@ -7,7 +7,7 @@
   * [1.3 编辑器](intro/editor.md)
   * [1.4 Hello World](intro/hello.md)
 * [2. 语言基础](language/index.md)
-  * [2.1 变量与基本类型](language/basic.md)
+  * [2.1 变量与基本类型](language/basics.md)
   * [2.4 常用内置类型](language/commons.md)
   * [2.2 函数](language/function.md)
   * [2.5 类](language/class.md)
