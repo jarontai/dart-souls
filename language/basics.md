@@ -31,7 +31,7 @@ print(name); // 使用print函数打印，输出为null
 
 ## final与const
 
-如果变量内容不会改变，鼓励使用`final`或`const`。
+如果变量内容不会改变，建议使用`final`或`const`。
 
 `final`表示变量只能被赋值一次；`const`表示变量是编译时常量，`const`变量默认为`final`变量
 
@@ -102,13 +102,13 @@ int size = 9;
 print(size.isEven); // 是否偶数
 print(size.isOdd); // 是否奇数
 print(size.toRadixString(6)); // 转换为6进制字符串
-...
+......
 
 double pi = 3.1415926;
 print(pi.ceil()); // 向上取整
 print(pi.toInt()); // 转成整形
 print(pi.toStringAsPrecision(2)); // 转换为固定精度字符串
-...
+......
 ```
 
 ### 字符串
@@ -143,7 +143,7 @@ print(name.isEmpty); // 是否为空
 print(name.substring(1)); // 子字符串
 print(name.startsWith('b')); // 是否以某字符开头
 print(name.replaceAll('b', 'l')); // 替换所有
-...
+......
 ```
 
 ### 布尔
@@ -157,7 +157,7 @@ print(name.replaceAll('b', 'l')); // 替换所有
 var name = 'bob';
 if (name) { // name被视为false，后续代码不再执行
   var message = 'hi' + name;
-  ...
+  ......
 }
 ```
 
