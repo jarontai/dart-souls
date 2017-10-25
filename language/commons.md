@@ -1,12 +1,22 @@
 # 常用内置类型
 
-除了[2.1节](/language/basic.md)介绍的基本类型，Dart也内置了很多其他常用类型。
+除了[2.1节](/language/basics.md)介绍的基本类型，Dart也内置了很多其他常用类型。
 
 ## 集合
 
 常用的集合类型有：`List`，`Map` 和 `Set`。
 
 ### List
+
+`List`就是其他语言中常见的数组（array），可以使用字面量（`[a1, a2]的形式`）或构造函数创建
+
+```dart
+var gameArray = ['Halo', 'Gears of War']; // 字面量形式
+
+var gameList = new List(); // 使用构造函数
+gameList.add('The Witcher'); // 使用add方法添加数据
+gameList.add('Dark Souls');
+```
 
 ### Map
 
