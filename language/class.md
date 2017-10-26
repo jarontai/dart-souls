@@ -6,9 +6,9 @@
 
 类的声明是使用关键字`class`。
 
-类中可以声明数据和函数，即对象的属性和方法。
+类中可以包含数据和函数，即对象的属性和方法。
 
-在类中使用`this`访问自身的属性和方法，`this`是可选的，官方建议不使用`this`
+在类中可以通过`this`或直接访问自身的属性和方法
 
 ```dart
 // 声明一个表示游戏的类
@@ -17,7 +17,7 @@ class Game {
   String title; // 游戏标题
   String developer; // 游戏开发商
   int playerNum = 1; // 支持玩家数，初始化为1
-  
+
   // 类中的函数，即对象的方法
   play() {
     print('Play the ' + this.title + ' developed by ' + developer); // 通过this或直接访问自身属性
