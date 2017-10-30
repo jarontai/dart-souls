@@ -73,7 +73,7 @@ main() {
 
 `final`表示变量只能被赋值一次；`const`表示变量是编译时常量，`const`变量默认为`final`变量。
 
-注意：顶层`final`变量与[类](/language/class.md)变量在首次访问是才执行初始化
+注意：顶层`final`变量与[类](/language/class.md)变量在首次访问时才执行初始化
 
 ```dart
 final name = 'bob'; // 也可以这样写：final String name = 'bob';
@@ -89,7 +89,7 @@ const area = pi * 2 * 2; // 由常量值计算得到的常量
 
 ### 数字
 
-数字类型有两种，一种是整数`int`
+常用的数字类型有两种，一种是整数`int`
 
 ```dart
 int age = 28;
@@ -116,6 +116,8 @@ print(pi.toInt()); // 转成整形
 print(pi.toStringAsPrecision(2)); // 转换为固定精度字符串
 ......
 ```
+
+`int`与`double`都继承数字类型`num`，在需要同时支持整数与浮点数时可以使用`num`。
 
 ### 字符串
 
