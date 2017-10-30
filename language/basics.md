@@ -31,21 +31,7 @@ print(name); // 使用print函数打印，输出为null
 print(age); // 使用print函数打印，输出也为null
 ```
 
-## final与const
-
-如果变量内容不会改变，建议使用`final`或`const`。
-
-`final`表示变量只能被赋值一次；`const`表示变量是编译时常量，`const`变量默认为`final`变量
-
-```dart
-final name = 'bob'; // 也可以这样写：final String name = 'bob';
-name = 'john'; // 再次赋值将报错!
-
-const pi = 3.14;
-const area = pi * 2 * 2; // 由常量值计算得到的常量
-```
-
-## 词法作用域
+## 作用域
 
 Dart使用词法作用域（也称为静态作用域），即变量的作用域在其定义时就已经确定。
 
@@ -79,6 +65,22 @@ main() {
     }
   }
 }
+```
+
+## final与const
+
+如果变量内容不会改变，建议使用`final`或`const`。
+
+`final`表示变量只能被赋值一次；`const`表示变量是编译时常量，`const`变量默认为`final`变量。
+
+注意：顶层`final`变量与[类](/language/class.md)变量在首次访问是才执行初始化
+
+```dart
+final name = 'bob'; // 也可以这样写：final String name = 'bob';
+name = 'john'; // 再次赋值将报错!
+
+const pi = 3.14;
+const area = pi * 2 * 2; // 由常量值计算得到的常量
 ```
 
 ## 基本数据类型
