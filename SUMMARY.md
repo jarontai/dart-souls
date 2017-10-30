@@ -11,7 +11,7 @@
   * [2.2 函数](language/function.md)
   * [2.3 类](language/class.md)
   * [2.4 常用内置类型](language/commons.md)
-  * [2.3 流程控制与异常](language/exception.md)
-  * [2.x mixin](language/mixin.md)
-  * [2.x 泛型](language/generics.md)
+  * [2.5 流程控制与异常](language/exception.md)
+  * [2.6 mixin](language/mixin.md)
+  * [2.7 泛型](language/generics.md)
 
