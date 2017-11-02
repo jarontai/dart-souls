@@ -23,7 +23,7 @@ class Game {
     print('Play the ' + this.title + ' developed by ' + developer); // 通过this或直接访问属性
     ......
   }
-  
+
   updateTitle(String title) {
     this.title = title; // 参数与属性同名，必须使用this区分
   }
@@ -74,7 +74,9 @@ getter和setter是对属性进行读写的特殊方法，它们虽是方法却�
 ```dart
 class Game {
   final String title = 'mario';
-  double price; 
+  final String developer = 'nintendo';
+  num price = 100;
+  num discount = 0.2;
 
   // title隐含的getter
   // String get title => title;
@@ -82,19 +84,33 @@ class Game {
   // price隐含的getter和setter
   // String get price => price;
   // set price(double title) => this.price = price;
-  
+
   // 自定义的getter和setter
-  String get 
+  num get salePrice {
+    if (discount != null) {
+      return price * (1 - discount);
+    }
+    return 0;
+  }
+
+  set salePrice(num salePrice) {
+    discount = (price - salePrice) / price;
+  }
 }
 
 main() {
   // 以下所有对属性的读写都是通过getter和setter
   var game = new Game();
   print(game.title);
-  game.price = 10.0;
+  game.price = 200;
   print(game.price);
+  print(game.salePrice);
+  game.salePrice = 180;
+  print(game.discount);
+
   game.title = 'halo'; // 错误，title的setter不存在
 }
+
 ```
 
 
