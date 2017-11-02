@@ -8,7 +8,7 @@
 
 类中可以包含数据和函数，即对象的属性和方法。
 
-在类中可以通过`this.`或直接访问自身的属性和方法
+在类中可以通过`this.`或直接访问自身的属性和方法，官方建议只在命名冲突时才使用`.this`方式
 
 ```dart
 // 声明一个表示游戏的类
@@ -20,8 +20,12 @@ class Game {
 
   // 类中的函数，即对象的方法
   play() {
-    print('Play the ' + this.title + ' developed by ' + developer); // 通过this或直接访问自身属性
+    print('Play the ' + this.title + ' developed by ' + developer); // 通过this或直接访问属性
     ......
+  }
+  
+  updateTitle(String title) {
+    this.title = title; // 参数与属性同名，必须使用this区分
   }
 }
 ```
@@ -63,26 +67,34 @@ main() {
 
 ## Getter/Setter
 
-getter和setter是对属性进行读写的特殊方法，它们虽是方法却使用跟属性一样的书写方式。
+getter和setter是对属性进行读写的特殊方法，它们虽是方法却有跟属性一样的访问方式（即`对象.属性`）。
 
-所有普通属性都会隐含生成一对getter跟setter，`final`属性只有getter。
+所有普通属性都有一对隐含的getter跟setter，`final`属性只有getter。
 
 ```dart
 class Game {
-  final String title = 'tetris';
+  final String title = 'mario';
   double price; 
-  
+
   // title隐含的getter
   // String get title => title;
 
   // price隐含的getter和setter
   // String get price => price;
   // set price(double title) => this.price = price;
+  
+  // 自定义的getter和setter
+  String get 
 }
 
-var game = new Game();
-print(game.tetris);
-game.price = 10.0;
+main() {
+  // 以下所有对属性的读写都是通过getter和setter
+  var game = new Game();
+  print(game.title);
+  game.price = 10.0;
+  print(game.price);
+  game.title = 'halo'; // 错误，title的setter不存在
+}
 ```
 
 
