@@ -8,7 +8,7 @@
 
 类中可以包含数据和函数，即对象的属性和方法。
 
-在类中可以通过`this.`或直接访问自身的属性和方法，官方建议只在命名冲突时才使用`.this`方式
+在类中可以通过`this.`或直接访问属性和方法，官方建议只在命名冲突时才使用`.this`方式
 
 ```dart
 // 声明一个表示游戏的类
@@ -25,7 +25,7 @@ class Game {
   }
 
   updateTitle(String title) {
-    this.title = title; // 参数与属性同名，必须使用this区分
+    this.title = title; // 使用this区分同名的参数和属性
   }
 }
 ```
@@ -100,7 +100,7 @@ class Game {
   set salePrice(num salePrice) {
     discount = (price - salePrice) / price;
   }
-  
+
   displayInfo() {
     print('${title} - salePrice: ${salePrice}'); // 像访问title一样访问salePrice
   }
@@ -134,12 +134,12 @@ class Game2 {
   String get title {
     return souls();
   }
-  
+
   souls() => 'Dark Souls';
 }
 
 main() {
-  // 使用两个不同版本的Game，但是对title的访问方式不变
+  // 使用两个不同版本的Game，但对title的访问方式不变
   var game1 = new Game1();
   var game2 = new Game2();
   print(game1.title);
