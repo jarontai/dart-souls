@@ -67,19 +67,24 @@ main() {
 
 ## Getter/Setter
 
-getter和setter是对属性进行读写的特殊方法，它们虽是方法却有跟属性一样的访问方式（即`对象.属性`）。
+跟很多语言不同，Dart对象属性的读写是通过getter和setter完成的。
+
+getter和setter是一种特殊的方法，它们虽是方法却有跟属性一样的访问方式。
 
 所有普通属性都有一对隐含的getter跟setter，`final`属性只有getter。
 
+自定义getter和setter也是支持的，方式是在方法名前添加`get`或`set`，`getter`有返回值无参数而`setter`正好相反
+
 ```dart
 class Game {
-  final String title = 'mario';
-  final String developer = 'nintendo';
+  final String title = 'Dark Souls';
+  final String developer = 'FromSoftware';
   num price = 100;
   num discount = 0.2;
 
-  // title隐含的getter
+  // title、developer隐含的getter
   // String get title => title;
+  // String get developer => developer;
 
   // price隐含的getter和setter
   // String get price => price;
@@ -92,14 +97,17 @@ class Game {
     }
     return 0;
   }
-
   set salePrice(num salePrice) {
     discount = (price - salePrice) / price;
+  }
+  
+  displayInfo() {
+    print('${title} - salePrice: ${salePrice}'); // 像访问title一样访问salePrice
   }
 }
 
 main() {
-  // 以下所有对属性的读写都是通过getter和setter
+  // 所有对属性的读写都是通过getter和setter
   var game = new Game();
   print(game.title);
   game.price = 200;
@@ -107,8 +115,35 @@ main() {
   print(game.salePrice);
   game.salePrice = 180;
   print(game.discount);
+  print(game.displayInfo());
 
-  game.title = 'halo'; // 错误，title的setter不存在
+  game.title = 'Mario'; // 错误，title的setter不存在
+}
+```
+
+getter和setter带来的好处是，你可以随时更改属性的内部实现，而且不用修改外部调用代码
+
+```dart
+// 版本1的Game
+class Game1 {
+  final String title = 'Dark Souls';
+}
+
+// 版本2的Game，将title转换为一个getter
+class Game2 {
+  String get title {
+    return souls();
+  }
+  
+  souls() => 'Dark Souls';
+}
+
+main() {
+  // 使用两个不同版本的Game，但是对title的访问方式不变
+  var game1 = new Game1();
+  var game2 = new Game2();
+  print(game1.title);
+  print(game2.title);
 }
 ```
 
