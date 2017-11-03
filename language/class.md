@@ -110,7 +110,6 @@ main() {
 
   game.title = 'halo'; // 错误，title的setter不存在
 }
-
 ```
 
 
