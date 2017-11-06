@@ -24,7 +24,8 @@ Dart VM version: 1.24.2 (Thu Jun 22 08:42:17 2017) on "macos_x64"
 
 ```dart
 main() {
-  print('Hello World!'); // print是全局打印函数，类似于JavaScript的console.log和Java的System.out.print
+  // print是全局打印函数，类似于JavaScript的console.log和Java的System.out.print
+  print('Hello World!');
 }
 ```
 
