@@ -152,7 +152,7 @@ main() {
 
 初始化列表先于构造函数体执行，常用于`final`属性的初始化，即没有初始化的`final`属性可以在初始化列表中进行赋值。
 
-初始化列表还可用于构造函数转发（复用构造函数逻辑），构造函数转发跟赋值操作不能同时出现
+初始化列表还可使用`this`进行构造函数转发（复用构造函数逻辑），构造函数转发和赋值操作可以同时出现
 
 ```dart
 class GreatSword {
@@ -191,7 +191,7 @@ main() {
 
 子类的构造函数在执行前，将隐含调用父类的`无参构造函数`（没有参数的构造函数，默认或显式声明的都可）。
 
-如果父类没有`无参构造函数`，则子类的构造函数必须在初始化列表中显式调用父类的某个构造函数。
+如果父类没有`无参构造函数`，则子类的构造函数必须在初始化列表中通过`super`显式调用父类的某个构造函数。
 
 ```dart
 // 大剑
@@ -208,13 +208,13 @@ class GreatSword {
 
 // 特大剑
 class UltraGreatSword extends GreatSword {
-  int extraDamage = 50; // 附加伤害值
+  int extraDamage = 20; // 附加伤害值
 
   // 重写getter
   int get totalDamage => super.damage + extraDamage; // 父类的伤害加上自己的附加伤害为总伤害（super可省略）
 
-  // 必须调用父类的构造函数，否则错误
-  UltraGreatSword(String name) : super(name);
+  // 必须使用super（代表父类名）调用父类的构造函数，否则错误
+  UltraGreatSword(String name) : extraDamage = 50, super(name);
 }
 
 main() {
