@@ -169,9 +169,9 @@ class GreatSword {
   // 强化版大剑基础伤害120
   GreatSword.enhanced(this.name, this.extraDamage) : damage = 120;
 
-  // 通过初始化列表转发到其他构造函数，其中this代表类名
-  GreatSword.bastard(): this('Bastard Sword'); // 混种大剑
-  GreatSword.moonlight(): this.enhanced('Moonlight GreatSword', 10); // 月光大剑
+  // `混种大剑`和`月光大剑`的构造函数，通过初始化列表转发到其他构造函数，其中this代表类名
+  GreatSword.bastard(): this('Bastard Sword'); // 转发到普通构造函数
+  GreatSword.moonlight(): this.enhanced('Moonlight GreatSword', 10); // 转发到命名构造函数
 }
 
 main() {
