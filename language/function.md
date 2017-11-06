@@ -51,29 +51,31 @@ adder(1, 3, (val) => print(val));
 
 ```dart
 // 一个必填参数和一个位置可选参数
-youSay(String words, [String moreWords = 'yah']) {
+String youSay(String words, [String moreWords = 'yah']) {
   var result = 'You say $words';
   if (moreWords != null) {
     result += ' $moreWords';
   }
-  print(result);
+  return result;
 }
 
 // 两个命名可选参数
-iSay({String words, int times = 1}) {
+String iSay({String words, int times = 1}) {
   var result = 'I say';
   if (words != null) {
     for (var i = 0; i < times; i++) {
       result += ' $words';
     }
   }
-  print(result);
+  return result;
 }
 
-youSay('yah');
-youSay('yah', 'hoo');
-iSay(words: 'yah');
-iSay(words: 'yah', times: 6);
+main() {
+  print(youSay('yah'));
+  print(youSay('yah', 'hoo'));
+  print(iSay(words: 'yah'));
+  print(iSay(words: 'yah', times: 6));
+}
 ```
 
 ## 返回值
@@ -85,18 +87,18 @@ iSay(words: 'yah', times: 6);
 闭包（_closure_）是指一个函数对象，即使不在初始作用域内，也仍然能够访问其中的变量。
 
 ```dart
-// makeAdder生成一个将参数跟base相加的函数
-Function makeAdder(int base) {
-  return (int i) => base + i;
+// makeSpeaker生成一个将参数跟person相连的函数
+Function makeSpeaker(String person) {
+  return (String words) => '$person say $words';
 }
 
 main() {
-  var add2 = makeAdder(2); // base为2
-  var add4 = makeAdder(4); // base为4
+  var bob = makeSpeaker('bob'); // person为bob
+  var john = makeSpeaker('john'); // person为john
 
-  // 不在makeAdder内，仍然可以访问makeAdder的参数变量base
-  print(add2(3)); // 5
-  print(add4(3)); // 7
+  // 不在makeSpeaker内，仍然可以访问makeSpeaker的参数变量person
+  print(bob('hi')); // bob say hi
+  print(john('hello')); //  john say hello
 }
 ```
 
