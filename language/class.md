@@ -100,7 +100,7 @@ class GreatSword {
     return damage + extraDamage; // 基础伤害与附加伤害之和
   }
   set totalDamage(int totalDamage) {
-    extraDamage = totalDamage - damage; // 计算出附加伤害
+    extraDamage = totalDamage - damage; // 通过总伤害计算出附加伤害
   }
 
   // 打印信息
