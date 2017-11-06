@@ -51,30 +51,30 @@ adder(1, 3, (val) => print(val));
 
 ```dart
 // 一个必填参数和一个位置可选参数
-String youSay(String words, [String moreWords = 'yah']) {
-  var result = 'You say $words';
+String bobSay(String words, [String moreWords = 'yah']) {
+  var result = 'Bob say $words';
   if (moreWords != null) {
-    result += ' $moreWords';
+  	result += ' $moreWords';
   }
   return result;
 }
 
 // 两个命名可选参数
-String iSay({String words, int times = 1}) {
-  var result = 'I say';
+String johnSay({String words, int times = 1}) {
+  var result = 'John say';
   if (words != null) {
     for (var i = 0; i < times; i++) {
-      result += ' $words';
+    	result += ' $words';
     }
   }
   return result;
 }
 
 main() {
-  print(youSay('yah'));
-  print(youSay('yah', 'hoo'));
-  print(iSay(words: 'yah'));
-  print(iSay(words: 'yah', times: 6));
+  print(bobSay('yah'));
+  print(bobSay('yah', 'hoo'));
+  print(johnSay(words: 'yah'));
+  print(johnSay(words: 'yah', times: 6));
 }
 ```
 
