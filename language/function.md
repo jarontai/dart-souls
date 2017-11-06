@@ -71,10 +71,10 @@ String johnSay({String words, int times = 1}) {
 }
 
 main() {
-  print(bobSay('yah'));
-  print(bobSay('yah', 'hoo'));
-  print(johnSay(words: 'yah'));
-  print(johnSay(words: 'yah', times: 6));
+  print(bobSay('yah')); // Bob say yah yah
+  print(bobSay('yah', 'hoo')); // Bob say yah hoo
+  print(johnSay(words: 'yah')); // John say yah
+  print(johnSay(words: 'yah', times: 6)); // John say yah yah yah yah yah yah
 }
 ```
 
