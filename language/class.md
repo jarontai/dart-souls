@@ -105,7 +105,7 @@ class GreatSword {
 
   // 打印信息
   info() {
-    return ('${name} - totalDamage: ' + this.totalDamage.toString()); // 通过this或直接访问属性
+    return '${name} - totalDamage: ' + this.totalDamage.toString(); // 通过this或直接访问属性
   }
 }
 
