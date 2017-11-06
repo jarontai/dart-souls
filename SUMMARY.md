@@ -10,7 +10,7 @@
   * [2.1 变量与基本类型](language/basics.md)
   * [2.2 函数](language/function.md)
   * [2.3 类](language/class.md)
-  * [2.4 库与可见性](language/24-ku-yu-ke-jian-xing.md)
+  * [2.4 库与可见性](language/visibility.md)
   * [2.5 流程控制与异常](language/exception.md)
   * [2.6 泛型](language/generics.md)
   * [2.7 mixin](language/mixin.md)

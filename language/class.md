@@ -30,64 +30,6 @@ class Game {
 }
 ```
 
-## 构造函数
-
-构造函数用于将类实例化为对象，配合关键字`new`或`const`使用。
-
-没有显式声明构造函数的类，将默认拥有一个与类同名且没有参数的构造函数。
-
-构造函数中最常见的操作是对属性进行赋值，Dart为此提供了简写方式（在参数列表中直接使用`this.属性`）。
-
-除了普通的构造函数，Dart还支持`Class.name`方式的命名构造函数。
-
-```dart
-class Game {
-  String title;
-  String developer;
-
-  // 构造函数
-  Game(String title, String developer) {
-    this.title = title;
-    this.developer = developer;
-  }
-  // 以上构造函数的简写方式
-  // Game(this.title, this.developer);
-
-  // 命名构造函数
-  Game.dark() {
-    this.title = 'Dark Souls';
-    this.developer = 'FromSoftware';
-  }
-}
-
-main() {
-  // 实例化
-  var mario = new Game('Mario', 'Nintendo'); // 普通构造函数
-  var ds = new Game.dark(); // 使用命名构造函数
-}
-```
-
-## 初始化列表
-
-构造函数还支持一种专用于初始化的赋值操作列表，书写方式是参数列表后跟一个以冒号开头的逗号分隔赋值列表
-
-```dart
-class Game {
-  String title;
-  String developer;
-  String fullTitle;
-  
-  // 
-  Game(this.title, this.developer) : fullTitle = '$title developed by $developer';
-}
-```
-
-
-
-
-
-// TODO - const class
-
 ## Getter/Setter
 
 跟很多语言不同，Dart对象属性的读写是通过getter和setter完成的。
@@ -169,6 +111,86 @@ main() {
   print(game2.title);
 }
 ```
+
+## 构造函数
+
+构造函数用于将类实例化为对象，配合关键字`new`或`const`使用。
+
+没有显式声明构造函数的类，将默认拥有一个与类同名且没有参数的构造函数。
+
+构造函数中最常见的操作是对属性进行赋值，Dart为此提供了简写方式（在参数列表中直接使用`this.属性`）。
+
+除了普通的构造函数，Dart还支持`Class.name`方式的命名构造函数。
+
+```dart
+class Game {
+  String title;
+  String developer;
+
+  // 构造函数
+  Game(String title, String developer) {
+    this.title = title;
+    this.developer = developer;
+  }
+  // 以上构造函数的简写方式
+  // Game(this.title, this.developer);
+
+  // 命名构造函数
+  Game.dark() {
+    this.title = 'Dark Souls';
+    this.developer = 'FromSoftware';
+  }
+}
+
+main() {
+  // 实例化
+  var mario = new Game('Mario', 'Nintendo'); // 普通构造函数
+  var ds = new Game.dark(); // 使用命名构造函数
+}
+```
+
+## 初始化列表
+
+构造函数还支持初始化列表，书写方式是在参数列表后跟一个以冒号开头的逗号分隔赋值列表。
+
+初始化列表先于构造函数体执行，常用于初始化属性和构造函数转发
+
+```dart
+class Game {
+  String title;
+  String developer;
+  String fullTitle;
+
+  // 
+  Game(this.title, this.developer) : fullTitle = '$title developed by $developer';
+}
+```
+
+// TODO - const class
+
+## 子类
+
+使用`extends`来创建子类，使用`super`来访问父类。
+
+父类的属性（setter/getter）与方法，子类都可以重写（override）
+
+```dart
+// 大剑
+class Sword {
+  int damage = 100; // 基本伤害值
+
+  int get totalDamage => damage; // 总伤害
+}
+
+// 特大剑
+class GreatSword extends Sword {
+  int extraDamage = 50; // 附加伤害值
+
+  int get totalDamage => super.damage + extraDamage; // 父类的伤害加上自己的附加伤害为总伤害（super可以省略）
+}
+```
+
+
 
 
 
