@@ -1,6 +1,6 @@
 # 函数
 
-Dart是纯面向对象语言，所以函数也是对象，它们的类型是`Function`。
+Dart是纯面向对象语言，所以函数也是对象。
 
 ## 函数声明
 
@@ -21,17 +21,17 @@ int add2(int a, int b) => a + b;
 
 // 外层函数
 outFun() {
-  local() => 'local fun'; // 声明本地函数
-  print(local()); // 调用本地函数
+  add3(int a, int b) => a + b; // 函数内声明的本地函数
+  print(add3(1, 1)); // 调用本地函数
 }
 ```
 
 ## 函数对象
 
-函数是对象，可以赋给变量，可以作为函数的参数或返回值，可以匿名
+函数是对象，可以赋给变量，可以匿名；函数的类型是`Function`，可以作为参数或返回值
 
 ```dart
-// 将函数赋给变量，此函数最后一个参数是函数类型
+// 将函数赋给变量，函数最后一个参数的类型是函数
 var adder = (int a, int b, Function printer) {
   var result = a + b;
   printer(result);
