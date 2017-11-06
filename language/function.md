@@ -11,18 +11,24 @@ Dart是纯面向对象语言，所以函数也是对象。
 函数中也可以声明函数，即本地函数
 
 ```dart
-// 声明一个加法函数
-int add1(int a, int b) {
-  return a + b;
+// 声明一个函数
+String bobSay(String words) {
+  return 'bob say $words';
 }
 
-// 简写版本的加法函数
-int add2(int a, int b) => a + b;
+// bobSay函数的简写版本
+String bobSay2(String words) => 'bob say $words';
 
 // 外层函数
-outFun() {
-  add3(int a, int b) => a + b; // 函数内声明的本地函数
-  print(add3(1, 1)); // 调用本地函数
+String say() {
+  johnSay(String words) => 'john say $words'; // 函数内声明的本地函数
+  return johnSay('hello'); // 调用本地函数
+}
+
+main() {
+  print(bobSay('yah')); // bob say yah
+  print(bobSay2('yah')); // bob say yah
+  print(say()); // john say hello
 }
 ```
 
@@ -31,14 +37,16 @@ outFun() {
 函数是对象，可以赋给变量，可以匿名；函数的类型是`Function`，可以作为参数或返回值
 
 ```dart
-// 将函数赋给变量，函数最后一个参数的类型是函数
-var adder = (int a, int b, Function printer) {
-  var result = a + b;
+// 将函数赋给变量，第二个参数的类型是函数
+var bobSay = (String words, Function printer) {
+	var result = 'bob say $words';
   printer(result);
 };
 
-// 匿名函数作为参数
-adder(1, 3, (val) => print(val));
+main() {
+  // 使用变量bobSay调用函数，同时也传递一个匿名函数作为参数
+  bobSay('yah', (val) => print(val)); // bob say yah
+}
 ```
 
 ## 可选参数
