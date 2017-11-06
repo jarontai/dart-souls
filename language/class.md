@@ -177,8 +177,10 @@ class GreatSword {
 main() {
   var bastard = new GreatSword.bastard();
   var moonlight = new GreatSword.moonlight();
+  print(bastard.name);
   print(bastard.damage);
   print(bastard.extraDamage);
+  print(moonlight.name);
   print(moonlight.damage);
   print(moonlight.extraDamage);
 }
