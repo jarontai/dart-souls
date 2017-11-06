@@ -16,12 +16,12 @@ int add1(int a, int b) {
   return a + b;
 }
 
-// 简写方式
+// 简写版本的加法函数
 int add2(int a, int b) => a + b;
 
-// 声明一个函数
+// 外层函数
 outFun() {
-  local() => 'local fun'; // 声明一个本地函数
+  local() => 'local fun'; // 声明本地函数
   print(local()); // 调用本地函数
 }
 ```

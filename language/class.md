@@ -11,24 +11,62 @@
 在类中可以通过`this.`或直接访问属性和方法，官方建议只在命名冲突时才使用`.this`方式
 
 ```dart
-// 声明一个表示游戏的类
-class Game {
-  // 属性声明
-  String title; // 游戏标题
-  String developer; // 游戏开发商
-  int playerNum = 1; // 支持玩家数，初始化为1
+// 声明一个表示大剑（黑魂游戏系列的武器）的类
+class GreatSword {
+  // 属性
+  String name; // 名称
+  int damage = 100; // 伤害值
+  int extraDamage = 0; // 其他附加伤害
 
-  // 类中的函数，即对象的方法
-  play() {
-    print('Play the ' + this.title + ' developed by ' + developer); // 通过this或直接访问属性
-    ......
+  // 类中可以声明函数，即定义对象的方法
+  // 打印信息
+  info() {
+    print('GreatSword ${name} - damage: ' + this.damage.toString()); // 通过this或直接访问属性
   }
 
-  updateTitle(String title) {
-    this.title = title; // 使用this区分同名的参数和属性
+  // 武器升级（增加伤害值）
+  upgrade(int damage) {
+    this.damage += damage; // 使用this区分同名的参数和属性
   }
 }
 ```
+
+## 构造函数
+
+构造函数用于将类实例化为对象，配合关键字`new`或`const`使用。
+
+没有显式声明构造函数的类，将默认拥有一个与类同名且没有参数的构造函数。
+
+构造函数最常见的操作是使用参数对属性赋值，Dart为此提供了简写方式（参数列表中直接使用`this.属性`）。
+
+除了普通的构造函数，Dart还支持`Class.name`方式的命名构造函数
+
+```dart
+class GreatSword {
+  // 属性
+  String name; // 名称
+  final int damage = 100; // 伤害值
+  int extraDamage = 0; // 其他附加伤害
+
+  // 构造函数
+  GreatSword(String name) {
+    this.name = name;
+  }
+  // 以上构造函数的简写方式
+  // GreatSword(this.name);
+  
+  // 命名构造函数（使用简写方式）
+  GreatSword.enhanced(this.name, this.extraDamage);
+}
+
+main() {
+  // 实例化
+  var sword = new GreatSword('Bastard Sword'); // 普通构造函数
+  var enhancedSword = new GreatSword.enhanced('Claymore', 20); // 使用命名构造函数
+}
+```
+
+// TODO - const class
 
 ## Getter/Setter
 
@@ -41,156 +79,123 @@ getter和setter是一种特殊的方法，它们虽是方法却有跟属性一�
 自定义getter和setter也是支持的，方式是在方法名前添加`get`或`set`，`getter`有返回值无参数而`setter`正好相反
 
 ```dart
-class Game {
-  final String title = 'Dark Souls';
-  final String developer = 'FromSoftware';
-  num price = 100;
-  num discount = 0.2;
+class GreatSword {
+  // 属性
+  String name; // 名称
+  final int damage = 100; // 伤害值
+  int extraDamage = 0; // 其他附加伤害
 
-  // title、developer隐含的getter
-  // String get title => title;
-  // String get developer => developer;
+  // name隐含的getter
+  // String get name => name;
 
-  // price隐含的getter和setter
-  // String get price => price;
-  // set price(double title) => this.price = price;
+  // damage和extraDamage隐含的getter和setter
+  // int get damage => damage;
+  // set damage(int damage) => this.damage = damage;
+  // int get extraDamage => extraDamage;
+  // set extraDamage(int extraDamage) => this.extraDamage = extraDamage;
 
   // 自定义的getter和setter
-  num get salePrice {
-    if (discount != null) {
-      return price * (1 - discount);
-    }
-    return 0;
+  // 总伤害
+  int get totalDamage {
+    return damage + extraDamage; // 基础伤害与附加伤害之和
   }
-  set salePrice(num salePrice) {
-    discount = (price - salePrice) / price;
+  set totalDamage(int totalDamage) {
+    extraDamage = totalDamage - damage; // 计算出附加伤害
   }
-
-  displayInfo() {
-    print('${title} - salePrice: ${salePrice}'); // 像访问title一样访问salePrice
+  
+  // 打印信息
+  info() {
+    return ('${name} - totalDamage: ' + this.totalDamage.toString()); // 通过this或直接访问属性
   }
 }
 
 main() {
   // 所有对属性的读写都是通过getter和setter
-  var game = new Game();
-  print(game.title);
-  game.price = 200;
-  print(game.price);
-  print(game.salePrice);
-  game.salePrice = 180;
-  print(game.discount);
-  print(game.displayInfo());
+  var sword = new GreatSword();
+  print(sword.damage);
+  print(sword.extraDamage);
+  sword.totalDamage = 200;
+  print(sword.damage);
+  print(sword.extraDamage);
+  print(sword.info());
 
-  game.title = 'Mario'; // 错误，title的setter不存在
+  sword.damage = 180; // 错误，damage的setter不存在  
 }
 ```
 
 getter和setter带来的好处是，你可以随时更改属性的内部实现，而且不用修改外部调用代码
 
 ```dart
-// 版本1的Game
-class Game1 {
-  final String title = 'Dark Souls';
+// 版本1的GreatSword
+class GreatSword1 {
+  final String name = 'GreatSword';
 }
 
-// 版本2的Game，将title转换为一个getter
-class Game2 {
-  String get title {
-    return souls();
+// 版本2的GreatSword，将属性name转换为一个getter
+class GreatSword2 {
+  String get name {
+    return greatName();
   }
 
-  souls() => 'Dark Souls';
+  greatName() => 'GreatSword';
 }
 
 main() {
-  // 使用两个不同版本的Game，但对title的访问方式不变
-  var game1 = new Game1();
-  var game2 = new Game2();
-  print(game1.title);
-  print(game2.title);
-}
-```
-
-## 构造函数
-
-构造函数用于将类实例化为对象，配合关键字`new`或`const`使用。
-
-没有显式声明构造函数的类，将默认拥有一个与类同名且没有参数的构造函数。
-
-构造函数中最常见的操作是对属性进行赋值，Dart为此提供了简写方式（在参数列表中直接使用`this.属性`）。
-
-除了普通的构造函数，Dart还支持`Class.name`方式的命名构造函数。
-
-```dart
-class Game {
-  String title;
-  String developer;
-
-  // 构造函数
-  Game(String title, String developer) {
-    this.title = title;
-    this.developer = developer;
-  }
-  // 以上构造函数的简写方式
-  // Game(this.title, this.developer);
-
-  // 命名构造函数
-  Game.dark() {
-    this.title = 'Dark Souls';
-    this.developer = 'FromSoftware';
-  }
-}
-
-main() {
-  // 实例化
-  var mario = new Game('Mario', 'Nintendo'); // 普通构造函数
-  var ds = new Game.dark(); // 使用命名构造函数
+  // 使用两个不同版本的GreatSword，对name的访问方式不变
+  var sword = new GreatSword1();
+  print(sword.name);
+  sword = new GreatSword2();
+  print(sword.name);
 }
 ```
 
 ## 初始化列表
 
-构造函数还支持初始化列表，书写方式是在参数列表后跟一个以冒号开头的逗号分隔赋值列表。
+构造函数还支持初始化列表，其书写方式是在参数列表后跟一个以冒号开头，使用逗号分隔的赋值列表。
 
-初始化列表先于构造函数体执行，常用于初始化属性和构造函数转发
+初始化列表先于构造函数体执行，常用于`final`属性初始化和构造函数转发（复用构造函数逻辑）
 
 ```dart
-class Game {
-  String title;
-  String developer;
-  String fullTitle;
+class GreatSword {
+  // 属性
+  String name; // 名称
+  final int damage; // 伤害值
+  int extraDamage = 0; // 其他附加伤害
 
-  // 
-  Game(this.title, this.developer) : fullTitle = '$title developed by $developer';
+  // 普通大剑基础伤害100
+  GreatSword(this.name) : damage = 100; 
+  
+  // 强化版大剑基础伤害120
+  GreatSword.enhanced(this.name, this.extraDamage) : damage = 120;
+}
+
+main() {
+ 
 }
 ```
-
-// TODO - const class
 
 ## 子类
 
 使用`extends`来创建子类，使用`super`来访问父类。
 
-父类的属性（setter/getter）与方法，子类都可以重写（override）
+除了构造函数，父类所有的属性（setter/getter）和方法都被子类继承，而且都可以被重写（override）
 
 ```dart
 // 大剑
-class Sword {
-  int damage = 100; // 基本伤害值
+class GreatSword {
+  int damage = 100; // 基础伤害值
 
   int get totalDamage => damage; // 总伤害
 }
 
 // 特大剑
-class GreatSword extends Sword {
+class UltraGreatSword extends GreatSword {
   int extraDamage = 50; // 附加伤害值
-
+  
+  // 重写getter
   int get totalDamage => super.damage + extraDamage; // 父类的伤害加上自己的附加伤害为总伤害（super可以省略）
 }
 ```
 
-
-
-
+默认构造函数
 
