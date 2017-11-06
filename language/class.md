@@ -112,8 +112,7 @@ class GreatSword {
 main() {
   // 所有对属性的读写都是通过getter和setter
   var sword = new GreatSword();
-  print(sword.damage);
-  print(sword.extraDamage);
+  sword.name = 'GreatSword';
   sword.totalDamage = 200;
   print(sword.damage);
   print(sword.extraDamage);
