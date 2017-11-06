@@ -54,7 +54,7 @@ class GreatSword {
   }
   // 以上构造函数的简写方式
   // GreatSword(this.name);
-  
+
   // 命名构造函数（使用简写方式）
   GreatSword.enhanced(this.name, this.extraDamage);
 }
@@ -76,7 +76,7 @@ getter和setter是一种特殊的方法，它们虽是方法却有跟属性一�
 
 所有普通属性都有一对隐含的getter跟setter，`final`属性只有getter。
 
-自定义getter和setter也是支持的，方式是在方法名前添加`get`或`set`，`getter`有返回值无参数而`setter`正好相反
+自定义getter和setter也是支持的，书写方式是在方法名前添加`get`或`set`，`getter`有返回值无参数而`setter`正好相反
 
 ```dart
 class GreatSword {
@@ -85,12 +85,12 @@ class GreatSword {
   final int damage = 100; // 伤害值
   int extraDamage = 0; // 其他附加伤害
 
-  // name隐含的getter
-  // String get name => name;
-
-  // damage和extraDamage隐含的getter和setter
+  // damage隐含的getter
   // int get damage => damage;
-  // set damage(int damage) => this.damage = damage;
+
+  // name和extraDamage隐含的getter和setter
+  // String get name => name;
+  // set name(String name) => this.name = name;
   // int get extraDamage => extraDamage;
   // set extraDamage(int extraDamage) => this.extraDamage = extraDamage;
 
@@ -102,7 +102,7 @@ class GreatSword {
   set totalDamage(int totalDamage) {
     extraDamage = totalDamage - damage; // 计算出附加伤害
   }
-  
+
   // 打印信息
   info() {
     return ('${name} - totalDamage: ' + this.totalDamage.toString()); // 通过this或直接访问属性
@@ -164,13 +164,13 @@ class GreatSword {
 
   // 普通大剑基础伤害100
   GreatSword(this.name) : damage = 100; 
-  
+
   // 强化版大剑基础伤害120
   GreatSword.enhanced(this.name, this.extraDamage) : damage = 120;
 }
 
 main() {
- 
+
 }
 ```
 
@@ -191,7 +191,7 @@ class GreatSword {
 // 特大剑
 class UltraGreatSword extends GreatSword {
   int extraDamage = 50; // 附加伤害值
-  
+
   // 重写getter
   int get totalDamage => super.damage + extraDamage; // 父类的伤害加上自己的附加伤害为总伤害（super可以省略）
 }
