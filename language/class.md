@@ -198,10 +198,10 @@ main() {
 class GreatSword {
   String name; // 名称
   final int damage = 100; // 基础伤害值
-  
+
   // 总伤害的getter
   int get totalDamage => damage; // 总伤害
-  
+
   // 一个参数的构造函数
   GreatSword(this.name);
 }
@@ -215,6 +215,13 @@ class UltraGreatSword extends GreatSword {
 
   // 必须调用父类的构造函数，否则错误
   UltraGreatSword(String name) : super(name);
+}
+
+main() {
+  var black = new UltraGreatSword('Black Knight Greatsword');
+  print(black.name);
+  print(black.damage);
+  print(black.extraDamage);
 }
 ```
 
