@@ -39,7 +39,7 @@ main() {
 ```dart
 // 将函数赋给变量，第二个参数的类型是函数
 var bobSay = (String words, Function printer) {
-	var result = 'bob say $words';
+  var result = 'bob say $words';
   printer(result);
 };
 
