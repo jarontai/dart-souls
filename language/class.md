@@ -152,24 +152,35 @@ main() {
 
 构造函数还支持初始化列表，其书写方式是在参数列表后跟一个以冒号开头，使用逗号分隔的赋值列表。
 
-初始化列表先于构造函数体执行，常用于`final`属性初始化和构造函数转发（复用构造函数逻辑）
+初始化列表先于构造函数体执行，常用于`final`属性的初始化，即没有初始化的`final`属性可以在初始化列表中进行赋值。
+
+初始化列表还可用于构造函数转发（复用构造函数逻辑）
 
 ```dart
 class GreatSword {
   // 属性
   String name; // 名称
-  final int damage; // 伤害值
+  final int damage; // 伤害值（没有初始化）
   int extraDamage = 0; // 其他附加伤害
 
   // 普通大剑基础伤害100
-  GreatSword(this.name) : damage = 100; 
+  GreatSword(this.name) : damage = 100;
 
   // 强化版大剑基础伤害120
   GreatSword.enhanced(this.name, this.extraDamage) : damage = 120;
+  
+  // 通过初始化列表转发到其他构造函数，复用构造逻辑
+  GreatSword.bastard(): this('Bastard Sword'); // 混种大剑
+  GreatSword.moonlight(): this.enhanced('Moonlight GreatSword', 10); // 月光大剑
 }
 
 main() {
-
+  var bastard = new GreatSword.bastard();
+  var moonlight = new GreatSword.moonlight();
+  print(bastard.damage);
+  print(bastard.extraDamage);
+  print(moonlight.damage);
+  print(moonlight.extraDamage);
 }
 ```
 
