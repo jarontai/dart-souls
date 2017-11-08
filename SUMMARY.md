@@ -15,6 +15,7 @@
   * [2.x 常用内置类](language/commons.md)
   * [2.x 泛型](language/generics.md)
   * [2.x 流程控制与异常](language/exception.md)
+  * [2.x 异步](language/async.md)
 * [3. 标准库](library/index.md)
 * [4. Pub](pub/index.md)
 * [5. Web](web/index.md)
