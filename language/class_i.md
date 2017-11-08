@@ -2,7 +2,7 @@
 
 类用于创建对象，是对象的蓝本。
 
-_类的知识点较多，所以分成两个小节进行讲解，本节是Part I，下一节是_[_Part II_](/language/class_ii.md)_。_
+_类的知识点较多，所以分成两节进行讲解，本节是Part I，下一节是_[_Part II_](/language/class_ii.md)_。_
 
 ## 类的声明
 
