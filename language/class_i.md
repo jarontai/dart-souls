@@ -1,6 +1,8 @@
-# 类
+# 类 - Part I
 
 类用于创建对象，是对象的蓝本，所有类都直接或间接继承最顶端的`Object`类。
+
+_类的知识点较多，所以分成两个小节进行讲解，本节是Part I，下一节是_[_Part II_](/language/class_ii.md)_。_
 
 ## 类的声明
 
@@ -65,7 +67,44 @@ main() {
 }
 ```
 
-// TODO - const class
+// TODO - const / Factory class
+
+## 初始化列表
+
+构造函数还支持初始化列表，其书写方式是在参数列表后跟一个以冒号开头，使用逗号分隔的赋值列表。
+
+初始化列表先于构造函数体执行，常用于`final`属性的初始化，即没有初始化的`final`属性可以在初始化列表中进行赋值。
+
+初始化列表还可使用`this`进行构造函数转发（复用构造函数逻辑），构造函数转发和赋值操作可以同时出现
+
+```dart
+class GreatSword {
+  String name; // 名称
+  final int damage; // 伤害值（没有初始化）
+  int extraDamage = 0; // 其他附加伤害
+
+  // 普通大剑基础伤害100
+  GreatSword(this.name) : damage = 100;
+
+  // 强化版大剑基础伤害120
+  GreatSword.enhanced(this.name, this.extraDamage) : damage = 120;
+
+  // '混种大剑'和'月光大剑'的构造函数，通过初始化列表转发到其他构造函数，其中this代表类名
+  GreatSword.bastard(): this('Bastard Sword'); // 转发到普通构造函数
+  GreatSword.moonlight(): this.enhanced('Moonlight GreatSword', 10); // 转发到命名构造函数
+}
+
+main() {
+  var bastard = new GreatSword.bastard();
+  var moonlight = new GreatSword.moonlight();
+  print(bastard.name);
+  print(bastard.damage);
+  print(bastard.extraDamage);
+  print(moonlight.name);
+  print(moonlight.damage);
+  print(moonlight.extraDamage);
+}
+```
 
 ## Getter/Setter
 
@@ -146,43 +185,6 @@ main() {
 }
 ```
 
-## 初始化列表
-
-构造函数还支持初始化列表，其书写方式是在参数列表后跟一个以冒号开头，使用逗号分隔的赋值列表。
-
-初始化列表先于构造函数体执行，常用于`final`属性的初始化，即没有初始化的`final`属性可以在初始化列表中进行赋值。
-
-初始化列表还可使用`this`进行构造函数转发（复用构造函数逻辑），构造函数转发和赋值操作可以同时出现
-
-```dart
-class GreatSword {
-  String name; // 名称
-  final int damage; // 伤害值（没有初始化）
-  int extraDamage = 0; // 其他附加伤害
-
-  // 普通大剑基础伤害100
-  GreatSword(this.name) : damage = 100;
-
-  // 强化版大剑基础伤害120
-  GreatSword.enhanced(this.name, this.extraDamage) : damage = 120;
-
-  // '混种大剑'和'月光大剑'的构造函数，通过初始化列表转发到其他构造函数，其中this代表类名
-  GreatSword.bastard(): this('Bastard Sword'); // 转发到普通构造函数
-  GreatSword.moonlight(): this.enhanced('Moonlight GreatSword', 10); // 转发到命名构造函数
-}
-
-main() {
-  var bastard = new GreatSword.bastard();
-  var moonlight = new GreatSword.moonlight();
-  print(bastard.name);
-  print(bastard.damage);
-  print(bastard.extraDamage);
-  print(moonlight.name);
-  print(moonlight.damage);
-  print(moonlight.extraDamage);
-}
-```
-
 ## 子类
 
 使用`extends`来创建子类，使用`super`来访问父类。
@@ -224,6 +226,10 @@ main() {
   print(black.extraDamage);
 }
 ```
+
+## 类变量和类方法
+
+## 抽象类和抽象方法
 
 
 
