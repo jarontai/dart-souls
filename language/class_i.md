@@ -56,8 +56,13 @@ class GreatSword {
   // 以上构造函数的简写方式
   // GreatSword(this.name);
 
-  // 命名构造函数（使用简写方式）
-  GreatSword.enhanced(this.name, this.extraDamage);
+  // 使用简写方式的命名构造函数
+  GreatSword.enhanced(this.name, this.extraDamage); 
+  // 等同于以下写法
+  // GreatSword.enhanced(String name, int extraDamage) {
+  //   this.name = name;
+  //   this.extraDamage = extraDamage;
+  // }
 }
 
 main() {
