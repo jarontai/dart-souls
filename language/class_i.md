@@ -306,7 +306,7 @@ class UltraGreatSword extends GreatSword {
   // 重写getter
   int get totalDamage => super.damage + extraDamage; // 父类的伤害加上自己的附加伤害为总伤害（super可省略）
 
-  // 父类没有无参构造函数，必须使用super（代表父类名）调用父类的构造函数
+  // 父类没有无参默认构造函数，必须使用super（代表父类名）调用父类的构造函数
   UltraGreatSword(String name) : extraDamage = 50, super(name);
 }
 
