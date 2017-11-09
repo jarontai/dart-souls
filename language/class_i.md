@@ -91,7 +91,44 @@ main() {
 }
 ```
 
-如果希望创建不可变对象，可以将实例变量使用`final`修饰，构造函数使用`const`修饰，最后使用`const`创建对象即可
+默认情况下，构造函数总是会自动新建一个对象，并且不需要也不能使用`return`语句。
+
+如果需要构造函数不是每次调用都新建对象，比如需要从缓存中获取已存在的对象，则可以使用工厂构造函数。
+
+使用`factory`修饰的构造函数即是工厂构造函数，跟普通构造函数不同，它必须使用return语句返回对象
+
+```dart
+class GreatSword {
+  String name; // 名称
+	
+  // 使用map类型（后续章节将进行讲解）作为对象缓存
+  static final cache = {};
+
+  // 工厂构造函数
+  factory GreatSword(String name) {
+    if (cache.containsKey(name)) {
+      return cache[name];
+    } else {
+      final sword = new GreatSword._internal(name);
+      cache[name] = sword;
+      return sword;
+    }
+  }
+  
+  // 库私有（后续章节将进行讲解）的命名构造函数
+  GreatSword._internal(this.name);
+}
+
+main() {
+  // 进行多次实例化
+  var sword1 = new GreatSword('Claymore');
+  var sword2 = new GreatSword('Claymore');
+  // 使用顶层函数identical检查是否同一对象
+  print(identical(sword1, sword2)); // true - 是同一对象
+}
+```
+
+如果希望创建不可变对象，可以将所有实例变量使用`final`修饰，构造函数使用`const`修饰，最后使用`const`创建对象即可
 
 ```dart
 // 声明一个表示'篝火'（《黑暗之魂》系列游戏的存盘点）的类
@@ -107,10 +144,9 @@ main() {
   var bonfire2 = const Bonfire('home');
   // 使用顶层函数identical检查是否同一对象
   print(identical(bonfire1, bonfire2)); // true - 是同一对象
+  // bonfire1.name = 'castle'; // 错误，尝试修改不可变对象
 }
 ```
-
-// TODO - const / Factory class
 
 ## 初始化列表
 
