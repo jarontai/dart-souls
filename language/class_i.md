@@ -25,7 +25,7 @@ _类的知识点较多，所以分成两节进行讲解，本节是Part I，下�
 class GreatSword {
   // 实例变量
   String name; // 名称
-  final int damage = 100; // 基础伤害值
+  final int damage = 100; // 基础伤害值（不可变）
   int extraDamage = 0; // 其他附加伤害
 
   // 类变量
@@ -43,11 +43,13 @@ class GreatSword {
 }
 
 main() {
-  // 使用默认构造函数
+  // 使用默认构造函数（见下一小节）进行实例化
   var sword = new GreatSword();
+  // 访问final属性
   print(sword.damage);
   // 使用类方法
   GreatSword.upgrade(sword);
+  // 访问普通属性
   print(sword.extraDamage);
 }
 ```
@@ -100,7 +102,7 @@ main() {
 ```dart
 class GreatSword {
   String name; // 名称
-	
+
   // 使用map类型（后续章节将进行讲解）作为对象缓存
   static final cache = {};
 
@@ -114,7 +116,7 @@ class GreatSword {
       return sword;
     }
   }
-  
+
   // 库私有（后续章节将进行讲解）的命名构造函数
   GreatSword._internal(this.name);
 }
