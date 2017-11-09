@@ -1,4 +1,32 @@
-# 类 - Part I
+#   var sword = new GreatSword\('Claymore'\);
+
+#   var bastard = new GreatSword.bastard\(\);
+
+#   var moonlight = new GreatSword.moonlight\(\);
+
+#   print\(sword.name\);
+
+#   print\(sword.damage\);
+
+#   print\(sword.extraDamage\);
+
+#   print\(moonlight.name\);
+
+#   print\(moonlight.damage\);
+
+#   print\(moonlight.extraDamage\);  
+
+#   print\(bastard.name\);
+
+#   print\(bastard.damage\);
+
+#   print\(bastard.extraDamage\);
+
+#   print\(moonlight.name\);
+
+#   print\(moonlight.damage\);
+
+#   print\(moonlight.extraDamage\);类 - Part I
 
 类用于创建对象，是对象的蓝本。
 
@@ -8,7 +36,7 @@ _类的知识点较多，所以分成两节进行讲解，本节是Part I，下�
 
 类的声明是使用关键字`class`，所有类都直接或间接继承最顶端的`Object`类。
 
-类中可以包含数据和函数，即对象的属性和方法（也被称为实例变量和实例方法），其中属性可以使用`final`修饰。
+类中可以包含数据和函数，即对象的属性和方法，其中属性可以使用`final`修饰。
 
 在类中通过`this`或直接访问属性和方法，官方建议只在命名冲突时才使用`this`
 
@@ -30,6 +58,20 @@ class GreatSword {
   upgrade(int extraDamage) {
     this.extraDamage += extraDamage; // 使用this区分同名的参数和属性
   }
+}
+```
+
+// TODO
+
+类的普通属性和方法通常也被称为实例变量和实例方法，如果它们跟类绑定的就叫做类变量和类方法。
+
+类变量和类方法的声明方法是在普通属性之前添加`static`关键字，它们也常被称为静态变量。
+
+```dart
+class GreatSword {
+  String name; // 名称
+  final int damage = 100; // 基础伤害值
+  int extraDamage = 0; // 其他附加伤害
 }
 ```
 
@@ -67,8 +109,8 @@ class GreatSword {
 
 main() {
   // 实例化
-  var sword = new GreatSword('Bastard Sword'); // 普通构造函数
-  var enhancedSword = new GreatSword.enhanced('Claymore', 20); // 使用命名构造函数
+  var sword = new GreatSword('Claymore'); // 普通大剑
+  var enhancedSword = new GreatSword.enhanced('Bastard Sword', 20); // 强化版混种大剑
 }
 ```
 
@@ -76,11 +118,11 @@ main() {
 
 ## 初始化列表
 
-构造函数还支持初始化列表，其书写方式是在参数列表后跟一个以冒号开头，使用逗号分隔的赋值列表。
+构造函数还支持初始化列表，书写方式是在参数列表后跟一个以冒号开头的，使用逗号分隔的赋值列表。
 
 初始化列表先于构造函数体执行，常用于`final`属性的初始化，即没有初始化的`final`属性可以在初始化列表中进行赋值。
 
-初始化列表还可使用`this`进行构造函数转发（复用构造函数逻辑），构造函数转发和赋值操作可以同时出现
+初始化列表还可使用`this`进行构造函数转发，即复用构造函数逻辑，构造函数转发和赋值操作不能同时出现
 
 ```dart
 class GreatSword {
@@ -88,20 +130,29 @@ class GreatSword {
   final int damage; // 基础伤害值（没有初始化）
   int extraDamage = 0; // 其他附加伤害
 
-  // 普通大剑基础伤害100
-  GreatSword(this.name) : damage = 100;
+  // 在初始化列表中设置final变量damage
+  GreatSword(this.name, [this.extraDamage = 0]) : damage = 100; // 普通大剑基础伤害100
 
-  // 强化版大剑基础伤害120
-  GreatSword.enhanced(this.name, this.extraDamage) : damage = 120;
+  // 在初始化列表中调用静态方法计算extraDamage
+  GreatSword.magic(this.name, this.damage) : extraDamage = magicPower(damage); // 魔法大剑附加伤害经过计算得出
 
-  // '混种大剑'和'月光大剑'的构造函数，通过初始化列表转发到其他构造函数，其中this代表类名
-  GreatSword.bastard(): this('Bastard Sword'); // 转发到普通构造函数
-  GreatSword.moonlight(): this.enhanced('Moonlight GreatSword', 10); // 转发到命名构造函数
+  // 通过初始化列表转发到其他构造函数，其中this代表类名
+  GreatSword.bastard(): this('Bastard Sword', 10); // 混种大剑
+  GreatSword.moonlight(): this.magic('Moonlight GreatSword', 80); // 月光大剑
+
+  // 计算魔法武器的附加伤害
+  static magicPower(int damage) {
+    return damage * 0.15;
+  }
 }
 
 main() {
+  var sword = new GreatSword('Claymore');
   var bastard = new GreatSword.bastard();
   var moonlight = new GreatSword.moonlight();
+  print(sword.name);
+  print(sword.damage);
+  print(sword.extraDamage);
   print(bastard.name);
   print(bastard.damage);
   print(bastard.extraDamage);
@@ -229,20 +280,6 @@ main() {
   print(black.name);
   print(black.damage);
   print(black.extraDamage);
-}
-```
-
-## 类变量和类方法
-
-类中声明的普通属性和方法也被称为实例变量和实例方法，而跟类绑定的就叫做类变量和类方法。
-
-类变量和类方法的声明方法是在普通属性之前添加`static`关键字，它们也常被称为静态变量。
-
-```dart
-class GreatSword {
-  String name; // 名称
-  final int damage = 100; // 基础伤害值
-  int extraDamage = 0; // 其他附加伤害
 }
 ```
 
