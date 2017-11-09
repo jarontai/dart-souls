@@ -10,42 +10,36 @@ _类的知识点较多，所以分成两节进行讲解，本节是Part I，下�
 
 ## 属性和方法
 
-类中可以包含数据和函数，即对象的属性和方法，其中属性可以使用`final`修饰。
+类中可以包含数据和函数，即对象的属性和方法。
 
-在类中通过`this`或直接访问属性和方法，官方建议只在命名冲突时才使用`this`
+普通的属性和方法是跟对象实例绑定的，它们常被称为实例变量和实例方法。
+
+使用`static`修饰的属性和方法，它们是与类绑定的，即类变量和类方法。
+
+实例变量和实例方法、类变量和类方法，在类中都可以通过名称直接访问，实例变量和实例方法还可以通过`this`访问。
+
+外部代码必须通过`类名.变量`的方式才能访问类变量和类方法
 
 ```dart
 // 声明一个表示'大剑'（《黑暗之魂》系列游戏的一种武器）的类
 class GreatSword {
-  // 属性
+  // 实例变量
   String name; // 名称
   final int damage = 100; // 基础伤害值
   int extraDamage = 0; // 其他附加伤害
 
-  // 类中可以声明函数，即定义对象的方法
-  // 打印信息
+  // 类变量
+  static String category = 'weapon'; // 大剑的分类是武器
+
+  // 类方法
+  static upgrade(GreatSword sword) { // 升级，即增加附加伤害
+    sword.extraDamage += 10;
+  }
+
+  // 实例方法
   info() {
     print('GreatSword ${name} - damage: ' + this.damage.toString()); // 通过this或直接访问属性
   }
-
-  // 武器升级（增加附加伤害值）
-  upgrade(int extraDamage) {
-    this.extraDamage += extraDamage; // 使用this区分同名的参数和属性
-  }
-}
-```
-
-// TODO
-
-类的普通属性和方法通常也被称为实例变量和实例方法，如果它们跟类绑定的就叫做类变量和类方法。
-
-类变量和类方法的声明方法是在普通属性之前添加`static`关键字，它们也常被称为静态变量。
-
-```dart
-class GreatSword {
-  String name; // 名称
-  final int damage = 100; // 基础伤害值
-  int extraDamage = 0; // 其他附加伤害
 }
 ```
 
@@ -57,7 +51,7 @@ class GreatSword {
 
 构造函数最常见的操作是使用参数对属性赋值，Dart为此提供了简写方式（参数列表中直接使用`this.属性`）。
 
-除了普通的构造函数，Dart还支持`Class.name`方式的命名构造函数
+除了普通的构造函数，Dart还支持`类名.构造函数名`方式的命名构造函数
 
 ```dart
 class GreatSword {
