@@ -295,7 +295,7 @@ class GreatSword {
   // 总伤害的getter
   int get totalDamage => damage; // 总伤害
 
-  // 一个参数的构造函数（即没有无参构造函数）
+  // 一个参数的构造函数
   GreatSword(this.name);
 }
 
