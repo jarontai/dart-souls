@@ -1,0 +1,770 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.3 类 - Part I · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="class_ii.html" />
+    
+    
+    <link rel="prev" href="function.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    1. 入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/install.html">
+            
+                <a href="../intro/install.html">
+            
+                    
+                    1.1 安装SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/manual.html">
+            
+                <a href="../intro/manual.html">
+            
+                    
+                    1.2 手动安装SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/editor.html">
+            
+                <a href="../intro/editor.html">
+            
+                    
+                    1.3 编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../intro/hello.html">
+            
+                <a href="../intro/hello.html">
+            
+                    
+                    1.4 Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2. 语言基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                    2.1 变量与基本类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    2.2 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="class_i.html">
+            
+                <a href="class_i.html">
+            
+                    
+                    2.3 类 - Part I
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="class_ii.html">
+            
+                <a href="class_ii.html">
+            
+                    
+                    2.4 类 - Part II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="visibility.html">
+            
+                <a href="visibility.html">
+            
+                    
+                    2.x 库与可见性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="commons.html">
+            
+                <a href="commons.html">
+            
+                    
+                    2.x 常用内置类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    2.x 泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="exception.html">
+            
+                <a href="exception.html">
+            
+                    
+                    2.x 流程控制与异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="async.html">
+            
+                <a href="async.html">
+            
+                    
+                    2.x 异步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../library/">
+            
+                <a href="../library/">
+            
+                    
+                    3. 标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../pub/">
+            
+                <a href="../pub/">
+            
+                    
+                    4. Pub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../web/">
+            
+                <a href="../web/">
+            
+                    
+                    5. Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../server/">
+            
+                <a href="../server/">
+            
+                    
+                    5. Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../mobile/">
+            
+                <a href="../mobile/">
+            
+                    
+                    5. Mobile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.3 类 - Part I</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7C7B;---part-i">&#x7C7B; - Part I</h1>
+<p><em>&#x7C7B;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#x8F83;&#x591A;&#xFF0C;&#x6240;&#x4EE5;&#x5206;&#x6210;&#x4E24;&#x8282;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF0C;&#x672C;&#x8282;&#x662F;Part I&#xFF0C;&#x4E0B;&#x4E00;&#x8282;&#x662F;</em><a href="class_ii.html"><em>Part II</em></a><em>&#x3002;</em></p>
+<hr>
+<p>&#x7C7B;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x84DD;&#x672C;&#x3002;</p>
+<p>&#x7C7B;&#x7684;&#x58F0;&#x660E;&#x662F;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>class</code>&#xFF0C;&#x6240;&#x6709;&#x7C7B;&#x90FD;&#x76F4;&#x63A5;&#x6216;&#x95F4;&#x63A5;&#x7EE7;&#x627F;&#x6700;&#x9876;&#x7AEF;&#x7684;<code>Object</code>&#x7C7B;&#x3002;</p>
+<h2 id="&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;">&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</h2>
+<p>&#x7C7B;&#x4E2D;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x6570;&#x636E;&#x548C;&#x51FD;&#x6570;&#xFF0C;&#x5373;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x666E;&#x901A;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x662F;&#x8DDF;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x7ED1;&#x5B9A;&#x7684;&#xFF0C;&#x5B83;&#x4EEC;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>static</code>&#x4FEE;&#x9970;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x4E0E;&#x7C7B;&#x7ED1;&#x5B9A;&#x7684;&#xFF0C;&#x5373;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x7C7B;&#x4E2D;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x540D;&#x79F0;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>this</code>&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x5916;&#x90E8;&#x4EE3;&#x7801;&#x5FC5;&#x987B;&#x901A;&#x8FC7;<code>&#x7C7B;&#x540D;.&#x53D8;&#x91CF;</code>&#x7684;&#x65B9;&#x5F0F;&#x624D;&#x80FD;&#x8BBF;&#x95EE;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-dart"><span class="hljs-comment">// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x8868;&#x793A;&apos;&#x5927;&#x5251;&apos;&#xFF08;&#x300A;&#x9ED1;&#x6697;&#x4E4B;&#x9B42;&#x300B;&#x7CFB;&#x5217;&#x6E38;&#x620F;&#x7684;&#x4E00;&#x79CD;&#x6B66;&#x5668;&#xFF09;&#x7684;&#x7C7B;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
+  <span class="hljs-comment">// &#x5B9E;&#x4F8B;&#x53D8;&#x91CF;</span>
+  <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">int</span> damage = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x57FA;&#x7840;&#x4F24;&#x5BB3;&#x503C;&#xFF08;&#x4E0D;&#x53EF;&#x53D8;&#xFF09;</span>
+  <span class="hljs-built_in">int</span> extraDamage = <span class="hljs-number">0</span>; <span class="hljs-comment">// &#x5176;&#x4ED6;&#x9644;&#x52A0;&#x4F24;&#x5BB3;</span>
+
+  <span class="hljs-comment">// &#x7C7B;&#x53D8;&#x91CF;</span>
+  <span class="hljs-keyword">static</span> <span class="hljs-built_in">String</span> category = <span class="hljs-string">&apos;weapon&apos;</span>; <span class="hljs-comment">// &#x5927;&#x5251;&#x7684;&#x5206;&#x7C7B;&#x662F;&#x6B66;&#x5668;</span>
+
+  <span class="hljs-comment">// &#x7C7B;&#x65B9;&#x6CD5;</span>
+  <span class="hljs-keyword">static</span> upgrade(GreatSword sword) { <span class="hljs-comment">// &#x5347;&#x7EA7;&#xFF0C;&#x5373;&#x589E;&#x52A0;&#x9644;&#x52A0;&#x4F24;&#x5BB3;</span>
+    sword.extraDamage += <span class="hljs-number">10</span>;
+  }
+
+  <span class="hljs-comment">// &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</span>
+  info() {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;GreatSword <span class="hljs-subst">${name}</span> - damage: &apos;</span> + <span class="hljs-keyword">this</span>.damage.toString()); <span class="hljs-comment">// &#x901A;&#x8FC7;&#x540D;&#x79F0;&#x6216;this&#x8BBF;&#x95EE;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;</span>
+  }
+}
+
+main() {
+  <span class="hljs-comment">// &#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;&#x89C1;&#x4E0B;&#x4E00;&#x5C0F;&#x8282;&#xFF09;&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;</span>
+  <span class="hljs-keyword">var</span> sword = <span class="hljs-keyword">new</span> GreatSword();
+  <span class="hljs-built_in">print</span>(sword.damage); <span class="hljs-comment">// 100</span>
+  <span class="hljs-built_in">print</span>(sword.extraDamage); <span class="hljs-comment">// 0</span>
+  <span class="hljs-comment">// &#x4F7F;&#x7528;&#x7C7B;&#x65B9;&#x6CD5;</span>
+  GreatSword.upgrade(sword);
+  <span class="hljs-built_in">print</span>(sword.extraDamage); <span class="hljs-comment">// 10</span>
+}
+</code></pre>
+<h2 id="&#x6784;&#x9020;&#x51FD;&#x6570;">&#x6784;&#x9020;&#x51FD;&#x6570;</h2>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x5C06;&#x7C7B;&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;&#x5BF9;&#x8C61;&#xFF0C;&#x914D;&#x5408;&#x5173;&#x952E;&#x5B57;<code>new</code>&#x6216;<code>const</code>&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#xFF0C;&#x5C06;&#x9ED8;&#x8BA4;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x4E0E;&#x7C7B;&#x540C;&#x540D;&#x4E14;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x5BF9;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#xFF0C;Dart&#x4E3A;&#x6B64;&#x63D0;&#x4F9B;&#x4E86;&#x7B80;&#x5199;&#x65B9;&#x5F0F;&#xFF08;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>this.&#x5C5E;&#x6027;</code>&#xFF09;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x666E;&#x901A;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;Dart&#x8FD8;&#x652F;&#x6301;<code>&#x7C7B;&#x540D;.&#x6784;&#x9020;&#x51FD;&#x6570;&#x540D;</code>&#x65B9;&#x5F0F;&#x7684;&#x547D;&#x540D;&#x6784;&#x9020;&#x51FD;&#x6570;</p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
+  <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">int</span> damage = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x57FA;&#x7840;&#x4F24;&#x5BB3;&#x503C;</span>
+  <span class="hljs-built_in">int</span> extraDamage = <span class="hljs-number">0</span>; <span class="hljs-comment">// &#x5176;&#x4ED6;&#x9644;&#x52A0;&#x4F24;&#x5BB3;</span>
+
+  <span class="hljs-comment">// &#x6784;&#x9020;&#x51FD;&#x6570;</span>
+  GreatSword(<span class="hljs-built_in">String</span> name) {
+    <span class="hljs-keyword">this</span>.name = name;
+  }
+  <span class="hljs-comment">// &#x4EE5;&#x4E0A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x7B80;&#x5199;&#x65B9;&#x5F0F;</span>
+  <span class="hljs-comment">// GreatSword(this.name);</span>
+
+  <span class="hljs-comment">// &#x547D;&#x540D;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+  GreatSword.enhanced(<span class="hljs-keyword">this</span>.name, <span class="hljs-keyword">this</span>.extraDamage); 
+  <span class="hljs-comment">// &#x7B49;&#x540C;&#x4E8E;&#x4EE5;&#x4E0B;&#x5199;&#x6CD5;</span>
+  <span class="hljs-comment">// GreatSword.enhanced(String name, int extraDamage) {</span>
+  <span class="hljs-comment">//   this.name = name;</span>
+  <span class="hljs-comment">//   this.extraDamage = extraDamage;</span>
+  <span class="hljs-comment">// }</span>
+}
+
+main() {
+  <span class="hljs-comment">// &#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;</span>
+  <span class="hljs-keyword">var</span> sword = <span class="hljs-keyword">new</span> GreatSword(<span class="hljs-string">&apos;Claymore&apos;</span>); <span class="hljs-comment">// &#x666E;&#x901A;&#x5927;&#x5251;</span>
+  <span class="hljs-keyword">var</span> enhancedSword = <span class="hljs-keyword">new</span> GreatSword.enhanced(<span class="hljs-string">&apos;Bastard Sword&apos;</span>, <span class="hljs-number">20</span>); <span class="hljs-comment">// &#x5F3A;&#x5316;&#x7248;&#x6DF7;&#x79CD;&#x5927;&#x5251;</span>
+}
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x603B;&#x662F;&#x4F1A;&#x81EA;&#x52A8;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x9700;&#x8981;&#x4E5F;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<code>return</code>&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x662F;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x90FD;&#x65B0;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;&#x9700;&#x8981;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x83B7;&#x53D6;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5DE5;&#x5382;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>factory</code>&#x4FEE;&#x9970;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5373;&#x662F;&#x5DE5;&#x5382;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8DDF;&#x666E;&#x901A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x4F7F;&#x7528;return&#x8BED;&#x53E5;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
+  <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
+
+  <span class="hljs-comment">// &#x4F7F;&#x7528;Map&#x7C7B;&#x578B;&#xFF08;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x5C06;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF09;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;</span>
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-built_in">Map</span> cache = {};
+
+  <span class="hljs-comment">// &#x5DE5;&#x5382;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+  <span class="hljs-keyword">factory</span> GreatSword(<span class="hljs-built_in">String</span> name) {
+    <span class="hljs-comment">// &#x5BF9;&#x8C61;&#x5DF2;&#x5B58;&#x5728;&#x7F13;&#x5B58;&#x4E2D;</span>
+    <span class="hljs-keyword">if</span> (cache.containsKey(name)) {
+      <span class="hljs-keyword">return</span> cache[name];
+    } <span class="hljs-keyword">else</span> { <span class="hljs-comment">// &#x5BF9;&#x8C61;&#x4E0D;&#x5B58;&#x5728;&#x7F13;&#x5B58;&#x4E2D;</span>
+      <span class="hljs-comment">// &#x4F7F;&#x7528;&#x5E93;&#x79C1;&#x6709;&#x7684;&#xFF08;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x5C06;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF09;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65B0;&#x5EFA;&#x5BF9;&#x8C61;</span>
+      <span class="hljs-keyword">final</span> sword = <span class="hljs-keyword">new</span> GreatSword._internal(name);
+      cache[name] = sword; <span class="hljs-comment">// &#x5B58;&#x5165;&#x7F13;&#x5B58;</span>
+      <span class="hljs-keyword">return</span> sword;
+    }
+  }
+
+  <span class="hljs-comment">// &#x5E93;&#x79C1;&#x6709;&#x7684;&#xFF08;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x5C06;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF09;&#x547D;&#x540D;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+  GreatSword._internal(<span class="hljs-keyword">this</span>.name);
+}
+
+main() {
+  <span class="hljs-comment">// &#x8FDB;&#x884C;&#x591A;&#x6B21;&#x5B9E;&#x4F8B;&#x5316;</span>
+  <span class="hljs-keyword">var</span> sword1 = <span class="hljs-keyword">new</span> GreatSword(<span class="hljs-string">&apos;Claymore&apos;</span>);
+  <span class="hljs-keyword">var</span> sword2 = <span class="hljs-keyword">new</span> GreatSword(<span class="hljs-string">&apos;Claymore&apos;</span>);
+  <span class="hljs-comment">// &#x4F7F;&#x7528;&#x9876;&#x5C42;&#x51FD;&#x6570;identical&#x68C0;&#x67E5;&#x662F;&#x5426;&#x540C;&#x4E00;&#x5BF9;&#x8C61;</span>
+  <span class="hljs-built_in">print</span>(identical(sword1, sword2)); <span class="hljs-comment">// true - &#x662F;&#x540C;&#x4E00;&#x5BF9;&#x8C61;</span>
+}
+</code></pre>
+<p>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x521B;&#x5EFA;&#x4E0D;&#x53EF;&#x53D8;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x4F7F;&#x7528;<code>final</code>&#x4FEE;&#x9970;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F7F;&#x7528;<code>const</code>&#x4FEE;&#x9970;&#xFF0C;&#x6700;&#x540E;&#x4F7F;&#x7528;<code>const</code>&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x5373;&#x53EF;</p>
+<pre><code class="lang-dart"><span class="hljs-comment">// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x8868;&#x793A;&apos;&#x7BDD;&#x706B;&apos;&#xFF08;&#x300A;&#x9ED1;&#x6697;&#x4E4B;&#x9B42;&#x300B;&#x7CFB;&#x5217;&#x6E38;&#x620F;&#x7684;&#x5B58;&#x76D8;&#x70B9;&#xFF09;&#x7684;&#x7C7B;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bonfire</span> </span>{
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
+
+  <span class="hljs-keyword">const</span> Bonfire(<span class="hljs-keyword">this</span>.name);
+}
+
+main() {
+  <span class="hljs-comment">// &#x4F7F;&#x7528;const&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x5B9E;&#x4F8B;&#x5316;</span>
+  <span class="hljs-keyword">var</span> bonfire1 = <span class="hljs-keyword">const</span> Bonfire(<span class="hljs-string">&apos;home&apos;</span>);
+  <span class="hljs-keyword">var</span> bonfire2 = <span class="hljs-keyword">const</span> Bonfire(<span class="hljs-string">&apos;home&apos;</span>);
+  <span class="hljs-comment">// &#x4F7F;&#x7528;&#x9876;&#x5C42;&#x51FD;&#x6570;identical&#x68C0;&#x67E5;&#x662F;&#x5426;&#x540C;&#x4E00;&#x5BF9;&#x8C61;</span>
+  <span class="hljs-built_in">print</span>(identical(bonfire1, bonfire2)); <span class="hljs-comment">// true - &#x662F;&#x540C;&#x4E00;&#x5BF9;&#x8C61;</span>
+  <span class="hljs-comment">// bonfire1.name = &apos;castle&apos;; // &#x9519;&#x8BEF;&#xFF0C;&#x5C1D;&#x8BD5;&#x4FEE;&#x6539;&#x4E0D;&#x53EF;&#x53D8;&#x5BF9;&#x8C61;</span>
+}
+</code></pre>
+<h2 id="&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;">&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;</h2>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x8FD8;&#x652F;&#x6301;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#xFF0C;&#x4E66;&#x5199;&#x65B9;&#x5F0F;&#x662F;&#x5728;&#x53C2;&#x6570;&#x5217;&#x8868;&#x540E;&#x8DDF;&#x4E00;&#x4E2A;&#x4EE5;&#x5192;&#x53F7;&#x5F00;&#x5934;&#x7684;&#xFF0C;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x8D4B;&#x503C;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x5148;&#x4E8E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F53;&#x6267;&#x884C;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;<code>final</code>&#x5C5E;&#x6027;&#x7684;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5373;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x7684;<code>final</code>&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x5728;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x4E2D;&#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x3002;</p>
+<p>&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x8FD8;&#x53EF;&#x4F7F;&#x7528;<code>this</code>&#x8FDB;&#x884C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8F6C;&#x53D1;&#xFF0C;&#x5373;&#x590D;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x903B;&#x8F91;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8F6C;&#x53D1;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x51FA;&#x73B0;</p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
+  <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">int</span> damage; <span class="hljs-comment">// &#x57FA;&#x7840;&#x4F24;&#x5BB3;&#x503C;&#xFF08;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#xFF09;</span>
+  <span class="hljs-built_in">int</span> extraDamage = <span class="hljs-number">0</span>; <span class="hljs-comment">// &#x5176;&#x4ED6;&#x9644;&#x52A0;&#x4F24;&#x5BB3;</span>
+
+  <span class="hljs-comment">// &#x5728;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x4E2D;&#x8BBE;&#x7F6E;final&#x53D8;&#x91CF;damage</span>
+  GreatSword(<span class="hljs-keyword">this</span>.name, [<span class="hljs-keyword">this</span>.extraDamage = <span class="hljs-number">0</span>]) : damage = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x666E;&#x901A;&#x5927;&#x5251;&#x57FA;&#x7840;&#x4F24;&#x5BB3;100</span>
+
+  <span class="hljs-comment">// &#x5728;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x4E2D;&#x8C03;&#x7528;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x8BA1;&#x7B97;extraDamage</span>
+  GreatSword.magic(<span class="hljs-keyword">this</span>.name, <span class="hljs-keyword">this</span>.damage) : extraDamage = magicPower(damage); <span class="hljs-comment">// &#x9B54;&#x6CD5;&#x5927;&#x5251;&#x7684;&#x9644;&#x52A0;&#x4F24;&#x5BB3;&#x8981;&#x6839;&#x636E;&#x57FA;&#x7840;&#x4F24;&#x5BB3;&#x8BA1;&#x7B97;&#x5F97;&#x51FA;</span>
+
+  <span class="hljs-comment">// &#x901A;&#x8FC7;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x8F6C;&#x53D1;&#x5230;&#x5176;&#x4ED6;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5176;&#x4E2D;this&#x4EE3;&#x8868;&#x7C7B;&#x540D;</span>
+  GreatSword.bastard(): <span class="hljs-keyword">this</span>(<span class="hljs-string">&apos;Bastard Sword&apos;</span>, <span class="hljs-number">10</span>); <span class="hljs-comment">// &#x6DF7;&#x79CD;&#x5927;&#x5251;</span>
+  GreatSword.moonlight(): <span class="hljs-keyword">this</span>.magic(<span class="hljs-string">&apos;Moonlight GreatSword&apos;</span>, <span class="hljs-number">90</span>); <span class="hljs-comment">// &#x6708;&#x5149;&#x5927;&#x5251;</span>
+
+  <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x9B54;&#x6CD5;&#x6B66;&#x5668;&#x7684;&#x9644;&#x52A0;&#x4F24;&#x5BB3;</span>
+  <span class="hljs-keyword">static</span> magicPower(<span class="hljs-built_in">int</span> damage) {
+    <span class="hljs-keyword">return</span> damage * <span class="hljs-number">0.15</span>;
+  }
+}
+
+main() {
+  <span class="hljs-keyword">var</span> sword = <span class="hljs-keyword">new</span> GreatSword(<span class="hljs-string">&apos;Claymore&apos;</span>);
+  <span class="hljs-keyword">var</span> bastard = <span class="hljs-keyword">new</span> GreatSword.bastard();
+  <span class="hljs-keyword">var</span> moonlight = <span class="hljs-keyword">new</span> GreatSword.moonlight();
+  <span class="hljs-built_in">print</span>(sword.name); <span class="hljs-comment">// Claymore</span>
+  <span class="hljs-built_in">print</span>(sword.damage); <span class="hljs-comment">// 100</span>
+  <span class="hljs-built_in">print</span>(sword.extraDamage); <span class="hljs-comment">// 0</span>
+  <span class="hljs-built_in">print</span>(bastard.name); <span class="hljs-comment">// Bastard Sword</span>
+  <span class="hljs-built_in">print</span>(bastard.damage); <span class="hljs-comment">// 100</span>
+  <span class="hljs-built_in">print</span>(bastard.extraDamage); <span class="hljs-comment">// 10</span>
+  <span class="hljs-built_in">print</span>(moonlight.name); <span class="hljs-comment">// Moonlight GreatSword</span>
+  <span class="hljs-built_in">print</span>(moonlight.damage); <span class="hljs-comment">// 90</span>
+  <span class="hljs-built_in">print</span>(moonlight.extraDamage); <span class="hljs-comment">// 13.5</span>
+}
+</code></pre>
+<h2 id="gettersetter">Getter/Setter</h2>
+<p>&#x8DDF;&#x5F88;&#x591A;&#x8BED;&#x8A00;&#x4E0D;&#x540C;&#xFF0C;Dart&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x7684;&#x8BFB;&#x5199;&#x662F;&#x901A;&#x8FC7;getter&#x548C;setter&#x5B8C;&#x6210;&#x7684;&#x3002;</p>
+<p>getter&#x548C;setter&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4EEC;&#x867D;&#x662F;&#x65B9;&#x6CD5;&#x5374;&#x6709;&#x8DDF;&#x5C5E;&#x6027;&#x4E00;&#x6837;&#x7684;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x6240;&#x6709;&#x666E;&#x901A;&#x5C5E;&#x6027;&#x90FD;&#x6709;&#x4E00;&#x5BF9;&#x9690;&#x542B;&#x7684;getter&#x8DDF;setter&#xFF0C;<code>final</code>&#x5C5E;&#x6027;&#x53EA;&#x6709;getter&#x3002;</p>
+<p>&#x81EA;&#x5B9A;&#x4E49;getter&#x548C;setter&#x4E5F;&#x662F;&#x652F;&#x6301;&#x7684;&#xFF0C;&#x4E66;&#x5199;&#x65B9;&#x5F0F;&#x662F;&#x5728;&#x65B9;&#x6CD5;&#x540D;&#x524D;&#x6DFB;&#x52A0;<code>get</code>&#x6216;<code>set</code>&#xFF0C;<code>getter</code>&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x65E0;&#x53C2;&#x6570;&#x800C;<code>setter</code>&#x6B63;&#x597D;&#x76F8;&#x53CD;</p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
+  <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">int</span> damage = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x57FA;&#x7840;&#x4F24;&#x5BB3;&#x503C;</span>
+  <span class="hljs-built_in">int</span> extraDamage = <span class="hljs-number">0</span>; <span class="hljs-comment">// &#x5176;&#x4ED6;&#x9644;&#x52A0;&#x4F24;&#x5BB3;</span>
+
+  <span class="hljs-comment">// damage&#x9690;&#x542B;&#x7684;getter</span>
+  <span class="hljs-comment">// int get damage =&gt; damage;</span>
+
+  <span class="hljs-comment">// name&#x548C;extraDamage&#x9690;&#x542B;&#x7684;getter&#x548C;setter</span>
+  <span class="hljs-comment">// String get name =&gt; name;</span>
+  <span class="hljs-comment">// set name(String name) =&gt; this.name = name;</span>
+  <span class="hljs-comment">// int get extraDamage =&gt; extraDamage;</span>
+  <span class="hljs-comment">// set extraDamage(int extraDamage) =&gt; this.extraDamage = extraDamage;</span>
+
+  <span class="hljs-comment">// &#x81EA;&#x5B9A;&#x4E49;&#x7684;getter&#x548C;setter</span>
+  <span class="hljs-comment">// &#x603B;&#x4F24;&#x5BB3;</span>
+  <span class="hljs-built_in">int</span> <span class="hljs-keyword">get</span> totalDamage {
+    <span class="hljs-keyword">return</span> damage + extraDamage; <span class="hljs-comment">// &#x57FA;&#x7840;&#x4F24;&#x5BB3;&#x4E0E;&#x9644;&#x52A0;&#x4F24;&#x5BB3;&#x4E4B;&#x548C;</span>
+  }
+  <span class="hljs-keyword">set</span> totalDamage(<span class="hljs-built_in">int</span> totalDamage) {
+    extraDamage = totalDamage - damage; <span class="hljs-comment">// &#x901A;&#x8FC7;&#x603B;&#x4F24;&#x5BB3;&#x8BA1;&#x7B97;&#x51FA;&#x9644;&#x52A0;&#x4F24;&#x5BB3;</span>
+  }
+
+  <span class="hljs-comment">// &#x6253;&#x5370;&#x4FE1;&#x606F;</span>
+  info() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;<span class="hljs-subst">${name}</span> - totalDamage: &apos;</span> + <span class="hljs-keyword">this</span>.totalDamage.toString(); <span class="hljs-comment">// &#x901A;&#x8FC7;this&#x6216;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;</span>
+  }
+}
+
+main() {
+  <span class="hljs-comment">// &#x6240;&#x6709;&#x5BF9;&#x5C5E;&#x6027;&#x7684;&#x8BFB;&#x5199;&#x90FD;&#x662F;&#x901A;&#x8FC7;getter&#x548C;setter</span>
+  <span class="hljs-keyword">var</span> sword = <span class="hljs-keyword">new</span> GreatSword();
+  sword.name = <span class="hljs-string">&apos;GreatSword&apos;</span>;
+  sword.totalDamage = <span class="hljs-number">200</span>;
+  <span class="hljs-built_in">print</span>(sword.damage); <span class="hljs-comment">// 100</span>
+  <span class="hljs-built_in">print</span>(sword.extraDamage); <span class="hljs-comment">// 100</span>
+  <span class="hljs-built_in">print</span>(sword.info()); <span class="hljs-comment">// GreatSword - totalDamage: 200</span>
+
+  sword.damage = <span class="hljs-number">180</span>; <span class="hljs-comment">// &#x9519;&#x8BEF;&#xFF0C;damage&#x7684;setter&#x4E0D;&#x5B58;&#x5728;  </span>
+}
+</code></pre>
+<p>getter&#x548C;setter&#x5E26;&#x6765;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x66F4;&#x6539;&#x5C5E;&#x6027;&#x7684;&#x5185;&#x90E8;&#x5B9E;&#x73B0;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x7528;&#x4FEE;&#x6539;&#x5916;&#x90E8;&#x8C03;&#x7528;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-dart"><span class="hljs-comment">// &#x7248;&#x672C;1&#x7684;GreatSword</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword1</span> </span>{
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">String</span> name = <span class="hljs-string">&apos;GreatSword&apos;</span>;
+}
+
+<span class="hljs-comment">// &#x7248;&#x672C;2&#x7684;GreatSword&#xFF0C;&#x5C06;&#x5C5E;&#x6027;name&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;getter</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword2</span> </span>{
+  <span class="hljs-built_in">String</span> <span class="hljs-keyword">get</span> name {
+    <span class="hljs-keyword">return</span> greatName();
+  }
+
+  greatName() =&gt; <span class="hljs-string">&apos;GreatSword&apos;</span>;
+}
+
+main() {
+  <span class="hljs-comment">// &#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;GreatSword&#xFF0C;&#x5BF9;name&#x7684;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x4E0D;&#x53D8;</span>
+  <span class="hljs-keyword">var</span> sword = <span class="hljs-keyword">new</span> GreatSword1();
+  <span class="hljs-built_in">print</span>(sword.name); <span class="hljs-comment">// GreatSword</span>
+  sword = <span class="hljs-keyword">new</span> GreatSword2();
+  <span class="hljs-built_in">print</span>(sword.name); <span class="hljs-comment">// GreatSword</span>
+}
+</code></pre>
+<h2 id="&#x5B50;&#x7C7B;">&#x5B50;&#x7C7B;</h2>
+<p>&#x4F7F;&#x7528;<code>extends</code>&#x6765;&#x521B;&#x5EFA;&#x5B50;&#x7C7B;&#xFF0C;&#x4F7F;&#x7528;<code>super</code>&#x6765;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7236;&#x7C7B;&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#xFF08;setter/getter&#xFF09;&#x548C;&#x65B9;&#x6CD5;&#x90FD;&#x88AB;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#xFF0C;&#x800C;&#x4E14;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x3002;</p>
+<p>&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5728;&#x6267;&#x884C;&#x524D;&#xFF0C;&#x5C06;&#x9690;&#x542B;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;<code>&#x65E0;&#x53C2;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;</code>&#xFF08;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x4E14;&#x4E0E;&#x7C7B;&#x540C;&#x540D;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x6216;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x7684;&#x90FD;&#x53EF;&#xFF09;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7236;&#x7C7B;&#x6CA1;&#x6709;<code>&#x65E0;&#x53C2;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;</code>&#xFF0C;&#x5219;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x5728;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x4E2D;&#x901A;&#x8FC7;<code>super</code>&#x663E;&#x5F0F;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x67D0;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-dart"><span class="hljs-comment">// &#x5927;&#x5251;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
+  <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">int</span> damage = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x57FA;&#x7840;&#x4F24;&#x5BB3;&#x503C;</span>
+
+  <span class="hljs-comment">// &#x603B;&#x4F24;&#x5BB3;&#x7684;getter</span>
+  <span class="hljs-built_in">int</span> <span class="hljs-keyword">get</span> totalDamage =&gt; damage; <span class="hljs-comment">// &#x603B;&#x4F24;&#x5BB3;</span>
+
+  <span class="hljs-comment">// &#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+  GreatSword(<span class="hljs-keyword">this</span>.name);
+}
+
+<span class="hljs-comment">// &#x7279;&#x5927;&#x5251;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UltraGreatSword</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">GreatSword</span> </span>{
+  <span class="hljs-built_in">int</span> extraDamage = <span class="hljs-number">20</span>; <span class="hljs-comment">// &#x9644;&#x52A0;&#x4F24;&#x5BB3;&#x503C;</span>
+
+  <span class="hljs-comment">// &#x91CD;&#x5199;getter</span>
+  <span class="hljs-built_in">int</span> <span class="hljs-keyword">get</span> totalDamage =&gt; <span class="hljs-keyword">super</span>.damage + extraDamage; <span class="hljs-comment">// &#x7236;&#x7C7B;&#x7684;&#x4F24;&#x5BB3;&#x52A0;&#x4E0A;&#x81EA;&#x5DF1;&#x7684;&#x9644;&#x52A0;&#x4F24;&#x5BB3;&#x4E3A;&#x603B;&#x4F24;&#x5BB3;&#xFF08;super&#x53EF;&#x7701;&#x7565;&#xFF09;</span>
+
+  <span class="hljs-comment">// &#x7236;&#x7C7B;&#x6CA1;&#x6709;&#x65E0;&#x53C2;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;super&#xFF08;&#x4EE3;&#x8868;&#x7236;&#x7C7B;&#x540D;&#xFF09;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+  UltraGreatSword(<span class="hljs-built_in">String</span> name) : extraDamage = <span class="hljs-number">50</span>, <span class="hljs-keyword">super</span>(name);
+}
+
+main() {
+  <span class="hljs-keyword">var</span> black = <span class="hljs-keyword">new</span> UltraGreatSword(<span class="hljs-string">&apos;Black Knight Greatsword&apos;</span>);
+  <span class="hljs-built_in">print</span>(black.name); <span class="hljs-comment">// Black Knight Greatsword</span>
+  <span class="hljs-built_in">print</span>(black.damage); <span class="hljs-comment">// 100</span>
+  <span class="hljs-built_in">print</span>(black.extraDamage); <span class="hljs-comment">// 50</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="function.html" class="navigation navigation-prev " aria-label="Previous page: 2.2 函数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="class_ii.html" class="navigation navigation-next " aria-label="Next page: 2.4 类 - Part II">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.3 类 - Part I","level":"1.3.3","depth":2,"next":{"title":"2.4 类 - Part II","level":"1.3.4","depth":2,"path":"language/class_ii.md","ref":"language/class_ii.md","articles":[]},"previous":{"title":"2.2 函数","level":"1.3.2","depth":2,"path":"language/function.md","ref":"language/function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/class_i.md","mtime":"2017-11-09T10:17:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-09T14:02:23.945Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,617 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.1 变量与基本类型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="function.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    1. 入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/install.html">
+            
+                <a href="../intro/install.html">
+            
+                    
+                    1.1 安装SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/manual.html">
+            
+                <a href="../intro/manual.html">
+            
+                    
+                    1.2 手动安装SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/editor.html">
+            
+                <a href="../intro/editor.html">
+            
+                    
+                    1.3 编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../intro/hello.html">
+            
+                <a href="../intro/hello.html">
+            
+                    
+                    1.4 Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2. 语言基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                    2.1 变量与基本类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    2.2 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="class_i.html">
+            
+                <a href="class_i.html">
+            
+                    
+                    2.3 类 - Part I
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="class_ii.html">
+            
+                <a href="class_ii.html">
+            
+                    
+                    2.4 类 - Part II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="visibility.html">
+            
+                <a href="visibility.html">
+            
+                    
+                    2.x 库与可见性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="commons.html">
+            
+                <a href="commons.html">
+            
+                    
+                    2.x 常用内置类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    2.x 泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="exception.html">
+            
+                <a href="exception.html">
+            
+                    
+                    2.x 流程控制与异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="async.html">
+            
+                <a href="async.html">
+            
+                    
+                    2.x 异步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../library/">
+            
+                <a href="../library/">
+            
+                    
+                    3. 标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../pub/">
+            
+                <a href="../pub/">
+            
+                    
+                    4. Pub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../web/">
+            
+                <a href="../web/">
+            
+                    
+                    5. Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../server/">
+            
+                <a href="../server/">
+            
+                    
+                    5. Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../mobile/">
+            
+                <a href="../mobile/">
+            
+                    
+                    5. Mobile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.1 变量与基本类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x53D8;&#x91CF;&#x4E0E;&#x57FA;&#x672C;&#x7C7B;&#x578B;">&#x53D8;&#x91CF;&#x4E0E;&#x57FA;&#x672C;&#x7C7B;&#x578B;</h1>
+<p>&#x5148;&#x6765;&#x8BA4;&#x8BC6;Dart&#x7684;&#x53D8;&#x91CF;&#x548C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<h2 id="&#x53D8;&#x91CF;">&#x53D8;&#x91CF;</h2>
+<p>&#x6709;&#x4E24;&#x79CD;&#x57FA;&#x672C;&#x7684;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x65B9;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x4E0D;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#xFF0C;&#x5373;&#x4F7F;&#x7528;<code>var</code>&#xFF08;&#x53D8;&#x91CF;&#x6B64;&#x65F6;&#x7684;&#x7C7B;&#x578B;&#x4E3A;<code>dynamic</code>&#xFF09;</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">var</span> name = <span class="hljs-string">&apos;bob&apos;</span>; <span class="hljs-comment">// name&#x53D8;&#x91CF;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5185;&#x5BB9;&#x4E3A;&apos;bob&apos;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;</span>
+</code></pre>
+<p>&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x6307;&#x5B9A;&#x7C7B;&#x578B;</p>
+<pre><code class="lang-dart"><span class="hljs-built_in">String</span> name = <span class="hljs-string">&apos;bob&apos;</span>; <span class="hljs-comment">// &#x663E;&#x5F0F;&#x6307;&#x660E;name&#x53D8;&#x91CF;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;</span>
+</code></pre>
+<p>&#x6307;&#x5B9A;&#x6216;&#x4E0D;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#xFF0C;&#x7531;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x5DF1;&#x51B3;&#x5B9A;&#xFF1B;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#x5C06;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x5F00;&#x53D1;&#x4F53;&#x9A8C;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x66F4;&#x591A;&#x66F4;&#x5168;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x63D0;&#x793A;&#x3002;</p>
+<p>&#x53D8;&#x91CF;&#x90FD;&#x662F;&#x5F15;&#x7528;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x6307;&#x5411;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#xFF08;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x7684;&#x53D8;&#x91CF;&#x6307;&#x5411;<code>null</code>&#xFF0C;&#x800C;<code>null</code>&#x4E5F;&#x662F;&#x5BF9;&#x8C61;&#xFF09;&#x3002;</p>
+<h2 id="&#x9ED8;&#x8BA4;&#x503C;">&#x9ED8;&#x8BA4;&#x503C;</h2>
+<p>Dart&#x7684;&#x53D8;&#x91CF;&#x6709;&#x4E00;&#x4E2A;&#x663E;&#x8457;&#x533A;&#x522B;&#x4E8E;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x5373;&#x65E0;&#x8BBA;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5728;&#x58F0;&#x660E;&#x65F6;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8D4B;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x90FD;&#x662F;<code>null</code></p>
+<pre><code class="lang-dart"><span class="hljs-keyword">var</span> name; <span class="hljs-comment">// &#x672A;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-built_in">int</span> age; <span class="hljs-comment">// &#x6307;&#x5B9A;&#x4E3A;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-built_in">print</span>(name); <span class="hljs-comment">// &#x4F7F;&#x7528;print&#x51FD;&#x6570;&#x6253;&#x5370;&#xFF0C;&#x8F93;&#x51FA;&#x4E3A;null</span>
+<span class="hljs-built_in">print</span>(age); <span class="hljs-comment">// &#x4F7F;&#x7528;print&#x51FD;&#x6570;&#x6253;&#x5370;&#xFF0C;&#x8F93;&#x51FA;&#x4E5F;&#x4E3A;null</span>
+</code></pre>
+<h2 id="&#x4F5C;&#x7528;&#x57DF;">&#x4F5C;&#x7528;&#x57DF;</h2>
+<p>Dart&#x4F7F;&#x7528;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;&#x9759;&#x6001;&#x4F5C;&#x7528;&#x57DF;&#xFF09;&#xFF0C;&#x5373;&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5728;&#x5176;&#x5B9A;&#x4E49;&#x65F6;&#x5C31;&#x5DF2;&#x7ECF;&#x786E;&#x5B9A;&#x3002;</p>
+<p>&#x4F5C;&#x7528;&#x57DF;&#x7531;&#x53D8;&#x91CF;&#x6240;&#x5904;&#x4EE3;&#x7801;&#x5757;&#xFF08;&#x5927;&#x62EC;&#x53F7;&#xFF09;&#x7684;&#x5C42;&#x7EA7;&#x51B3;&#x5B9A;&#xFF0C;&#x5C42;&#x6B21;&#x8D8A;&#x6DF1;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x8D8A;&#x5C0F;&#x3002;</p>
+<p>&#x4E0D;&#x88AB;&#x4EFB;&#x4F55;&#x4EE3;&#x7801;&#x5757;&#x5305;&#x542B;&#x7684;&#x53D8;&#x91CF;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x9876;&#x5C42;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x8303;&#x56F4;&#x6700;&#x5927;</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">var</span> top = <span class="hljs-keyword">true</span>; <span class="hljs-comment">// &#x9876;&#x5C42;&#x53D8;&#x91CF;</span>
+
+main() {
+  <span class="hljs-keyword">var</span> inMain = <span class="hljs-string">&apos;main&apos;</span>;
+  <span class="hljs-built_in">print</span>(inMain); <span class="hljs-comment">// OK</span>
+  <span class="hljs-built_in">print</span>(top); <span class="hljs-comment">// OK</span>
+  <span class="hljs-built_in">print</span>(inFn); <span class="hljs-comment">// &#x9519;&#x8BEF;&#xFF0C;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;</span>
+  <span class="hljs-built_in">print</span>(inIf); <span class="hljs-comment">// &#x9519;&#x8BEF;&#xFF0C;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;</span>
+
+  fn() {
+    <span class="hljs-keyword">var</span> inFn = <span class="hljs-string">&apos;fn&apos;</span>;
+    <span class="hljs-built_in">print</span>(inFn); <span class="hljs-comment">// OK</span>
+    <span class="hljs-built_in">print</span>(inMain); <span class="hljs-comment">// OK</span>
+    <span class="hljs-built_in">print</span>(top); <span class="hljs-comment">// OK</span>
+    <span class="hljs-built_in">print</span>(inIf); <span class="hljs-comment">// &#x9519;&#x8BEF;&#xFF0C;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;</span>
+
+    <span class="hljs-keyword">if</span> (top) {
+      <span class="hljs-keyword">var</span> inIf = <span class="hljs-string">&apos;if&apos;</span>;
+      <span class="hljs-built_in">print</span>(inIf); <span class="hljs-comment">// OK</span>
+      <span class="hljs-built_in">print</span>(inFn); <span class="hljs-comment">// OK</span>
+      <span class="hljs-built_in">print</span>(inMain); <span class="hljs-comment">// OK</span>
+      <span class="hljs-built_in">print</span>(top); <span class="hljs-comment">// OK</span>
+    }
+  }
+}
+</code></pre>
+<h2 id="final&#x4E0E;const">final&#x4E0E;const</h2>
+<p>&#x5982;&#x679C;&#x53D8;&#x91CF;&#x5185;&#x5BB9;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;<code>final</code>&#x6216;<code>const</code>&#x3002;</p>
+<p><code>final</code>&#x8868;&#x793A;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x88AB;&#x8D4B;&#x503C;&#x4E00;&#x6B21;&#xFF1B;<code>const</code>&#x8868;&#x793A;&#x53D8;&#x91CF;&#x662F;&#x7F16;&#x8BD1;&#x65F6;&#x5E38;&#x91CF;&#xFF0C;<code>const</code>&#x53D8;&#x91CF;&#x9ED8;&#x8BA4;&#x4E3A;<code>final</code>&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x9876;&#x5C42;<code>final</code>&#x53D8;&#x91CF;&#x4E0E;<a href="class.md">&#x7C7B;</a>&#x53D8;&#x91CF;&#x5728;&#x9996;&#x6B21;&#x8BBF;&#x95EE;&#x65F6;&#x624D;&#x6267;&#x884C;&#x521D;&#x59CB;&#x5316;  // TODO</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">final</span> name = <span class="hljs-string">&apos;bob&apos;</span>; <span class="hljs-comment">// &#x4E5F;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5199;&#xFF1A;final String name = &apos;bob&apos;;</span>
+name = <span class="hljs-string">&apos;john&apos;</span>; <span class="hljs-comment">// &#x518D;&#x6B21;&#x8D4B;&#x503C;&#x5C06;&#x62A5;&#x9519;!</span>
+
+<span class="hljs-keyword">const</span> pi = <span class="hljs-number">3.14</span>;
+<span class="hljs-keyword">const</span> area = pi * <span class="hljs-number">2</span> * <span class="hljs-number">2</span>; <span class="hljs-comment">// &#x7531;&#x5E38;&#x91CF;&#x503C;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x5E38;&#x91CF;</span>
+</code></pre>
+<h2 id="&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
+<p>&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6709;&#x4E09;&#x79CD;&#xFF1A;&#x6570;&#x5B57;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x4E0E;&#x5E03;&#x5C14;&#x3002;</p>
+<h3 id="&#x6570;&#x5B57;">&#x6570;&#x5B57;</h3>
+<p>&#x5E38;&#x7528;&#x7684;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x6574;&#x6570;<code>int</code></p>
+<pre><code class="lang-dart"><span class="hljs-built_in">int</span> age = <span class="hljs-number">28</span>;
+</code></pre>
+<p>&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x53CC;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;<code>double</code></p>
+<pre><code class="lang-dart"><span class="hljs-built_in">double</span> percent = <span class="hljs-number">0.23</span>;
+</code></pre>
+<p>&#x6570;&#x5B57;&#x5BF9;&#x8C61;&#x5177;&#x6709;&#x591A;&#x79CD;&#x6570;&#x5B66;&#x8BA1;&#x7B97;&#x76F8;&#x5173;&#x7684;&#x5C5E;&#x6027;&#x4E0E;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-dart"><span class="hljs-built_in">int</span> size = <span class="hljs-number">9</span>;
+<span class="hljs-built_in">print</span>(size.isEven); <span class="hljs-comment">// &#x662F;&#x5426;&#x5076;&#x6570;</span>
+<span class="hljs-built_in">print</span>(size.isOdd); <span class="hljs-comment">// &#x662F;&#x5426;&#x5947;&#x6570;</span>
+<span class="hljs-built_in">print</span>(size.toRadixString(<span class="hljs-number">6</span>)); <span class="hljs-comment">// &#x8F6C;&#x6362;&#x4E3A;6&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;</span>
+......
+
+<span class="hljs-built_in">double</span> pi = <span class="hljs-number">3.1415926</span>;
+<span class="hljs-built_in">print</span>(pi.ceil()); <span class="hljs-comment">// &#x5411;&#x4E0A;&#x53D6;&#x6574;</span>
+<span class="hljs-built_in">print</span>(pi.toInt()); <span class="hljs-comment">// &#x8F6C;&#x6210;&#x6574;&#x5F62;</span>
+<span class="hljs-built_in">print</span>(pi.toStringAsPrecision(<span class="hljs-number">2</span>)); <span class="hljs-comment">// &#x8F6C;&#x6362;&#x4E3A;&#x56FA;&#x5B9A;&#x7CBE;&#x5EA6;&#x5B57;&#x7B26;&#x4E32;</span>
+......
+</code></pre>
+<p><code>int</code>&#x4E0E;<code>double</code>&#x90FD;&#x7EE7;&#x627F;&#x6570;&#x5B57;&#x7C7B;&#x578B;<code>num</code>&#xFF0C;&#x5728;&#x9700;&#x8981;&#x540C;&#x65F6;&#x652F;&#x6301;&#x6574;&#x6570;&#x4E0E;&#x6D6E;&#x70B9;&#x6570;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>num</code>&#x3002;</p>
+<h3 id="&#x5B57;&#x7B26;&#x4E32;">&#x5B57;&#x7B26;&#x4E32;</h3>
+<p>&#x4F7F;&#x7528;&#x5355;&#x5F15;&#x53F7;&#x6216;&#x53CC;&#x5F15;&#x53F7;&#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x652F;&#x6301;&#x4F7F;&#x7528;<code>${ }</code>&#x8FDB;&#x884C;&#x63D2;&#x503C;</p>
+<pre><code class="lang-dart"><span class="hljs-built_in">String</span> name = <span class="hljs-string">&apos;bob&apos;</span>;
+<span class="hljs-built_in">String</span> message = <span class="hljs-string">&apos;Hi <span class="hljs-subst">${name.toUpperCase()}</span>&apos;</span>; <span class="hljs-comment">// Hi BOB</span>
+<span class="hljs-built_in">String</span> text = <span class="hljs-string">&apos;Welcome $name&apos;</span>; <span class="hljs-comment">// &#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x65F6;&#x53EF;&#x4EE5;&#x7701;&#x7565;{}</span>
+</code></pre>
+<p>&#x591A;&#x4E2A;&#x76F8;&#x90BB;&#x5B57;&#x7B26;&#x4E32;&#x5C06;&#x81EA;&#x52A8;&#x8FDE;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x6216;&#x8005;&#x663E;&#x5F0F;&#x4F7F;&#x7528;<code>+</code>&#xFF1B;&#x591A;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x4F7F;&#x7528;<code>&apos;&apos;&apos;</code>&#x6216;<code>&quot;&quot;&quot;</code>&#x6765;&#x521B;&#x5EFA;</p>
+<pre><code class="lang-dart"><span class="hljs-built_in">String</span> message1 = <span class="hljs-string">&apos;Hi&apos;</span>
+                 <span class="hljs-string">&apos; there&apos;</span>; <span class="hljs-comment">// Hi there</span>
+<span class="hljs-built_in">String</span> message2 = <span class="hljs-string">&apos;Hi&apos;</span>
+                 + <span class="hljs-string">&apos; there&apos;</span>; <span class="hljs-comment">// Hi there</span>
+<span class="hljs-built_in">String</span> multiMessage = <span class="hljs-string">&apos;&apos;&apos;
+Hello
+again!
+&apos;&apos;&apos;</span>; <span class="hljs-comment">// &#x591A;&#x884C;&#x5B57;&#x7B26;&#x4E32;</span>
+</code></pre>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x4E0D;&#x53EF;&#x53D8;&#xFF0C;&#x81EA;&#x5E26;&#x591A;&#x79CD;&#x5B9E;&#x7528;&#x5C5E;&#x6027;&#x4E0E;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-dart"><span class="hljs-built_in">String</span> name = <span class="hljs-string">&apos;bob&apos;</span>;
+<span class="hljs-built_in">print</span>(name.length); <span class="hljs-comment">// &#x957F;&#x5EA6;</span>
+<span class="hljs-built_in">print</span>(name.isEmpty); <span class="hljs-comment">// &#x662F;&#x5426;&#x4E3A;&#x7A7A;</span>
+<span class="hljs-built_in">print</span>(name.substring(<span class="hljs-number">1</span>)); <span class="hljs-comment">// &#x5B50;&#x5B57;&#x7B26;&#x4E32;</span>
+<span class="hljs-built_in">print</span>(name.startsWith(<span class="hljs-string">&apos;b&apos;</span>)); <span class="hljs-comment">// &#x662F;&#x5426;&#x4EE5;&#x67D0;&#x5B57;&#x7B26;&#x5F00;&#x5934;</span>
+<span class="hljs-built_in">print</span>(name.replaceAll(<span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;l&apos;</span>)); <span class="hljs-comment">// &#x66FF;&#x6362;&#x6240;&#x6709;</span>
+......
+</code></pre>
+<h3 id="&#x5E03;&#x5C14;">&#x5E03;&#x5C14;</h3>
+<p>&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;<code>true</code>&#x548C;<code>false</code>&#x3002;</p>
+<p><code>true</code>&#x662F;&#x552F;&#x4E00;&#x201C;&#x6B63;&#x786E;&#x201D;&#x7684;&#x503C;&#xFF0C;&#x6240;&#x6709;&#x975E;true&#x7684;&#x503C;&#x90FD;&#x89C6;&#x4E3A;<code>false</code></p>
+<pre><code class="lang-dart"><span class="hljs-comment">// &#x4EE5;&#x4E0B;&#x5E38;&#x89C1;&#x7684;JavaScript&#x4EE3;&#x7801;&#xFF0C;&#x5728;Dart&#x4E2D;&#x5C06;&#x5931;&#x6548;</span>
+<span class="hljs-keyword">var</span> name = <span class="hljs-string">&apos;bob&apos;</span>;
+<span class="hljs-keyword">if</span> (name) { <span class="hljs-comment">// name&#x88AB;&#x89C6;&#x4E3A;false&#xFF0C;&#x540E;&#x7EED;&#x4EE3;&#x7801;&#x4E0D;&#x518D;&#x6267;&#x884C;</span>
+  <span class="hljs-keyword">var</span> message = <span class="hljs-string">&apos;hi&apos;</span> + name;
+  ......
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 2. 语言基础">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="function.html" class="navigation navigation-next " aria-label="Next page: 2.2 函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.1 变量与基本类型","level":"1.3.1","depth":2,"next":{"title":"2.2 函数","level":"1.3.2","depth":2,"path":"language/function.md","ref":"language/function.md","articles":[]},"previous":{"title":"2. 语言基础","level":"1.3","depth":1,"path":"language/index.md","ref":"language/index.md","articles":[{"title":"2.1 变量与基本类型","level":"1.3.1","depth":2,"path":"language/basics.md","ref":"language/basics.md","articles":[]},{"title":"2.2 函数","level":"1.3.2","depth":2,"path":"language/function.md","ref":"language/function.md","articles":[]},{"title":"2.3 类 - Part I","level":"1.3.3","depth":2,"path":"language/class_i.md","ref":"language/class_i.md","articles":[]},{"title":"2.4 类 - Part II","level":"1.3.4","depth":2,"path":"language/class_ii.md","ref":"language/class_ii.md","articles":[]},{"title":"2.x 库与可见性","level":"1.3.5","depth":2,"path":"language/visibility.md","ref":"language/visibility.md","articles":[]},{"title":"2.x 常用内置类","level":"1.3.6","depth":2,"path":"language/commons.md","ref":"language/commons.md","articles":[]},{"title":"2.x 泛型","level":"1.3.7","depth":2,"path":"language/generics.md","ref":"language/generics.md","articles":[]},{"title":"2.x 流程控制与异常","level":"1.3.8","depth":2,"path":"language/exception.md","ref":"language/exception.md","articles":[]},{"title":"2.x 异步","level":"1.3.9","depth":2,"path":"language/async.md","ref":"language/async.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/basics.md","mtime":"2017-11-08T02:06:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-09T14:02:23.945Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
