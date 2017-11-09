@@ -91,6 +91,25 @@ main() {
 }
 ```
 
+如果希望创建不可变对象，可以将实例变量使用`final`修饰，构造函数使用`const`修饰，最后使用`const`创建对象即可
+
+```dart
+// 声明一个表示'篝火'（《黑暗之魂》系列游戏的存盘点）的类
+class Bonfire {
+  final String name; // 名称
+
+  const Bonfire(this.name);
+}
+
+main() {
+  // 使用const进行多次实例化
+  var bonfire1 = const Bonfire('home');
+  var bonfire2 = const Bonfire('home');
+  // 使用顶层函数identical检查是否同一对象
+  print(identical(bonfire1, bonfire2)); // true - 是同一对象
+}
+```
+
 // TODO - const / Factory class
 
 ## 初始化列表
