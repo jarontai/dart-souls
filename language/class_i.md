@@ -1,12 +1,12 @@
 # 类 - Part I
 
-类用于创建对象，是对象的蓝本。
-
 _类的知识点较多，所以分成两节进行讲解，本节是Part I，下一节是_[_Part II_](/language/class_ii.md)_。_
 
-## 类的声明
+类用于创建对象，是对象的蓝本。
 
 类的声明是使用关键字`class`，所有类都直接或间接继承最顶端的`Object`类。
+
+## 属性和方法
 
 类中可以包含数据和函数，即对象的属性和方法，其中属性可以使用`final`修饰。
 
@@ -123,7 +123,7 @@ main() {
   var bastard = new GreatSword.bastard();
   var moonlight = new GreatSword.moonlight();
   print(sword.name);
-  print(sword.damage)
+  print(sword.damage);
   print(sword.extraDamage);
   print(bastard.name);
   print(bastard.damage);
