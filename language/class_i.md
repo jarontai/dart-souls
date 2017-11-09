@@ -1,32 +1,4 @@
-#   var sword = new GreatSword\('Claymore'\);
-
-#   var bastard = new GreatSword.bastard\(\);
-
-#   var moonlight = new GreatSword.moonlight\(\);
-
-#   print\(sword.name\);
-
-#   print\(sword.damage\);
-
-#   print\(sword.extraDamage\);
-
-#   print\(moonlight.name\);
-
-#   print\(moonlight.damage\);
-
-#   print\(moonlight.extraDamage\);  
-
-#   print\(bastard.name\);
-
-#   print\(bastard.damage\);
-
-#   print\(bastard.extraDamage\);
-
-#   print\(moonlight.name\);
-
-#   print\(moonlight.damage\);
-
-#   print\(moonlight.extraDamage\);类 - Part I
+# 类 - Part I
 
 类用于创建对象，是对象的蓝本。
 
@@ -134,7 +106,7 @@ class GreatSword {
   GreatSword(this.name, [this.extraDamage = 0]) : damage = 100; // 普通大剑基础伤害100
 
   // 在初始化列表中调用静态方法计算extraDamage
-  GreatSword.magic(this.name, this.damage) : extraDamage = magicPower(damage); // 魔法大剑附加伤害经过计算得出
+  GreatSword.magic(this.name, this.damage) : extraDamage = magicPower(damage); // 魔法大剑的附加伤害要根据基础伤害计算得出
 
   // 通过初始化列表转发到其他构造函数，其中this代表类名
   GreatSword.bastard(): this('Bastard Sword', 10); // 混种大剑
@@ -151,7 +123,7 @@ main() {
   var bastard = new GreatSword.bastard();
   var moonlight = new GreatSword.moonlight();
   print(sword.name);
-  print(sword.damage);
+  print(sword.damage)
   print(sword.extraDamage);
   print(bastard.name);
   print(bastard.damage);
