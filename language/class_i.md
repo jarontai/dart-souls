@@ -282,9 +282,9 @@ main() {
 
 除了构造函数，父类所有的属性（setter/getter）和方法都被子类继承，而且都可以被重写（override）。
 
-子类的构造函数在执行前，将隐含调用父类的`无参构造函数`（没有参数的构造函数，默认或显式声明的都可）。
+子类的构造函数在执行前，将隐含调用父类的`无参默认构造函数`（没有参数且与类同名的构造函数，默认或显式声明的都可）。
 
-如果父类没有`无参构造函数`，则子类的构造函数必须在初始化列表中通过`super`显式调用父类的某个构造函数。
+如果父类没有`无参默认构造函数`，则子类的构造函数必须在初始化列表中通过`super`显式调用父类的某个构造函数。
 
 ```dart
 // 大剑
@@ -306,7 +306,7 @@ class UltraGreatSword extends GreatSword {
   // 重写getter
   int get totalDamage => super.damage + extraDamage; // 父类的伤害加上自己的附加伤害为总伤害（super可省略）
 
-  // 必须使用super（代表父类名）调用父类的构造函数，否则错误
+  // 父类没有无参构造函数，必须使用super（代表父类名）调用父类的构造函数
   UltraGreatSword(String name) : extraDamage = 50, super(name);
 }
 
