@@ -2,7 +2,9 @@
 
 《Dart简易教程》一本介绍Dart的小书 \(努力编写中...\)
 
-[gitbook在线阅读](https://www.gitbook.com/read/book/jarontai/the-little-dart-book)（最新，需要翻越GFW），[github.io在线阅读](https://jarontai.github.io/the-little-dart-book/)（定期更新）， [pdf](https://www.gitbook.com/download/pdf/book/jarontai/the-little-dart-book)，[epub](https://www.gitbook.com/download/epub/book/jarontai/the-little-dart-book)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/the-little-dart-book)
+在线阅读：[github](https://jarontai.github.io/the-little-dart-book/)（不定期更新）， [gitbook](https://www.gitbook.com/read/book/jarontai/the-little-dart-book)（最新，需要翻越GFW）
+
+下载阅读（最新）：[pdf](https://www.gitbook.com/download/pdf/book/jarontai/the-little-dart-book)，[epub](https://www.gitbook.com/download/epub/book/jarontai/the-little-dart-book)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/the-little-dart-book)
 
 ## 目标
 
