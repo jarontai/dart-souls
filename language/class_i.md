@@ -102,21 +102,23 @@ main() {
 class GreatSword {
   String name; // 名称
 
-  // 使用map类型（后续章节将进行讲解）作为对象缓存
-  static final cache = {};
+  // 使用Map类型（后续章节将进行讲解）作为对象缓存
+  static final Map cache = {};
 
   // 工厂构造函数
   factory GreatSword(String name) {
+    // 对象已存在缓存中
     if (cache.containsKey(name)) {
       return cache[name];
-    } else {
+    } else { // 对象不存在缓存中
+      // 使用库私有的（后续章节将进行讲解）构造函数新建对象
       final sword = new GreatSword._internal(name);
-      cache[name] = sword;
+      cache[name] = sword; // 存入缓存
       return sword;
     }
   }
 
-  // 库私有（后续章节将进行讲解）的命名构造函数
+  // 库私有的（后续章节将进行讲解）命名构造函数
   GreatSword._internal(this.name);
 }
 
