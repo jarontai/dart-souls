@@ -8,16 +8,16 @@ _类的知识点较多，所以分成两节进行讲解，本节是Part I，下�
 
 类的声明是使用关键字`class`，所有类都直接或间接继承最顶端的`Object`类。
 
-类中可以包含数据和函数，即对象的属性和方法。
+类中可以包含数据和函数，即对象的属性和方法（也被称为实例变量和实例方法），其中属性可以使用`final`修饰。
 
-在类中可以通过`this.`或直接访问属性和方法，官方建议只在命名冲突时才使用`.this`方式
+在类中通过`this`或直接访问属性和方法，官方建议只在命名冲突时才使用`this`
 
 ```dart
 // 声明一个表示'大剑'（黑暗之魂系列游戏的一种武器）的类
 class GreatSword {
   // 属性
   String name; // 名称
-  int damage = 100; // 伤害值
+  final int damage = 100; // 基础伤害值
   int extraDamage = 0; // 其他附加伤害
 
   // 类中可以声明函数，即定义对象的方法
@@ -26,9 +26,9 @@ class GreatSword {
     print('GreatSword ${name} - damage: ' + this.damage.toString()); // 通过this或直接访问属性
   }
 
-  // 武器升级（增加伤害值）
-  upgrade(int damage) {
-    this.damage += damage; // 使用this区分同名的参数和属性
+  // 武器升级（增加附加伤害值）
+  upgrade(int extraDamage) {
+    this.extraDamage += extraDamage; // 使用this区分同名的参数和属性
   }
 }
 ```
@@ -46,7 +46,7 @@ class GreatSword {
 ```dart
 class GreatSword {
   String name; // 名称
-  final int damage = 100; // 伤害值
+  final int damage = 100; // 基础伤害值
   int extraDamage = 0; // 其他附加伤害
 
   // 构造函数
@@ -56,7 +56,7 @@ class GreatSword {
   // 以上构造函数的简写方式
   // GreatSword(this.name);
 
-  // 使用简写方式的命名构造函数
+  // 命名构造函数
   GreatSword.enhanced(this.name, this.extraDamage); 
   // 等同于以下写法
   // GreatSword.enhanced(String name, int extraDamage) {
@@ -85,7 +85,7 @@ main() {
 ```dart
 class GreatSword {
   String name; // 名称
-  final int damage; // 伤害值（没有初始化）
+  final int damage; // 基础伤害值（没有初始化）
   int extraDamage = 0; // 其他附加伤害
 
   // 普通大剑基础伤害100
@@ -124,7 +124,7 @@ getter和setter是一种特殊的方法，它们虽是方法却有跟属性一�
 ```dart
 class GreatSword {
   String name; // 名称
-  final int damage = 100; // 伤害值
+  final int damage = 100; // 基础伤害值
   int extraDamage = 0; // 其他附加伤害
 
   // damage隐含的getter
@@ -233,6 +233,18 @@ main() {
 ```
 
 ## 类变量和类方法
+
+类中声明的普通属性和方法也被称为实例变量和实例方法，而跟类绑定的就叫做类变量和类方法。
+
+类变量和类方法的声明方法是在普通属性之前添加`static`关键字，它们也常被称为静态变量。
+
+```dart
+class GreatSword {
+  String name; // 名称
+  final int damage = 100; // 基础伤害值
+  int extraDamage = 0; // 其他附加伤害
+}
+```
 
 ## 抽象类和抽象方法
 
