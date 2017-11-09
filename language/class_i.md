@@ -45,12 +45,11 @@ class GreatSword {
 main() {
   // 使用默认构造函数（见下一小节）进行实例化
   var sword = new GreatSword();
-  // 访问final属性
-  print(sword.damage);
+  print(sword.damage); // 100
+  print(sword.extraDamage); // 0
   // 使用类方法
   GreatSword.upgrade(sword);
-  // 访问普通属性
-  print(sword.extraDamage);
+  print(sword.extraDamage); // 10
 }
 ```
 
@@ -87,7 +86,7 @@ class GreatSword {
 }
 
 main() {
-  // 实例化
+  // 使用不同构造函数进行实例化
   var sword = new GreatSword('Claymore'); // 普通大剑
   var enhancedSword = new GreatSword.enhanced('Bastard Sword', 20); // 强化版混种大剑
 }
@@ -172,7 +171,7 @@ class GreatSword {
 
   // 通过初始化列表转发到其他构造函数，其中this代表类名
   GreatSword.bastard(): this('Bastard Sword', 10); // 混种大剑
-  GreatSword.moonlight(): this.magic('Moonlight GreatSword', 80); // 月光大剑
+  GreatSword.moonlight(): this.magic('Moonlight GreatSword', 90); // 月光大剑
 
   // 计算魔法武器的附加伤害
   static magicPower(int damage) {
@@ -184,15 +183,15 @@ main() {
   var sword = new GreatSword('Claymore');
   var bastard = new GreatSword.bastard();
   var moonlight = new GreatSword.moonlight();
-  print(sword.name);
-  print(sword.damage);
-  print(sword.extraDamage);
-  print(bastard.name);
-  print(bastard.damage);
-  print(bastard.extraDamage);
-  print(moonlight.name);
-  print(moonlight.damage);
-  print(moonlight.extraDamage);
+  print(sword.name); // Claymore
+  print(sword.damage); // 100
+  print(sword.extraDamage); // 0
+  print(bastard.name); // Bastard Sword
+  print(bastard.damage); // 100
+  print(bastard.extraDamage); // 10
+  print(moonlight.name); // Moonlight GreatSword
+  print(moonlight.damage); // 90
+  print(moonlight.extraDamage); // 13.5
 }
 ```
 
@@ -241,9 +240,9 @@ main() {
   var sword = new GreatSword();
   sword.name = 'GreatSword';
   sword.totalDamage = 200;
-  print(sword.damage);
-  print(sword.extraDamage);
-  print(sword.info());
+  print(sword.damage); // 100
+  print(sword.extraDamage); // 100
+  print(sword.info()); // GreatSword - totalDamage: 200
 
   sword.damage = 180; // 错误，damage的setter不存在  
 }
@@ -269,9 +268,9 @@ class GreatSword2 {
 main() {
   // 使用两个不同版本的GreatSword，对name的访问方式不变
   var sword = new GreatSword1();
-  print(sword.name);
+  print(sword.name); // GreatSword
   sword = new GreatSword2();
-  print(sword.name);
+  print(sword.name); // GreatSword
 }
 ```
 
@@ -311,9 +310,9 @@ class UltraGreatSword extends GreatSword {
 
 main() {
   var black = new UltraGreatSword('Black Knight Greatsword');
-  print(black.name);
-  print(black.damage);
-  print(black.extraDamage);
+  print(black.name); // Black Knight Greatsword
+  print(black.damage); // 100
+  print(black.extraDamage); // 50
 }
 ```
 
