@@ -38,8 +38,15 @@ class GreatSword {
 
   // 实例方法
   info() {
-    print('GreatSword ${name} - damage: ' + this.damage.toString()); // 通过this或直接访问属性
+    print('GreatSword ${name} - damage: ' + this.damage.toString()); // 通过名称或this访问实例变量
   }
+}
+
+main() {
+  var sword = new GreatSword(); // 使用默认构造函数
+  print(sword.damage);
+  GreatSword.upgrade(sword); // 使用类方法
+  print(sword.extraDamage);
 }
 ```
 
