@@ -21,8 +21,11 @@ String bobSay2(String words) => 'bob say $words';
 
 // 外层函数
 String say() {
-  johnSay(String words) => 'john say $words'; // 函数内声明的本地函数
-  return johnSay('hello'); // 调用本地函数
+  // 函数内声明的本地函数
+  johnSay(String words) => 'john say $words';
+  
+  // 调用本地函数
+  return johnSay('hello');
 }
 
 main() {

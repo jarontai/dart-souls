@@ -43,9 +43,11 @@ class GreatSword {
 }
 
 main() {
-  var sword = new GreatSword(); // 使用默认构造函数
+  // 使用默认构造函数
+  var sword = new GreatSword();
   print(sword.damage);
-  GreatSword.upgrade(sword); // 使用类方法
+  // 使用类方法
+  GreatSword.upgrade(sword);
   print(sword.extraDamage);
 }
 ```
