@@ -1,12 +1,16 @@
-# 安装SDK
+# 入门
+
+本节将讲解如何安装Dart SDK，以及编写最简单的Hello World。
+
+## 安装SDK
 
 推荐优先使用工具自动安装SDK。
 
 注意：由于众所周知的原因，在中国大陆使用以下工具安装可能会失败。如果你无法突破网络封锁，请尝试[手动安装](#手动安装sdk)。
 
-## windows系统
+### windows系统
 
-### 方式一
+方式一
 
 安装windows下的包管理器：[Chocolatey](https://chocolatey.org/) ，然后在命令行下执行
 
@@ -14,11 +18,11 @@
 choco install dart-sdk -version <版本号>
 ```
 
-### 方式二
+方式二
 
 使用社区维护的安装器：[www.gekorm.com/dart-windows](http://www.gekorm.com/dart-windows/)
 
-## mac系统
+### mac系统
 
 使用包管理器 [homebrew](https://brew.sh/) 安装
 
@@ -37,7 +41,7 @@ $ brew cleanup dart
 $ brew info dart
 ```
 
-## linux系统
+### linux系统
 
 ubuntu/debian使用apt-get安装，其他linux请[手动安装](/intro/manual.md)。
 
@@ -59,11 +63,11 @@ $ export PATH=/usr/lib/dart/bin:$PATH
 
 ---
 
-# 手动安装SDK
+## 手动安装SDK
 
 不能使用工具安装SDK时，可以手动安装。
 
-## 下载SDK
+### 下载SDK
 
 SDK下载链接模板:
 
@@ -87,41 +91,41 @@ SDK下载链接模板:
 >
 > [https://storage.googleapis.com/dart-archive/channels/dev/release/1.13.0-dev.0.0/sdk/dartsdk-linux-ia32-release.zip](https://storage.googleapis.com/dart-archive/channels/dev/release/1.13.0-dev.0.0/sdk/dartsdk-linux-ia32-release.zip)
 
-## 安装
+### 安装
 
 下载解压后，将sdk的bin文件夹添加到系统环境变量即可。
 
 ---
 
-# 编辑器
+## 编辑器
 
 使用具备Dart插件的编辑器，能让开发事半功倍；下面列举了部分Dart官网推荐的编辑器/IDE。
 
 笔者使用较多的是VS Code。
 
-## Jetbrains家族
+### Jetbrains家族
 
 [Jetbrains](https://www.jetbrains.com/)公司的IntelliJ IDEA、WebStorm、PhpStorm等，可以安装Jetbrains的[Dart](https://plugins.jetbrains.com/plugin/6351-dart)插件
 
-## VS Code
+### VS Code
 
 来自微软Visual Studio团队的[VS Code](https://code.visualstudio.com/)，配合[Dart Code](https://marketplace.visualstudio.com/items?itemName=DanTup.dart-code)插件
 
-## Atom
+### Atom
 
 Github出品的[Atom](https://atom.io/)编辑器，配合[dartlang](https://github.com/dart-atom/dartlang/)插件
 
-## Vim
+### Vim
 
 Linux下常用的老牌编辑器[Vim](http://www.vim.org/)，配合[dart-vim-plugin](https://github.com/dart-lang/dart-vim-plugin)插件
 
 ---
 
-# Hello World
+## Hello World
 
 按照惯例，编写一个Hello World。
 
-## 确认SDK安装成功
+### 确认SDK安装成功
 
 在命令行中输入以下指令
 
@@ -135,7 +139,7 @@ $ dart --version
 Dart VM version: 1.24.2 (Thu Jun 22 08:42:17 2017) on "macos_x64"
 ```
 
-# 运行Hello World
+### 运行Hello World
 
 与C语言等类似，dart文件的入口是`main`函数。
 
