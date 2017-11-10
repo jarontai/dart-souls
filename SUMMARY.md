@@ -3,7 +3,7 @@
 * [介绍](README.md)
 * [前言](foreword.md)
 * [入门](intro.md)
-* [2. 语言基础](language/index.md)
+* [2. 语言](language/index.md)
   * [2.1 变量与基本类型](language/basics.md)
   * [2.2 函数](language/function.md)
   * [2.3 类 - Part I](language/class_i.md)

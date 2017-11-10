@@ -2,7 +2,7 @@
 
 推荐优先使用工具自动安装SDK。
 
-注意：由于众所周知的原因，在中国大陆使用以下工具安装可能会失败。如果你无法突破网络封锁，请尝试[手动安装](/intro/manual.md)。
+注意：由于众所周知的原因，在中国大陆使用以下工具安装可能会失败。如果你无法突破网络封锁，请尝试[手动安装](#手动安装sdk)。
 
 ## windows系统
 
@@ -57,6 +57,8 @@ $ sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/de
 $ export PATH=/usr/lib/dart/bin:$PATH
 ```
 
+---
+
 # 手动安装SDK
 
 不能使用工具安装SDK时，可以手动安装。
@@ -89,6 +91,8 @@ SDK下载链接模板:
 
 下载解压后，将sdk的bin文件夹添加到系统环境变量即可。
 
+---
+
 # 编辑器
 
 使用具备Dart插件的编辑器，能让开发事半功倍；下面列举了部分Dart官网推荐的编辑器/IDE。
@@ -111,7 +115,7 @@ Github出品的[Atom](https://atom.io/)编辑器，配合[dartlang](https://gith
 
 Linux下常用的老牌编辑器[Vim](http://www.vim.org/)，配合[dart-vim-plugin](https://github.com/dart-lang/dart-vim-plugin)插件
 
-
+---
 
 # Hello World
 
