@@ -21,7 +21,7 @@ git add .
 git commit -a -m "Update book"
 
 # push to the origin
-git push origin gh-pages
+git push gh gh-pages
 
 # checkout to the master branch
 git checkout master
