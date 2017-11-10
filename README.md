@@ -12,7 +12,7 @@
 
 ### 交流
 
-作者水平有限，内容难免存在错误，欢迎[指正](https://github.com/jarontai/the-little-dart-book/issues/new)。如果希望有更深入的交流和讨论，请前往 [Dart China](http://www.dart-china.org/)。
+作者水平有限，书本内容难免存在错误，欢迎[指正](https://github.com/jarontai/the-little-dart-book/issues/new)。如果希望更深入的交流和讨论，请前往 [Dart China](http://www.dart-china.org/)。
 
 ### 关于
 
