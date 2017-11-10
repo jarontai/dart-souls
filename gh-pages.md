@@ -18,7 +18,7 @@ git clean -fx _book
 git add .
 
 # commit
-git commit -a -m "Update docs"
+git commit -a -m "Update book"
 
 # push to the origin
 git push origin gh-pages
