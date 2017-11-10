@@ -1,10 +1,12 @@
-# The Little Dart Book
+# The Little Dart Book -《Dart简易教程》
 
-《Dart简易教程》一本介绍Dart的小书 \(编写中...\)
+一本介绍Dart的小书 \(编写中...\)
 
-在线阅读：[github](https://jarontai.github.io/the-little-dart-book/)（不定期更新）， [gitbook](https://www.gitbook.com/read/book/jarontai/the-little-dart-book)（最新，需要翻越GFW）
+### 地址
 
-下载阅读（最新）：[pdf](https://www.gitbook.com/download/pdf/book/jarontai/the-little-dart-book)，[epub](https://www.gitbook.com/download/epub/book/jarontai/the-little-dart-book)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/the-little-dart-book)
+在线：[github](https://jarontai.github.io/the-little-dart-book/)（不定期更新）， [gitbook](https://www.gitbook.com/read/book/jarontai/the-little-dart-book)（最新，需要翻越GFW）
+
+下载（最新）：[pdf](https://www.gitbook.com/download/pdf/book/jarontai/the-little-dart-book)，[epub](https://www.gitbook.com/download/epub/book/jarontai/the-little-dart-book)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/the-little-dart-book)
 
 ### 目标
 
@@ -18,7 +20,7 @@
 
 Dart语言爱好者 - [Jaron Tai](https://github.com/jarontai)
 
-水平有限，内容难免存在错误之处，欢迎[指正](https://github.com/jarontai/the-little-dart-book/issues/new)。
+水平有限，内容难免存在错误之处，欢迎[指正](https://github.com/jarontai/the-little-dart-book/issues/new)。 // TODO
 
 ### 版权
 
