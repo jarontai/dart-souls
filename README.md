@@ -8,7 +8,7 @@
 
 ## 地址
 
-本书提供在线阅读，地址：[https://jarontai.github.io/the-little-dart-book](https://jarontai.github.io/the-little-dart-book) ，内容会不定期修改更新；本书也提供文件下载地址，内容都是最新版本：[pdf](https://www.gitbook.com/download/pdf/book/jarontai/the-little-dart-book)，[epub](https://www.gitbook.com/download/epub/book/jarontai/the-little-dart-book)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/the-little-dart-book)
+本书提供在线阅读，内容会不定期更新，地址：[https://jarontai.github.io/the-little-dart-book](https://jarontai.github.io/the-little-dart-book) ；本书也提供文件下载，内容都是最新版本，地址：[pdf](https://www.gitbook.com/download/pdf/book/jarontai/the-little-dart-book)，[epub](https://www.gitbook.com/download/epub/book/jarontai/the-little-dart-book)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/the-little-dart-book)
 
 ## 交流
 
@@ -16,5 +16,5 @@
 
 ## 关于
 
-本书作者：Dart语言爱好者 - [Jaron Tai](https://github.com/jarontai) 。本书内容使用 [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)（署名-非商业性使用 知识共享4.0许可协议）授权。只要保持原作者署名和非商用，你可以自由地阅读、分享、修改本书。本书使用 [Gitbook](https://www.gitbook.com/) 编写，原始内容保存在 [Github](https://github.com/jarontai/the-little-dart-book)。
+本书作者：Dart语言爱好者兼黑魂pve玩家 - [Jaron Tai](https://github.com/jarontai) 。本书内容使用 [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)（署名-非商业性使用 知识共享4.0许可协议）授权。只要保持原作者署名和非商用，你可以自由地阅读、分享、修改本书。本书使用 [Gitbook](https://www.gitbook.com/) 编写，原始内容保存在 [Github](https://github.com/jarontai/the-little-dart-book)。
 
