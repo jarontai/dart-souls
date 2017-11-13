@@ -69,18 +69,33 @@ main() {
 
 ## final与const
 
-如果变量内容不会改变，建议使用`final`或`const`。
+如果变量内容不会改变，建议使用`final`或`const`替代`var`，或者搭配类型使用。
 
 `final`表示变量只能被赋值一次；`const`表示变量是编译时常量，`const`变量默认为`final`变量。
 
-注意：顶层`final`变量与[类](/language/class.md)变量在首次访问时才执行初始化  // TODO
+需要注意的是，顶层`final`变量与[类变量](/language/class_i.md)在首次访问时才执行初始化
 
 ```dart
-final name = 'bob'; // 也可以这样写：final String name = 'bob';
-name = 'john'; // 再次赋值将报错!
+// 下面的写法等同于 final String name = 'bob';
+final name = initName();
+// name = 'john'; // 错误，final变量不能再次赋值!
 
+// 定义用于初始化name的函数（函数的知识点将在下一节讲解）
+initName() {
+  print('name init');
+  return 'bob';
+}
+
+// 常量
 const pi = 3.14;
-const area = pi * 2 * 2; // 由常量值计算得到的常量
+// 由常量值计算得到的常量
+const area = pi * 2 * 2;
+
+main() {
+  print(pi); // 3.14
+  print(area); // 12.56
+  print(name); // 先打印 name init，再打印 bob，即直到访问name时initName函数才执行
+}
 ```
 
 ## 基本数据类型
