@@ -2,7 +2,7 @@
 
 先来认识Dart的变量和基本数据类型。
 
-## 变量
+## 变量声明
 
 有两种基本的变量声明方式，一种是不指定类型，即使用`var`（变量此时的类型为`dynamic`）
 
@@ -120,15 +120,21 @@ double percent = 0.23;
 
 ```dart
 int size = 9;
-print(size.isEven); // 是否偶数
-print(size.isOdd); // 是否奇数
-print(size.toRadixString(6)); // 转换为6进制字符串
+// 是否偶数
+print(size.isEven); // false
+// 是否奇数
+print(size.isOdd); // true
+// 转换为6进制字符串
+print(size.toRadixString(6)); // 13
 ......
 
 double pi = 3.1415926;
-print(pi.ceil()); // 向上取整
-print(pi.toInt()); // 转成整形
-print(pi.toStringAsPrecision(2)); // 转换为固定精度字符串
+// 向上取整
+print(pi.ceil()); // 4
+// 转成整形
+print(pi.toInt()); // 3
+// 转换为固定精度字符串
+print(pi.toStringAsPrecision(2)); // 3.1
 ......
 ```
 
@@ -136,25 +142,29 @@ print(pi.toStringAsPrecision(2)); // 转换为固定精度字符串
 
 ### 字符串
 
-使用单引号或双引号创建字符串，支持使用`${ }`进行插值
+字符串是由单引号或双引号包裹的字符序列，它支持使用`${ 表达式 }`进行插值，插值表达式为标识符时可以省略`{}`
 
 ```dart
 String name = 'bob';
 String message = 'Hi ${name.toUpperCase()}'; // Hi BOB
-String text = 'Welcome $name'; // 直接使用变量时可以省略{}
+String text = 'Welcome $name'; // Welcome bob
 ```
 
-多个相邻字符串将自动连接在一起，或者显式使用`+`；多行字符串则使用`'''`或`"""`来创建
+使用`+`使连接多个字符串，多个相邻的字符串也会自动连接在一起；多行字符串则使用`'''`或`"""`来创建
 
 ```dart
+// 相邻字符串自动连接
 String message1 = 'Hi'
                  ' there'; // Hi there
+// 使用+号连接                 
 String message2 = 'Hi'
                  + ' there'; // Hi there
+// 使用'''创建多行字符串
 String multiMessage = '''
 Hello
 again!
-'''; // 多行字符串
+'''; // Hello
+     // again!
 ```
 
 字符串对象不可变，自带多种实用属性与方法
