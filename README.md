@@ -8,7 +8,7 @@
 
 ## 地址
 
-本书提供在线阅读，内容是不定期更新，地址：[https://jarontai.github.io/the-little-dart-book](https://jarontai.github.io/the-little-dart-book) ；本书也提供文件下载，内容为最新版，地址：[pdf](https://www.gitbook.com/download/pdf/book/jarontai/the-little-dart-book)，[epub](https://www.gitbook.com/download/epub/book/jarontai/the-little-dart-book)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/the-little-dart-book)
+本书提供在线阅读，内容不定期更新，地址：[https://jarontai.github.io/the-little-dart-book](https://jarontai.github.io/the-little-dart-book) ；本书也提供文件下载，内容为最新版，地址：[pdf](https://www.gitbook.com/download/pdf/book/jarontai/the-little-dart-book)，[epub](https://www.gitbook.com/download/epub/book/jarontai/the-little-dart-book)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/the-little-dart-book)
 
 ## 交流
 
