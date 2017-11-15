@@ -7,13 +7,15 @@
 有两种基本的变量声明方式，一种是不指定类型，即使用`var`（变量此时的类型为`dynamic`）
 
 ```dart
-var name = 'bob'; // name变量指向一个内容为'bob'的字符串对象
+// name变量指向一个内容为'bob'的字符串对象
+var name = 'bob';
 ```
 
 另一种是指定类型
 
 ```dart
-String name = 'bob'; // 显式指明name变量为字符串类型
+// 显式指明name变量为字符串类型
+String name = 'bob';
 ```
 
 指定或不指定类型，由开发者自己决定；指定类型将获得更好的开发体验，比如：更多更全面的代码提示。
@@ -25,8 +27,10 @@ String name = 'bob'; // 显式指明name变量为字符串类型
 Dart的变量有一个显著区别于其他语言的特点，即无论什么类型的变量，在声明时如果没有赋值，默认值都是`null`
 
 ```dart
-var name; // 未指定类型的变量
-int age; // 指定为数字类型的变量
+// 未指定类型的变量
+var name;
+// 指定为数字类型的变量
+int age;
 print(name); // 使用print函数打印，输出为null
 print(age); // 使用print函数打印，输出也为null
 ```
@@ -167,15 +171,20 @@ again!
      // again!
 ```
 
-字符串对象不可变，自带多种实用属性与方法
+字符串对象自带多种实用属性与方法
 
 ```dart
 String name = 'bob';
-print(name.length); // 长度
-print(name.isEmpty); // 是否为空
-print(name.substring(1)); // 子字符串
-print(name.startsWith('b')); // 是否以某字符开头
-print(name.replaceAll('b', 'l')); // 替换所有
+// 长度
+print(name.length); // 3
+// 是否为空
+print(name.isEmpty); // false
+// 子字符串
+print(name.substring(1)); // ob
+// 是否以某字符开头
+print(name.startsWith('b')); // true
+// 替换所有
+print(name.replaceAll('b', 'w')); // wow
 ......
 ```
 
@@ -188,7 +197,8 @@ print(name.replaceAll('b', 'l')); // 替换所有
 ```dart
 // 以下常见的JavaScript代码，在Dart中将失效
 var name = 'bob';
-if (name) { // name被视为false，后续代码不再执行
+// name被视为false，if的代码不会执行
+if (name) {
   var message = 'hi' + name;
   ......
 }
