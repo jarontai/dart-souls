@@ -2,9 +2,13 @@
 
 一本介绍 Dart 的小书 \(编写中......\)
 
-## 说明
+## 简介
 
-《Dart 简易教程》是一本开源的 Dart 小书，目标是用简单的文字归纳 Dart 的主要知识点。本书面向的读者是具有其他编程语言经验，希望快速上手 Dart 的开发者。本书的定位是入门级学习笔记，想更深入学习 Dart，你还需要查阅 Dart 官网或其他进阶书籍。
+《Dart 简易教程》是一本开源的 Dart 小书，目标是用简单的文字归纳 Dart 的主要知识点。
+
+## 定位
+
+本书面向的读者是具有其他编程语言经验，希望快速上手 Dart 的开发者。本书定位为入门级学习笔记，想更深入学习 Dart，你还需要查阅 Dart 官网或其他进阶书籍。
 
 ## 地址
 
@@ -12,7 +16,7 @@
 
 ## 交流
 
-作者水平有限，书本内容难免存在错误，欢迎[指正](https://github.com/jarontai/the-little-dart-book/issues/new)。如果希望更深入的交流和讨论，请前往 [Dart China](http://www.dart-china.org/)。
+作者水平有限，书本内容难免存在错误，欢迎[指正](https://github.com/jarontai/the-little-dart-book/issues/new)。如果希望对Dart进行详细深入的讨论，请前往 [Dart China](http://www.dart-china.org/)。
 
 ## 关于
 
