@@ -192,15 +192,15 @@ print(name.replaceAll('b', 'w')); // wow
 
 布尔类型只有两个对象，`true`和`false`。
 
-`true`是唯一“正确”的值，所有非true的值都视为`false`
+有别于很多动态语言，Dart中的`true`是唯一“正确”的值，所有非`true`的值都被视为`false`
 
 ```dart
-// 以下常见的JavaScript代码，在Dart中将失效
+// 以下Dart代码也是合法的JavaScript代码，但是执行结果完全不同
 var name = 'bob';
-// name被视为false，if的代码不会执行
 if (name) {
+  // 在JavaScript中，name被视为true，此处代码会执行
+  // 在Dart中，name被视为false，此处代码不会执行
   var message = 'hi' + name;
-  ......
 }
 ```
 
