@@ -154,7 +154,7 @@ String message = 'Hi ${name.toUpperCase()}'; // Hi BOB
 String text = 'Welcome $name'; // Welcome bob
 ```
 
-使用`+`使连接多个字符串，多个相邻的字符串也会自动连接在一起；多行字符串则使用`'''`或`"""`来创建
+使用`+`使连接多个字符串，多个相邻的字符串会自动连接在一起；多行字符串则使用`'''`或`"""`创建
 
 ```dart
 // 相邻字符串自动连接
@@ -200,7 +200,7 @@ var name = 'bob';
 if (name) {
   // 在JavaScript中，name被视为true，此处代码会执行
   // 在Dart中，name被视为false，此处代码不会执行
-  var message = 'hi' + name;
+  var message = 'hi ' + name;
 }
 ```
 
