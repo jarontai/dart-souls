@@ -6,7 +6,7 @@ Dart是纯面向对象语言，所以函数也是对象。
 
 函数声明由返回值（可选）、函数名、参数列表以及函数体构成。
 
-如果函数体只包含一个返回表达式，则可以使用`=>`简写。
+如果函数体只包含一个`return`语句，则可以使用`=>`进行简写。
 
 函数中也可以声明函数，即本地函数
 
@@ -23,7 +23,7 @@ String bobSay2(String words) => 'bob say $words';
 String say() {
   // 函数内声明的本地函数
   johnSay(String words) => 'john say $words';
-  
+
   // 调用本地函数
   return johnSay('hello');
 }
