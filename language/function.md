@@ -54,7 +54,7 @@ main() {
 
 函数参数有两种：必填参数和可选参数，它们可以同时出现，但可选参数必须在必填参数之后。
 
-可选参数又分为两种：位置型和命名型。这两种可选参数不能同时出现，位置型的声明方式是将参数包裹在`[]`中，命名型则是使用`{}`包裹参数，它们都可以使用`=`设置默认值 。位置可选参数的调用方式跟必填参数一样，命名可选参数则使用 `(参数名: 参数值)` 的调用方式
+可选参数又分为两种：位置型和命名型。这两种可选参数不能同时出现，位置型的声明方式是将参数包裹在`[]`中，命名型则是使用`{}`包裹参数。两种可选参数都可以使用`=`设置默认值，默认值本身必须是编译时常量。位置可选参数的调用方式跟必填参数一样，命名可选参数则使用 `(参数名: 参数值)` 的调用方式
 
 ```dart
 // 一个必填参数和一个位置可选参数
@@ -66,22 +66,23 @@ String bobSay(String words, [String moreWords = 'yah']) {
   return result;
 }
 
-// 两个命名可选参数，后一个设置了默认值
-String johnSay({String words, int times = 1}) {
+// 三个命名可选参数，后两个设置了默认值
+String johnSay({String words, int times = 1, List extraWords = const ['woo']}) {
   var result = 'John say';
   if (words != null) {
     for (var i = 0; i < times; i++) {
       result += ' $words';
     }
   }
+  extraWords.forEach((word) => result += ' $word');
   return result;
 }
 
 main() {
   print(bobSay('yah')); // Bob say yah yah
   print(bobSay('yah', 'hoo')); // Bob say yah hoo
-  print(johnSay(words: 'yah')); // John say yah
-  print(johnSay(words: 'yah', times: 6)); // John say yah yah yah yah yah yah
+  print(johnSay(words: 'yah')); // John say yah woo
+  print(johnSay(words: 'yah', times: 6)); // John say yah yah yah yah yah yah woo
 }
 ```
 
