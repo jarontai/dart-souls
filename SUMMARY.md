@@ -5,7 +5,7 @@
 * [入门](intro.md)
 * [语言](language/index.md)
   * [变量与基本类型](language/basics.md)
-  * [运算符和流程控制](language/exception.md)
+  * [运算符和流程控制](language/operators.md)
   * [函数](language/function.md)
   * [类 - Part I](language/class_i.md)
   * [类 - Part II](language/class_ii.md)
