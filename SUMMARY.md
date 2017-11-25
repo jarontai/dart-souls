@@ -11,7 +11,7 @@
   * [库与可见性](language/visibility.md)
   * [常用内置类](language/commons.md)
   * [泛型](language/generics.md)
-  * [流程控制与异常](language/exception.md)
+  * [运算符和流程控制](language/exception.md)
   * [异步](language/async.md)
 * [标准库](library/index.md)
 * [Pub](pub/index.md)
