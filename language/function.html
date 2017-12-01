@@ -60,7 +60,7 @@
     <link rel="next" href="class_i.html" />
     
     
-    <link rel="prev" href="basics.html" />
+    <link rel="prev" href="operators.html" />
     
 
     </head>
@@ -155,7 +155,20 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="function.html">
+        <li class="chapter " data-level="1.4.2" data-path="operators.html">
+            
+                <a href="operators.html">
+            
+                    
+                    运算符和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="function.html">
             
                 <a href="function.html">
             
@@ -168,7 +181,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="class_i.html">
+        <li class="chapter " data-level="1.4.4" data-path="class_i.html">
             
                 <a href="class_i.html">
             
@@ -181,7 +194,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="class_ii.html">
+        <li class="chapter " data-level="1.4.5" data-path="class_ii.html">
             
                 <a href="class_ii.html">
             
@@ -194,7 +207,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5" data-path="visibility.html">
+        <li class="chapter " data-level="1.4.6" data-path="visibility.html">
             
                 <a href="visibility.html">
             
@@ -207,7 +220,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6" data-path="commons.html">
+        <li class="chapter " data-level="1.4.7" data-path="commons.html">
             
                 <a href="commons.html">
             
@@ -220,25 +233,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.7" data-path="generics.html">
+        <li class="chapter " data-level="1.4.8" data-path="generics.html">
             
                 <a href="generics.html">
             
                     
                     泛型
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.8" data-path="exception.html">
-            
-                <a href="exception.html">
-            
-                    
-                    流程控制与异常
             
                 </a>
             
@@ -377,7 +377,7 @@
                                 <h1 id="&#x51FD;&#x6570;">&#x51FD;&#x6570;</h1>
 <p>Dart&#x662F;&#x7EAF;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#xFF0C;&#x6240;&#x4EE5;&#x51FD;&#x6570;&#x4E5F;&#x662F;&#x5BF9;&#x8C61;&#x3002;</p>
 <h2 id="&#x51FD;&#x6570;&#x58F0;&#x660E;">&#x51FD;&#x6570;&#x58F0;&#x660E;</h2>
-<p>&#x51FD;&#x6570;&#x58F0;&#x660E;&#x7531;&#x8FD4;&#x56DE;&#x503C;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x3001;&#x51FD;&#x6570;&#x540D;&#x3001;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4EE5;&#x53CA;&#x51FD;&#x6570;&#x4F53;&#x6784;&#x6210;&#x3002;&#x5982;&#x679C;&#x51FD;&#x6570;&#x4F53;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x4E2A;<code>return</code>&#x8BED;&#x53E5;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>=&gt;</code>&#x8FDB;&#x884C;&#x7B80;&#x5199;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x58F0;&#x660E;&#x7531;&#x8FD4;&#x56DE;&#x503C;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x3001;&#x51FD;&#x6570;&#x540D;&#x3001;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4EE5;&#x53CA;&#x51FD;&#x6570;&#x4F53;&#x6784;&#x6210;&#x3002;&#x5982;&#x679C;&#x51FD;&#x6570;&#x4F53;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x6761;<code>return</code>&#x8BED;&#x53E5;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>=&gt;</code>&#x8FDB;&#x884C;&#x7B80;&#x5199;&#x3002;</p>
 <p>&#x51FD;&#x6570;&#x4F53;&#x4E2D;&#x4E5F;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x58F0;&#x660E;&#x51FD;&#x6570;&#xFF0C;&#x5373;&#x672C;&#x5730;&#x51FD;&#x6570;</p>
 <pre><code class="lang-dart"><span class="hljs-comment">// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</span>
 <span class="hljs-built_in">String</span> bobSay(<span class="hljs-built_in">String</span> words) {
@@ -417,7 +417,7 @@ main() {
 </code></pre>
 <h2 id="&#x51FD;&#x6570;&#x53C2;&#x6570;">&#x51FD;&#x6570;&#x53C2;&#x6570;</h2>
 <p>&#x51FD;&#x6570;&#x53C2;&#x6570;&#x6709;&#x4E24;&#x79CD;&#xFF1A;&#x5FC5;&#x586B;&#x53C2;&#x6570;&#x548C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x51FA;&#x73B0;&#xFF0C;&#x4F46;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x5728;&#x5FC5;&#x586B;&#x53C2;&#x6570;&#x4E4B;&#x540E;&#x3002;</p>
-<p>&#x53EF;&#x9009;&#x53C2;&#x6570;&#x53C8;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#xFF1A;&#x4F4D;&#x7F6E;&#x578B;&#x548C;&#x547D;&#x540D;&#x578B;&#x3002;&#x8FD9;&#x4E24;&#x79CD;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x51FA;&#x73B0;&#xFF0C;&#x4F4D;&#x7F6E;&#x578B;&#x7684;&#x58F0;&#x660E;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x53C2;&#x6570;&#x5305;&#x88F9;&#x5728;<code>[]</code>&#x4E2D;&#xFF0C;&#x547D;&#x540D;&#x578B;&#x5219;&#x662F;&#x4F7F;&#x7528;<code>{}</code>&#x5305;&#x88F9;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>=</code>&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C; &#x3002;&#x4F4D;&#x7F6E;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x8DDF;&#x5FC5;&#x586B;&#x53C2;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x547D;&#x540D;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x5219;&#x4F7F;&#x7528; <code>(&#x53C2;&#x6570;&#x540D;: &#x53C2;&#x6570;&#x503C;)</code> &#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;</p>
+<p>&#x53EF;&#x9009;&#x53C2;&#x6570;&#x53C8;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#xFF1A;&#x4F4D;&#x7F6E;&#x578B;&#x548C;&#x547D;&#x540D;&#x578B;&#x3002;&#x8FD9;&#x4E24;&#x79CD;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x51FA;&#x73B0;&#xFF0C;&#x4F4D;&#x7F6E;&#x578B;&#x7684;&#x58F0;&#x660E;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x53C2;&#x6570;&#x5305;&#x88F9;&#x5728;<code>[]</code>&#x4E2D;&#xFF0C;&#x547D;&#x540D;&#x578B;&#x5219;&#x662F;&#x4F7F;&#x7528;<code>{}</code>&#x5305;&#x88F9;&#x53C2;&#x6570;&#x3002;&#x4E24;&#x79CD;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>=</code>&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x672C;&#x8EAB;&#x5FC5;&#x987B;&#x662F;&#x7F16;&#x8BD1;&#x65F6;&#x5E38;&#x91CF;&#x3002;&#x4F4D;&#x7F6E;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x8DDF;&#x5FC5;&#x586B;&#x53C2;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x547D;&#x540D;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x5219;&#x4F7F;&#x7528; <code>(&#x53C2;&#x6570;&#x540D;: &#x53C2;&#x6570;&#x503C;)</code> &#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;</p>
 <pre><code class="lang-dart"><span class="hljs-comment">// &#x4E00;&#x4E2A;&#x5FC5;&#x586B;&#x53C2;&#x6570;&#x548C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x53EF;&#x9009;&#x53C2;&#x6570;</span>
 <span class="hljs-built_in">String</span> bobSay(<span class="hljs-built_in">String</span> words, [<span class="hljs-built_in">String</span> moreWords = <span class="hljs-string">&apos;yah&apos;</span>]) {
   <span class="hljs-keyword">var</span> result = <span class="hljs-string">&apos;Bob say $words&apos;</span>;
@@ -427,22 +427,23 @@ main() {
   <span class="hljs-keyword">return</span> result;
 }
 
-<span class="hljs-comment">// &#x4E24;&#x4E2A;&#x547D;&#x540D;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x540E;&#x4E00;&#x4E2A;&#x8BBE;&#x7F6E;&#x4E86;&#x9ED8;&#x8BA4;&#x503C;</span>
-<span class="hljs-built_in">String</span> johnSay({<span class="hljs-built_in">String</span> words, <span class="hljs-built_in">int</span> times = <span class="hljs-number">1</span>}) {
+<span class="hljs-comment">// &#x4E09;&#x4E2A;&#x547D;&#x540D;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x540E;&#x4E24;&#x4E2A;&#x8BBE;&#x7F6E;&#x4E86;&#x9ED8;&#x8BA4;&#x503C;</span>
+<span class="hljs-built_in">String</span> johnSay({<span class="hljs-built_in">String</span> words, <span class="hljs-built_in">int</span> times = <span class="hljs-number">1</span>, <span class="hljs-built_in">List</span> extraWords = <span class="hljs-keyword">const</span> [<span class="hljs-string">&apos;woo&apos;</span>]}) {
   <span class="hljs-keyword">var</span> result = <span class="hljs-string">&apos;John say&apos;</span>;
   <span class="hljs-keyword">if</span> (words != <span class="hljs-keyword">null</span>) {
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; times; i++) {
       result += <span class="hljs-string">&apos; $words&apos;</span>;
     }
   }
+  extraWords.forEach((word) =&gt; result += <span class="hljs-string">&apos; $word&apos;</span>);
   <span class="hljs-keyword">return</span> result;
 }
 
 main() {
   <span class="hljs-built_in">print</span>(bobSay(<span class="hljs-string">&apos;yah&apos;</span>)); <span class="hljs-comment">// Bob say yah yah</span>
   <span class="hljs-built_in">print</span>(bobSay(<span class="hljs-string">&apos;yah&apos;</span>, <span class="hljs-string">&apos;hoo&apos;</span>)); <span class="hljs-comment">// Bob say yah hoo</span>
-  <span class="hljs-built_in">print</span>(johnSay(words: <span class="hljs-string">&apos;yah&apos;</span>)); <span class="hljs-comment">// John say yah</span>
-  <span class="hljs-built_in">print</span>(johnSay(words: <span class="hljs-string">&apos;yah&apos;</span>, times: <span class="hljs-number">6</span>)); <span class="hljs-comment">// John say yah yah yah yah yah yah</span>
+  <span class="hljs-built_in">print</span>(johnSay(words: <span class="hljs-string">&apos;yah&apos;</span>)); <span class="hljs-comment">// John say yah woo</span>
+  <span class="hljs-built_in">print</span>(johnSay(words: <span class="hljs-string">&apos;yah&apos;</span>, times: <span class="hljs-number">6</span>)); <span class="hljs-comment">// John say yah yah yah yah yah yah woo</span>
 }
 </code></pre>
 <h2 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h2>
@@ -498,7 +499,7 @@ main() {
 
             
                 
-                <a href="basics.html" class="navigation navigation-prev " aria-label="Previous page: 变量与基本类型">
+                <a href="operators.html" class="navigation navigation-prev " aria-label="Previous page: 运算符和流程控制">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -514,7 +515,7 @@ main() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"函数","level":"1.4.2","depth":2,"next":{"title":"类 - Part I","level":"1.4.3","depth":2,"path":"language/class_i.md","ref":"language/class_i.md","articles":[]},"previous":{"title":"变量与基本类型","level":"1.4.1","depth":2,"path":"language/basics.md","ref":"language/basics.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/function.md","mtime":"2017-11-21T06:30:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-21T07:11:00.897Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"函数","level":"1.4.3","depth":2,"next":{"title":"类 - Part I","level":"1.4.4","depth":2,"path":"language/class_i.md","ref":"language/class_i.md","articles":[]},"previous":{"title":"运算符和流程控制","level":"1.4.2","depth":2,"path":"language/operators.md","ref":"language/operators.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/function.md","mtime":"2017-12-01T15:41:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-01T15:46:50.676Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
