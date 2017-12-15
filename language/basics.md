@@ -156,7 +156,7 @@ String message = 'Hi ${name.toUpperCase()}'; // Hi BOB
 String text = 'Welcome $name'; // Welcome bob
 ```
 
-连接多个字符串一般使用`+`，而多个相邻的字符串也会自动连接在一起，多行字符串则使用`'''`或`"""`创建
+连接多个字符串可以使用`+`，而多个相邻的字符串也会自动连接在一起，多行字符串则使用`'''`或`"""`创建
 
 ```dart
 // 连接字符串
