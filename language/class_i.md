@@ -29,24 +29,23 @@ class GreatSword {
 
   // 类方法
   static upgrade(GreatSword sword) { // 升级，即增加附加伤害
-    sword.extraDamage += 10;
+  sword.extraDamage += 10;
   }
 
   // 实例方法
-  info() {
-    print('GreatSword ${name} - damage: ' + this.damage.toString()); // 通过名称或this访问实例变量
-  }
+  info() => 'GreatSword - damage: ${damage} , extraDamage: ${this.extraDamage}'; // 通过名称或this访问实例变量
 }
 
 main() {
   // 使用默认构造函数（见下一小节）进行实例化
   var sword = new GreatSword();
-  print(sword.damage); // 100
-  print(sword.extraDamage); // 0
+  print(sword.damage);
+  print(sword.info()); // GreatSword - damage: 100 , extraDamage: 0
 
   // 使用类方法
   GreatSword.upgrade(sword);
-  print(sword.extraDamage); // 10
+  print(sword.extraDamage);
+  print(sword.info()); // GreatSword - damage: 100 , extraDamage: 10
 }
 ```
 
