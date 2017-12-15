@@ -86,25 +86,25 @@ main() {
 需要注意的是，顶层`final`变量与[类变量](/language/class_i.md)在首次访问时才执行初始化
 
 ```dart
-// 下面的写法等同于 final String name = 'bob';
+// 定义final变量并使用函数进行初始化
 final name = initName();
 // name = 'john'; // 错误，final变量不能再次赋值!
 
-// 定义用于初始化name的函数（函数的知识点将在下一节讲解）
-initName() {
-  print('name init');
+// 定义用于初始化name的函数（下一节将对函数进行深入讲解）
+String initName() {
+  print('init name');
   return 'bob';
 }
 
 // 常量
 const pi = 3.14;
-// 由常量值计算得到的常量
+// 由常量值计算得到的也是常量
 const area = pi * 2 * 2;
 
 main() {
   print(pi); // 3.14
   print(area); // 12.56
-  print(name); // 先打印 name init，再打印 bob，即直到访问name时initName函数才执行
+  print(name); // 先打印 init name，再打印 bob，即直到访问name时initName函数才执行
 }
 ```
 
