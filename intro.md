@@ -121,7 +121,7 @@ Linux下常用的老牌编辑器[Vim](http://www.vim.org/)，配合[dart-vim-plu
 
 ## Hello World
 
-按照惯例，编写一个Hello World。
+按照惯例，我们来编写一个Hello World。
 
 ### 确认SDK安装成功
 
