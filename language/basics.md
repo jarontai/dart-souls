@@ -110,23 +110,21 @@ main() {
 
 ## 基本数据类型
 
-基本数据类型有三种：数字、字符串与布尔。基本数据类型的对象一般都是通过字面量进行创建，如：1，'bob'，true 等。
+Dart的基本数据类型有三种：数字、字符串与布尔。基本数据类型一般通过字面量进行创建，如：1，'bob'，true 等。
 
 ### 数字
 
-常用的数字类型有两种，一种是整数`int`
+常用的数字类型有两种，一种是整数`int`，另一种是双精度浮点数`double`。
+
+`int`与`double`都继承自数字类型`num`，在需要同时支持整数与浮点数时可以使用`num`
 
 ```dart
 int age = 28;
-```
-
-另一种是双精度浮点数`double`
-
-```dart
 double percent = 0.23;
+num price = 2.3;
 ```
 
-数字对象具有多种数学计算相关的属性与方法
+数字对象具备多种数学计算相关的属性与方法
 
 ```dart
 int size = 9;
@@ -148,8 +146,6 @@ print(pi.toStringAsPrecision(2)); // 3.1
 ......
 ```
 
-`int`与`double`都继承数字类型`num`，在需要同时支持整数与浮点数时可以使用`num`。
-
 ### 字符串
 
 字符串是由单引号或双引号包裹的字符序列，它支持使用`${ 表达式 }`进行插值，插值表达式为标识符时可以省略`{}`
@@ -160,15 +156,16 @@ String message = 'Hi ${name.toUpperCase()}'; // Hi BOB
 String text = 'Welcome $name'; // Welcome bob
 ```
 
-使用`+`使连接多个字符串，多个相邻的字符串会自动连接在一起；多行字符串则使用`'''`或`"""`创建
+连接多个字符串一般使用`+`，多个相邻的字符串会自动连接在一起，而多行字符串则使用`'''`或`"""`创建
 
 ```dart
-// 相邻字符串自动连接
-String message1 = 'Hi'
-                 ' there'; // Hi there
-// 使用+号连接                 
-String message2 = 'Hi'
-                 + ' there'; // Hi there
+// 连接字符串
+String message1 = 'Hello' + ' World'; // Hello World
+
+// 相邻字符串会自动连接
+String message2 = 'Hello'
+                 ' World'; // Hello World
+
 // 使用'''创建多行字符串
 String multiMessage = '''
 Hello
