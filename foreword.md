@@ -6,7 +6,7 @@ Dart初次公布于2011年，定位为web编程语言，以替代JavaScript并�
 
 Dart发布至今已经六年，对比其他2000年后诞生的语言，如Google自己的Go，Apple的Swift等，Dart的发展算是缓慢而曲折。幸好，随着发展方向的明确以及语言特性逐渐稳定，Dart近一两年的发展还是令人欣喜的。首先，Google内部的AdWords、AdSense等重要盈利项目都在使用Dart重构web端，Google新推出的跨平台移动端开发工具[Flutter](https://flutter.io/)也是使用Dart构建，而Google正在秘密研发的新操作系统[Fuchsia](https://github.com/fuchsia-mirror)，也在使用Dart和Flutter。此外，使用Dart的外部公司也开始慢慢[增多](https://www.dartlang.org/community/who-uses-dart)。虽然发展道路曲折，但Dart的未来还是让人颇为期待。
 
-笔者，一名Dart爱好者，为了更好地学习Dart，写下这本学习笔记型的开源小书，以此来梳理自身的Dart知识，同时也算为Dart在中国的发展添一份微薄之力。
+笔者，一名Dart爱好者，为了更好地学习Dart，写下这本学习笔记型的开源小书，以此来梳理自身的Dart知识，也算为Dart在中国的发展添一份微薄之力。
 
 Jaron
 
