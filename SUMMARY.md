@@ -13,9 +13,8 @@
   * [常用内置类](language/commons.md)
   * [泛型](language/generics.md)
   * [异步](language/async.md)
-* [标准库](library/index.md)
 * [Pub](pub/index.md)
-* [Web](web/index.md)
-* [Server](server/index.md)
 * [Mobile](mobile/index.md)
+* [Server](server/index.md)
+* [Web](web/index.md)
 
