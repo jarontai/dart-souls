@@ -2,7 +2,7 @@
 
 * [介绍](README.md)
 * [前言](foreword.md)
-* [入门](intro.md)
+* [准备](setup.md)
 * [语言](language/index.md)
   * [变量与基本类型](language/basics.md)
   * [运算符和流程控制](language/operators.md)
