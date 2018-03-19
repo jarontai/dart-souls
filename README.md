@@ -1,6 +1,6 @@
 # Dart Souls -《Dart之魂》
 
-Dart之魂，即Dart编程要点 \(编写中......\)
+Dart 编程要点，即 Dart 之魂 \(编写中......\)
 
 ## 简介
 
