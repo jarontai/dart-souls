@@ -1,10 +1,10 @@
-# Dart Souls -《Dart之魂》
+# Dart Souls - 《Dart 之魂》
 
-Dart 编程要点，即 Dart 之魂 \(编写中......\)
+《Dart 之魂》，即 Dart 编程要点 \(编写中......\)
 
 ## 简介
 
-《Dart Souls》是一本关于Dart编程的开源小书，目标是用简单的文字归纳 Dart 的主要知识点。
+《Dart 之魂》是一本关于Dart编程的开源小书，目标是用简单的文字归纳 Dart 的主要知识点。
 
 ## 定位
 
