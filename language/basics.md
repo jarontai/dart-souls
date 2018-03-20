@@ -50,28 +50,28 @@ Dart 使用词法作用域（也称为静态作用域，与之相反的是动态
 不被任何代码块包含的变量通常称为顶层变量，它们的作用域最大
 
 ```dart
-var top = true; // 顶层变量，作用域最大
+var top = 'top'; // 顶层变量，作用域最大
 
 main() {
   var inMain = 'main';
-  print(top); // OK
-  print(inMain); // OK
+  print(top); // top
+  print(inMain); // main
   print(inFn); // 错误，无法访问
   print(inIf); // 错误，无法访问
 
   fn() {
     var inFn = 'fn';
-    print(top); // OK
-    print(inMain); // OK
-    print(inFn); // OK
+    print(top); // top
+    print(inMain); // main
+    print(inFn); // fn
     print(inIf); // 错误，无法访问
 
     if (top) {
       var inIf = 'if'; // 最内层的变量，作用域最小
-      print(top); // OK
-      print(inMain); // OK
-      print(inFn); // OK      
-      print(inIf); // OK
+      print(top); // top
+      print(inMain); // main
+      print(inFn); // fn      
+      print(inIf); // if
     }
   }
 }
