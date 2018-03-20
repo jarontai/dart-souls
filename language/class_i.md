@@ -12,12 +12,12 @@ _类的知识点较多，所以分成两节进行讲解，本节是Part I，下�
 
 类中可以声明数据和函数，即对象的属性和方法。
 
-普通的属性和方法是跟对象实例绑定的，它们常被称为实例变量和实例方法；使用`static`修饰的属性和方法，它们是与类绑定的，即类变量和类方法。
+普通的属性和方法是跟对象实例绑定，它们常被称为实例变量和实例方法；使用`static`修饰的属性和方法，它们是与类绑定，即类变量和类方法。
 
-实例变量和实例方法、类变量和类方法，在类中都可以通过名称直接访问，实例变量和实例方法还可以通过`this`访问；在类的外部，实例变量和方法是通过`实例.变量`的方式进行访问，而类变量和类方法必须通过`类名.变量`的方式才能访问
+实例变量和实例方法、类变量和类方法，在类中都可以通过名称直接访问，实例变量和实例方法还可以通过`this`访问；在类的外部，实例变量和方法是通过`实例.变量`方式进行访问，而类变量和类方法必须通过`类名.变量`方式才能访问
 
 ```dart
-// 声明一个表示'大剑'（《黑暗之魂》系列游戏的一种武器）的类
+// 声明一个表示'大剑'（《黑暗之魂》系列游戏的一类武器）的类
 class GreatSword {
   // 实例变量
   String name; // 名称
@@ -29,7 +29,7 @@ class GreatSword {
 
   // 类方法
   static upgrade(GreatSword sword) { // 升级，即增加附加伤害
-  sword.extraDamage += 10;
+    sword.extraDamage += 10;
   }
 
   // 实例方法
@@ -51,13 +51,13 @@ main() {
 
 ## 构造函数
 
-构造函数用于将类实例化为对象，配合关键字`new`或`const`使用。
+构造函数用于将类实例化为对象，配合关键字`new`或`const`使用（在 Dart 2.0 中，`new`与`const`变为可选）。
 
 没有显式声明构造函数的类，将默认拥有一个与类同名且没有参数的构造函数。
 
-构造函数最常见的操作是使用参数对属性赋值，Dart为此提供了简写方式（参数列表中直接使用`this.属性`）。
+构造函数最常见的操作是使用参数对属性赋值，Dart 为此提供了简写方式（在参数列表中直接使用`this.属性`）。
 
-除了普通的构造函数，Dart还支持`类名.构造函数名`方式的命名构造函数
+除了普通的构造函数，Dart 还支持`类名.构造函数名`方式的命名构造函数
 
 ```dart
 class GreatSword {
@@ -84,15 +84,15 @@ class GreatSword {
 main() {
   // 使用不同构造函数进行实例化
   var sword = new GreatSword('Claymore'); // 普通大剑
-  var enhancedSword = new GreatSword.enhanced('Bastard Sword', 20); // 强化版混种大剑
+  var enhancedSword = new GreatSword.enhanced('Claymore', 20); // 强化版大剑
 }
 ```
 
-默认情况下，构造函数总是会自动新建一个对象，并且不需要也不能使用`return`语句。
+默认情况下，构造函数总是会自动新建一个对象，函数体内不需要也不能使用`return`语句。
 
-如果需要构造函数不是每次调用都新建对象，比如需要从缓存中获取已存在的对象，则可以使用工厂构造函数。
+如果不需要构造函数每次调用都新建对象，比如从缓存中获取已存在的对象，则可以使用工厂构造函数。
 
-使用`factory`修饰的构造函数即是工厂构造函数，跟普通构造函数不同，它必须使用return语句返回对象
+使用`factory`修饰的构造函数即工厂构造函数，跟普通构造函数不同，它必须使用`return`语句返回对象
 
 ```dart
 class GreatSword {
@@ -106,16 +106,16 @@ class GreatSword {
     // 对象已存在缓存中
     if (cache.containsKey(name)) {
       return cache[name];
-    } else { // 对象不存在缓存中
-      // 使用库私有的（后续章节将进行讲解）构造函数新建对象
-      final sword = new GreatSword._internal(name);
+    } else {
+      // 对象不存在缓存中，使用库私有的（后续章节将进行讲解）构造函数新建对象
+      final sword = new GreatSword._(name);
       cache[name] = sword; // 存入缓存
       return sword;
     }
   }
 
   // 库私有的（后续章节将进行讲解）命名构造函数
-  GreatSword._internal(this.name);
+  GreatSword._(this.name);
 }
 
 main() {
@@ -195,13 +195,13 @@ main() {
 
 ## Getter/Setter
 
-跟很多语言不同，Dart对象属性的读写是通过getter和setter完成的。
+跟很多语言不同，Dart 对象属性的读写是通过`getter`和`setter`完成的。
 
-getter和setter是一种特殊的方法，它们虽是方法却有跟属性一样的访问方式。
+`getter`和`setter`是一种特殊的方法，它们虽是方法却有跟属性一样的访问方式。
 
-所有普通属性都有一对隐含的getter跟setter，`final`属性只有getter。
+所有普通属性都有一对隐含的`getter`跟`setter`，`final`属性只有`getter`。
 
-自定义getter和setter也是支持的，书写方式是在方法名前添加`get`或`set`，`getter`有返回值无参数而`setter`正好相反
+自定义`getter`和`setter`也是支持的，书写方式是在方法名前添加`get`或`set`，`getter`有返回值无参数而`setter`正好相反
 
 ```dart
 class GreatSword {
@@ -246,7 +246,7 @@ main() {
 }
 ```
 
-getter和setter带来的好处是，你可以随时更改属性的内部实现，而且不用修改外部调用代码
+`getter`和`setter`带来的好处是，你可以随时更改属性的内部实现，而且不用修改外部调用代码
 
 ```dart
 // 版本1的GreatSword
