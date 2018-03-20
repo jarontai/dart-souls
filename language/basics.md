@@ -8,7 +8,7 @@
 
 ### 变量声明
 
-有两种基本的变量声明方式，一是不指定类型，即使用 `var`
+有两种基本的变量声明方式，一是不指定类型，即使用`var`
 
 ```dart
 // name变量存储一个内容为'bob'的字符串对象
@@ -26,7 +26,7 @@ String name = 'bob';
 
 ### 默认值
 
-显著区别于其他语言的是，无论什么类型的变量，在没有赋初始值的情况下，默认值为 `null`
+显著区别于其他语言的是，无论什么类型的变量，在没有赋初始值的情况下，默认值为`null`
 
 ```dart
 // 未指定类型的变量
@@ -39,45 +39,45 @@ print(name); // null
 print(age); // null
 ```
 
-`null` 也是对象，所以也可以理解为：未初始化的 Dart 变量都指向 `null` 对象。
+`null`也是对象，所以也可以理解为：未初始化的 Dart 变量都指向`null`对象。
 
 ### 作用域
 
-Dart使用词法作用域（也称为静态作用域），即变量的作用域在其定义时就已经确定。
+Dart 使用词法作用域（也称为静态作用域，与之相反的是动态作用域），即变量的作用域在定义时确定。
 
-作用域由变量所处代码块（大括号）的层级决定，层次越深，作用域越小。
+作用域范围由变量所处代码块（大括号）的层级决定，层级越深，作用域越小，层级越浅，作用域越大。
 
-不被任何代码块包含的变量通常称为顶层变量，它们的作用域范围最大
+不被任何代码块包含的变量通常称为顶层变量，它们的作用域最大
 
 ```dart
-var top = true; // 顶层变量
+var top = true; // 顶层变量，作用域最大
 
 main() {
   var inMain = 'main';
-  print(inMain); // OK
   print(top); // OK
+  print(inMain); // OK
   print(inFn); // 错误，无法访问
   print(inIf); // 错误，无法访问
 
   fn() {
     var inFn = 'fn';
-    print(inFn); // OK
-    print(inMain); // OK
     print(top); // OK
+    print(inMain); // OK
+    print(inFn); // OK
     print(inIf); // 错误，无法访问
 
     if (top) {
-      var inIf = 'if';
-      print(inIf); // OK
-      print(inFn); // OK
-      print(inMain); // OK
+      var inIf = 'if'; // 最内层的变量，作用域最小
       print(top); // OK
+      print(inMain); // OK
+      print(inFn); // OK      
+      print(inIf); // OK
     }
   }
 }
 ```
 
-### final与const
+### final 与 const
 
 如果变量内容不会改变，建议使用`final`或`const`替代`var`，或者搭配类型使用。
 
@@ -90,9 +90,9 @@ main() {
 final name = initName();
 // name = 'john'; // 错误，final变量不能再次赋值!
 
-// 定义用于初始化name的函数（下一节将对函数进行深入讲解）
+// 定义用于初始化name的函数（下一节将对函数进行讲解）
 String initName() {
-  print('init name');
+  print('initName');
   return 'bob';
 }
 
@@ -104,9 +104,11 @@ const area = pi * 2 * 2;
 main() {
   print(pi); // 3.14
   print(area); // 12.56
-  print(name); // 先打印 init name，再打印 bob，即直到访问name时initName函数才执行
+  print(name); // 先打印 initName，再打印 bob，即直到访问name时initName函数才执行
 }
 ```
+
+---
 
 ## 基本数据类型
 
