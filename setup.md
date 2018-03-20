@@ -6,21 +6,21 @@
 
 推荐优先使用工具自动安装 SDK。
 
-注意：由于众所周知的原因，在中国大陆使用以下工具安装可能会失败。如果你无法突破网络封锁，请尝试[手动安装](#手动安装sdk)。
+注意：由于众所周知的原因，在中国大陆使用以下工具安装可能会失败。如果失败，请尝试[手动安装](#手动安装-sdk)。
 
 ### Windows 系统
 
-方式一
+#### 方式一
+
+使用社区维护的安装器：[www.gekorm.com/dart-windows](http://www.gekorm.com/dart-windows/)
+
+#### 方式二
 
 安装 windows 下的包管理器：[Chocolatey](https://chocolatey.org/) ，然后在命令行下执行
 
 ```bash
 choco install dart-sdk -version <版本号>
 ```
-
-方式二
-
-使用社区维护的安装器：[www.gekorm.com/dart-windows](http://www.gekorm.com/dart-windows/)
 
 ### Mac 系统
 
