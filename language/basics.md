@@ -87,12 +87,12 @@ main() {
 
 ```dart
 // 定义final变量并使用函数进行初始化
-final name = initName();
+final name = fetchName();
 // name = 'john'; // 错误，final变量不能再次赋值!
 
-// 定义用于初始化name的函数（下一节将对函数进行讲解）
-String initName() {
-  print('initName');
+// 定义获取name的函数（下一节将对函数进行讲解）
+String fetchName() {
+  print('fetchName');
   return 'bob';
 }
 
@@ -104,7 +104,7 @@ const area = pi * 2 * 2;
 main() {
   print(pi); // 3.14
   print(area); // 12.56
-  print(name); // 先打印 initName，再打印 bob，即直到访问name时initName函数才执行
+  print(name); // 先打印 fetchName，再打印 bob，即直到访问name时fetchName函数才执行
 }
 ```
 
@@ -200,12 +200,13 @@ print(name.replaceAll('b', 'w')); // wow
 有别于很多动态语言，Dart 中的`true`是唯一“正确”的值，所有非`true`的值都被视为`false`
 
 ```dart
-// 以下Dart代码也是合法的JavaScript代码，但是执行结果完全不同
+// 以下Dart代码也是合法的JavaScript代码，但执行结果完全不同
 var name = 'bob';
 if (name) {
   // 在JavaScript中，name被视为true，此处代码会执行
   // 在Dart中，name被视为false，此处代码不会执行
-  var message = 'hi ' + name;
+  var message = 'Hi ' + name;
+  ......
 }
 ```
 
