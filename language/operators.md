@@ -1,10 +1,10 @@
 # 运算符和流程控制
 
-本节简述Dart的运算符和流程控制语句。
+本节简述 Dart 的运算符和流程控制语句。
 
 ## 运算符
 
-以下列出了Dart的运算符，从高到低按照优先级排列：
+以下列出了 Dart 的运算符，从高到低按照优先级排列：
 
 | 描述 | 运算符 |
 | :--- | :--- |
@@ -24,20 +24,20 @@
 | 级联运算符 | _**..**_ |
 | 赋值运算符 | = \*= /= ~/= %= += -= &lt;&lt;= &gt;&gt;= &= ^= \|= _**??=**_ |
 
-与其他类C语言比较，Dart的运算符大同小异，这里选出部分Dart特有的运算符（即上表中使用斜粗体的运算符）进行讲解:
+与其他类C语言比较，Dart 的运算符大同小异，这里选出部分 Dart 特有的运算符（即上表中使用斜粗体的运算符）进行讲解:
 
 | 运算符 | 介绍 | 示例 |
 | :--- | :--- | :--- |
-| ?. | 点符号前加问号，表示当前调用只在被访问者不为null的情况下才执行 | var upper = name?.toUpperCase\(\); |
-| is  is! | 检查对象是否属于某种类型 | if \(coder is Programmer\) { ... } |
+| ?. | 点符号前加问号，表示当前调用只在被访问者不为`null`的情况下才执行 | var upper = name?.toUpperCase\(\); |
+| is  is! | 检查对象是否属于或不属于某种类型 | if \(coder is Programmer\) { ... } |
 | as | 将对象转换为某类型，如果转换失败将抛出异常 | \(coder as Programmer\).name |
-| ?? | 空值检测，如：a1 ?? a2 ，表示如果a1不为null，则直接返回a1的值，否则返回a2的值 | var message = inputMsg ?? 'Hello'; |
-| .. | 级联操作符，用于对同一对象执行一系列操作，避免创建多余的临时变量 | 未使用级联：<br> var person = new Person();<br>person.name = 'bob';<br>person.age = 28; <br> <br>使用级联：<br> new Person()..name = 'bob' <br> &nbsp;&nbsp; ..age = 28; |
-| ??= | 空值判断赋值，只在左值为null的情况下才执行赋值操作 | message ??= 'Hello'; |
+| ?? | 空值检测，如：a1 ?? a2 ，表示如果a1不为`null`，则直接返回a1的值，否则返回a2的值 | var message = inputMsg ?? 'Hello'; |
+| .. | 级联操作符，用于对同一对象执行一系列操作（链式操作），避免创建多余的临时变量 | 不使用级联：<br> var person = new Person();<br>person.name = 'bob';<br>person.age = 28; <br> <br>使用级联：<br> new Person()..name = 'bob' <br> &nbsp;&nbsp; ..age = 28; |
+| ??= | 空值判断赋值，只在左值为`null`的情况下才执行赋值操作 | message ??= 'Hello'; |
 
 ## 流程控制语句
 
-跟大部分编程语言类似，Dart具有以下流程控制语句
+跟大部分编程语言类似，Dart 具有以下流程控制语句
 
 * if 、esle
 * for 循环
@@ -46,7 +46,7 @@
 * switch、case
 * assert（断言）// TODO
 
-有编程经验的开发者，都应该接触过它们，这里不作过多讲解。
+有经验的开发者，都应该接触使用过它们，这里不作过多讲解。
 
 TODO
 
