@@ -43,7 +43,7 @@ $ brew info dart
 
 ### Linux 系统
 
-ubuntu/debian 使用 apt-get 安装，其他 linux 请[手动安装](/intro/manual.md)。
+ubuntu/debian 使用 apt-get 安装，其他 linux 请[手动安装](#手动安装-sdk)。
 
 ```bash
 # 安装
@@ -79,7 +79,7 @@ Dart VM version: 1.24.2 (Thu Jun 22 08:42:17 2017) on "macos_x64"
 
 ## 手动安装 SDK
 
-不能使用工具安装 SDK 时，可以手动安装。
+使用工具自动安装 SDK 失败时，还可以手动安装。
 
 ### 下载 SDK
 
@@ -107,7 +107,7 @@ SDK 下载链接模板:
 
 ### 安装
 
-下载解压后，将 sdk 的 bin 文件夹添加到系统环境变量即可。
+下载并解压，将 sdk 中的 bin 文件夹添加到系统环境变量即可。
 
 ---
 
@@ -137,7 +137,7 @@ Linux 下常用的老牌编辑器 [Vim](http://www.vim.org/)，配合 [dart-vim-
 
 按照惯例，编写一个 Hello World。
 
-### 编写 Hello World
+### 编写
 
 在编辑器中新建一个 hello.dart 文件，并输入以下代码
 
@@ -150,9 +150,9 @@ main() {
 
 与C语言等类似，dart 文件的入口是`main`函数。
 
-### 运行 Hello World
+### 运行
 
-在命令行中执行并查看输出
+在命令行中执行 hello.dart 并查看输出
 
 ```
 $ dart hello.dart
