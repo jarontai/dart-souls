@@ -29,10 +29,10 @@
 | 运算符 | 介绍 | 示例 |
 | :--- | :--- | :--- |
 | ?. | 点符号前加问号，表示当前调用只在被访问者不为`null`的情况下才执行 | var upper = name?.toUpperCase\(\); |
-| is  is! | 检查对象是否属于或不属于某种类型 | if \(coder is Programmer\) { ... } |
-| as | 将对象转换为某类型，如果转换失败将抛出异常 | \(coder as Programmer\).name |
-| ?? | 空值检测，如：a1 ?? a2 ，表示如果a1不为`null`，则直接返回a1的值，否则返回a2的值 | var message = inputMsg ?? 'Hello'; |
-| .. | 级联操作符，用于对同一对象执行一系列操作（链式操作），避免创建多余的临时变量 | 不使用级联：<br> var person = new Person();<br>person.name = 'bob';<br>person.age = 28; <br> <br>使用级联：<br> new Person()..name = 'bob' <br> &nbsp;&nbsp; ..age = 28; |
+| is  is! | 检查对象是否属于或不属于某种类型 | if \(name is String\) { ... } |
+| as | 将对象转换为某类型，如果转换失败将抛出异常 | name as String |
+| ?? | 空值检测，如：a1 ?? a2 ，表示如果a1不为`null`，则直接返回a1的值，否则返回a2的值 | var message = input ?? 'Hello'; |
+| .. | 级联操作符，用于对同一对象执行一系列操作（链式操作），避免创建多余的临时变量 | 不使用级联：<br>person.name = 'bob';<br>person.age = 28; <br> <br>使用级联：<br> person..name = 'bob' <br> &nbsp;&nbsp; ..age = 28; |
 | ??= | 空值判断赋值，只在左值为`null`的情况下才执行赋值操作 | message ??= 'Hello'; |
 
 ## 流程控制语句
