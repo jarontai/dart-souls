@@ -41,19 +41,24 @@ class BastardSword extends GreatSword {
 Dart 支持接口，但没有定义接口的关键字。Dart 通过类的语法来定义接口，即每个类都隐含定义一个接口，该接口包含当前类所有的实例变量和方法（包含通过继承和实现其他类而得来的）。通常的做法是使用抽象类来定义接口，而接口的实现是通过`implements`关键字，多个接口之间使用逗号分隔。
 
 ```dart
-// 魂抽象类，即接口
-abstract class Soul {
-  String name;
-  
-  use();
+// 轻攻击接口
+abstract class Light {
+  lightAttack();
 }
 
-// 弱小的魂，实现魂接口
-class TinySoul implements Soul {
-  String name = 'tiny soul';
+// 重攻击接口
+abstract class Heavy {
+  heavyAttack();
+}
+
+// 武器同时实现了轻重攻击
+class Weapon implements Light, Heavy {
+  lightAttack() {
+    print('attack!');
+  }
   
-  use() {
-    print('use $name');
+  heavyAttack() {
+    print('attack!!!');
   }
 }
 ```
