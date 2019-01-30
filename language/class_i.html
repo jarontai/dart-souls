@@ -207,12 +207,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6" data-path="visibility.html">
+        <li class="chapter " data-level="1.4.6" data-path="commons.html">
             
-                <a href="visibility.html">
+                <a href="commons.html">
             
                     
-                    库与可见性
+                    常用内置类
             
                 </a>
             
@@ -220,12 +220,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.7" data-path="commons.html">
+        <li class="chapter " data-level="1.4.7" data-path="visibility.html">
             
-                <a href="commons.html">
+                <a href="visibility.html">
             
                     
-                    常用内置类
+                    库与可见性
             
                 </a>
             
@@ -366,11 +366,12 @@
 <hr>
 <p>&#x7C7B;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x84DD;&#x672C;&#xFF0C;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x3002;</p>
 <p>&#x7C7B;&#x7684;&#x58F0;&#x660E;&#x662F;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>class</code>&#xFF0C;&#x6240;&#x6709;&#x7C7B;&#x90FD;&#x76F4;&#x63A5;&#x6216;&#x95F4;&#x63A5;&#x7EE7;&#x627F;&#x6700;&#x9876;&#x7AEF;&#x7684;<code>Object</code>&#x7C7B;&#x3002;</p>
+<p><em>*&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x4E86;dart&#x6838;&#x5FC3;&#x5E93;&#x7684;</em><code>identical</code><em>&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x68C0;&#x67E5;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x5426;&#x6307;&#x5411;&#x540C;&#x4E00;&#x5BF9;&#x8C61;</em></p>
 <h2 id="&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;">&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</h2>
 <p>&#x7C7B;&#x4E2D;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x6570;&#x636E;&#x548C;&#x51FD;&#x6570;&#xFF0C;&#x5373;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>&#x666E;&#x901A;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x662F;&#x8DDF;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x7ED1;&#x5B9A;&#x7684;&#xFF0C;&#x5B83;&#x4EEC;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1B;&#x4F7F;&#x7528;<code>static</code>&#x4FEE;&#x9970;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x4E0E;&#x7C7B;&#x7ED1;&#x5B9A;&#x7684;&#xFF0C;&#x5373;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x7C7B;&#x4E2D;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x540D;&#x79F0;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>this</code>&#x8BBF;&#x95EE;&#xFF1B;&#x5728;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;<code>&#x5B9E;&#x4F8B;.&#x53D8;&#x91CF;</code>&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF0C;&#x800C;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x901A;&#x8FC7;<code>&#x7C7B;&#x540D;.&#x53D8;&#x91CF;</code>&#x7684;&#x65B9;&#x5F0F;&#x624D;&#x80FD;&#x8BBF;&#x95EE;</p>
-<pre><code class="lang-dart"><span class="hljs-comment">// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x8868;&#x793A;&apos;&#x5927;&#x5251;&apos;&#xFF08;&#x300A;&#x9ED1;&#x6697;&#x4E4B;&#x9B42;&#x300B;&#x7CFB;&#x5217;&#x6E38;&#x620F;&#x7684;&#x4E00;&#x79CD;&#x6B66;&#x5668;&#xFF09;&#x7684;&#x7C7B;</span>
+<p>&#x666E;&#x901A;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x662F;&#x8DDF;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x7ED1;&#x5B9A;&#xFF0C;&#x5B83;&#x4EEC;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1B;&#x4F7F;&#x7528;<code>static</code>&#x4FEE;&#x9970;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x4E0E;&#x7C7B;&#x7ED1;&#x5B9A;&#xFF0C;&#x5373;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x7C7B;&#x4E2D;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x540D;&#x79F0;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>this</code>&#x8BBF;&#x95EE;&#xFF1B;&#x5728;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;<code>&#x5B9E;&#x4F8B;.&#x53D8;&#x91CF;</code>&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF0C;&#x800C;&#x7C7B;&#x53D8;&#x91CF;&#x548C;&#x7C7B;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x901A;&#x8FC7;<code>&#x7C7B;&#x540D;.&#x53D8;&#x91CF;</code>&#x65B9;&#x5F0F;&#x624D;&#x80FD;&#x8BBF;&#x95EE;</p>
+<pre><code class="lang-dart"><span class="hljs-comment">// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x8868;&#x793A;&apos;&#x5927;&#x5251;&apos;&#xFF08;&#x300A;&#x9ED1;&#x6697;&#x4E4B;&#x9B42;&#x300B;&#x7CFB;&#x5217;&#x6E38;&#x620F;&#x7684;&#x4E00;&#x7C7B;&#x6B66;&#x5668;&#xFF09;&#x7684;&#x7C7B;</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
   <span class="hljs-comment">// &#x5B9E;&#x4F8B;&#x53D8;&#x91CF;</span>
   <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
@@ -382,7 +383,7 @@
 
   <span class="hljs-comment">// &#x7C7B;&#x65B9;&#x6CD5;</span>
   <span class="hljs-keyword">static</span> upgrade(GreatSword sword) { <span class="hljs-comment">// &#x5347;&#x7EA7;&#xFF0C;&#x5373;&#x589E;&#x52A0;&#x9644;&#x52A0;&#x4F24;&#x5BB3;</span>
-  sword.extraDamage += <span class="hljs-number">10</span>;
+    sword.extraDamage += <span class="hljs-number">10</span>;
   }
 
   <span class="hljs-comment">// &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</span>
@@ -402,10 +403,10 @@ main() {
 }
 </code></pre>
 <h2 id="&#x6784;&#x9020;&#x51FD;&#x6570;">&#x6784;&#x9020;&#x51FD;&#x6570;</h2>
-<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x5C06;&#x7C7B;&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;&#x5BF9;&#x8C61;&#xFF0C;&#x914D;&#x5408;&#x5173;&#x952E;&#x5B57;<code>new</code>&#x6216;<code>const</code>&#x4F7F;&#x7528;&#x3002;</p>
-<p>&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#xFF0C;&#x5C06;&#x9ED8;&#x8BA4;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x4E0E;&#x7C7B;&#x540C;&#x540D;&#x4E14;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
-<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x5BF9;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#xFF0C;Dart&#x4E3A;&#x6B64;&#x63D0;&#x4F9B;&#x4E86;&#x7B80;&#x5199;&#x65B9;&#x5F0F;&#xFF08;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>this.&#x5C5E;&#x6027;</code>&#xFF09;&#x3002;</p>
-<p>&#x9664;&#x4E86;&#x666E;&#x901A;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;Dart&#x8FD8;&#x652F;&#x6301;<code>&#x7C7B;&#x540D;.&#x6784;&#x9020;&#x51FD;&#x6570;&#x540D;</code>&#x65B9;&#x5F0F;&#x7684;&#x547D;&#x540D;&#x6784;&#x9020;&#x51FD;&#x6570;</p>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x5C06;&#x7C7B;&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;&#x5BF9;&#x8C61;&#xFF0C;&#x914D;&#x5408;&#x5173;&#x952E;&#x5B57;<code>new</code>&#x6216;<code>const</code>&#x4F7F;&#x7528;&#xFF08;&#x5728; Dart 2.0 &#x4E2D;&#xFF0C;<code>new</code>&#x4E0E;<code>const</code>&#x53D8;&#x4E3A;&#x53EF;&#x9009;&#xFF09;&#x3002;</p>
+<p>&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#xFF0C;&#x5C06;&#x9ED8;&#x8BA4;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x4E0E;&#x7C7B;&#x540C;&#x540D;&#x4E14;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;&#x65E0;&#x53C2;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF09;&#x3002;</p>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x5BF9;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#xFF0C;Dart &#x4E3A;&#x6B64;&#x63D0;&#x4F9B;&#x4E86;&#x7B80;&#x5199;&#x65B9;&#x5F0F;&#xFF08;&#x5728;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>this.&#x5C5E;&#x6027;</code>&#xFF09;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x666E;&#x901A;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;Dart &#x8FD8;&#x652F;&#x6301;<code>&#x7C7B;&#x540D;.&#x6784;&#x9020;&#x51FD;&#x6570;&#x540D;</code>&#x65B9;&#x5F0F;&#x7684;&#x547D;&#x540D;&#x6784;&#x9020;&#x51FD;&#x6570;</p>
 <pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
   <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
   <span class="hljs-keyword">final</span> <span class="hljs-built_in">int</span> damage = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x57FA;&#x7840;&#x4F24;&#x5BB3;&#x503C;</span>
@@ -430,12 +431,12 @@ main() {
 main() {
   <span class="hljs-comment">// &#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;</span>
   <span class="hljs-keyword">var</span> sword = <span class="hljs-keyword">new</span> GreatSword(<span class="hljs-string">&apos;Claymore&apos;</span>); <span class="hljs-comment">// &#x666E;&#x901A;&#x5927;&#x5251;</span>
-  <span class="hljs-keyword">var</span> enhancedSword = <span class="hljs-keyword">new</span> GreatSword.enhanced(<span class="hljs-string">&apos;Bastard Sword&apos;</span>, <span class="hljs-number">20</span>); <span class="hljs-comment">// &#x5F3A;&#x5316;&#x7248;&#x6DF7;&#x79CD;&#x5927;&#x5251;</span>
+  <span class="hljs-keyword">var</span> enhancedSword = <span class="hljs-keyword">new</span> GreatSword.enhanced(<span class="hljs-string">&apos;Claymore&apos;</span>, <span class="hljs-number">20</span>); <span class="hljs-comment">// &#x5F3A;&#x5316;&#x7248;&#x5927;&#x5251;</span>
 }
 </code></pre>
-<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x603B;&#x662F;&#x4F1A;&#x81EA;&#x52A8;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x9700;&#x8981;&#x4E5F;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<code>return</code>&#x8BED;&#x53E5;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x662F;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x90FD;&#x65B0;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;&#x9700;&#x8981;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x83B7;&#x53D6;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5DE5;&#x5382;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
-<p>&#x4F7F;&#x7528;<code>factory</code>&#x4FEE;&#x9970;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5373;&#x662F;&#x5DE5;&#x5382;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8DDF;&#x666E;&#x901A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x4F7F;&#x7528;return&#x8BED;&#x53E5;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x603B;&#x662F;&#x4F1A;&#x81EA;&#x52A8;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x4E0D;&#x9700;&#x8981;&#x4E5F;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<code>return</code>&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x9700;&#x8981;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x90FD;&#x65B0;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x83B7;&#x53D6;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5DE5;&#x5382;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>factory</code>&#x4FEE;&#x9970;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5373;&#x5DE5;&#x5382;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8DDF;&#x666E;&#x901A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x4F7F;&#x7528;<code>return</code>&#x8BED;&#x53E5;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;</p>
 <pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
   <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
 
@@ -447,16 +448,16 @@ main() {
     <span class="hljs-comment">// &#x5BF9;&#x8C61;&#x5DF2;&#x5B58;&#x5728;&#x7F13;&#x5B58;&#x4E2D;</span>
     <span class="hljs-keyword">if</span> (cache.containsKey(name)) {
       <span class="hljs-keyword">return</span> cache[name];
-    } <span class="hljs-keyword">else</span> { <span class="hljs-comment">// &#x5BF9;&#x8C61;&#x4E0D;&#x5B58;&#x5728;&#x7F13;&#x5B58;&#x4E2D;</span>
-      <span class="hljs-comment">// &#x4F7F;&#x7528;&#x5E93;&#x79C1;&#x6709;&#x7684;&#xFF08;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x5C06;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF09;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65B0;&#x5EFA;&#x5BF9;&#x8C61;</span>
-      <span class="hljs-keyword">final</span> sword = <span class="hljs-keyword">new</span> GreatSword._internal(name);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// &#x5BF9;&#x8C61;&#x4E0D;&#x5B58;&#x5728;&#x7F13;&#x5B58;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x5E93;&#x79C1;&#x6709;&#x7684;&#xFF08;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x5C06;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF09;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65B0;&#x5EFA;&#x5BF9;&#x8C61;</span>
+      <span class="hljs-keyword">final</span> sword = <span class="hljs-keyword">new</span> GreatSword._(name);
       cache[name] = sword; <span class="hljs-comment">// &#x5B58;&#x5165;&#x7F13;&#x5B58;</span>
       <span class="hljs-keyword">return</span> sword;
     }
   }
 
   <span class="hljs-comment">// &#x5E93;&#x79C1;&#x6709;&#x7684;&#xFF08;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x5C06;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF09;&#x547D;&#x540D;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
-  GreatSword._internal(<span class="hljs-keyword">this</span>.name);
+  GreatSword._(<span class="hljs-keyword">this</span>.name);
 }
 
 main() {
@@ -524,11 +525,10 @@ main() {
   <span class="hljs-built_in">print</span>(moonlight.extraDamage); <span class="hljs-comment">// 13.5</span>
 }
 </code></pre>
-<h2 id="gettersetter">Getter/Setter</h2>
-<p>&#x8DDF;&#x5F88;&#x591A;&#x8BED;&#x8A00;&#x4E0D;&#x540C;&#xFF0C;Dart&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x7684;&#x8BFB;&#x5199;&#x662F;&#x901A;&#x8FC7;getter&#x548C;setter&#x5B8C;&#x6210;&#x7684;&#x3002;</p>
-<p>getter&#x548C;setter&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4EEC;&#x867D;&#x662F;&#x65B9;&#x6CD5;&#x5374;&#x6709;&#x8DDF;&#x5C5E;&#x6027;&#x4E00;&#x6837;&#x7684;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x3002;</p>
-<p>&#x6240;&#x6709;&#x666E;&#x901A;&#x5C5E;&#x6027;&#x90FD;&#x6709;&#x4E00;&#x5BF9;&#x9690;&#x542B;&#x7684;getter&#x8DDF;setter&#xFF0C;<code>final</code>&#x5C5E;&#x6027;&#x53EA;&#x6709;getter&#x3002;</p>
-<p>&#x81EA;&#x5B9A;&#x4E49;getter&#x548C;setter&#x4E5F;&#x662F;&#x652F;&#x6301;&#x7684;&#xFF0C;&#x4E66;&#x5199;&#x65B9;&#x5F0F;&#x662F;&#x5728;&#x65B9;&#x6CD5;&#x540D;&#x524D;&#x6DFB;&#x52A0;<code>get</code>&#x6216;<code>set</code>&#xFF0C;<code>getter</code>&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x65E0;&#x53C2;&#x6570;&#x800C;<code>setter</code>&#x6B63;&#x597D;&#x76F8;&#x53CD;</p>
+<h2 id="gettersetter-&#x65B9;&#x6CD5;">Getter/Setter &#x65B9;&#x6CD5;</h2>
+<p>&#x8DDF;&#x5F88;&#x591A;&#x8BED;&#x8A00;&#x4E0D;&#x540C;&#xFF0C;Dart &#x901A;&#x8FC7;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;<code>getter/setter</code>&#x65B9;&#x6CD5;&#x5BF9;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#xFF0C;&#x5B83;&#x4EEC;&#x867D;&#x662F;&#x65B9;&#x6CD5;&#x5374;&#x6709;&#x8DDF;&#x5C5E;&#x6027;&#x4E00;&#x6837;&#x7684;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x6240;&#x6709;&#x666E;&#x901A;&#x5C5E;&#x6027;&#x90FD;&#x6709;&#x4E00;&#x5BF9;&#x9690;&#x542B;&#x7684;<code>getter/setter</code>&#xFF0C;<code>final</code>&#x5C5E;&#x6027;&#x53EA;&#x6709;<code>getter</code>&#x3002;</p>
+<p>&#x81EA;&#x5B9A;&#x4E49;<code>getter/setter</code>&#x4E5F;&#x662F;&#x652F;&#x6301;&#x7684;&#xFF0C;&#x4E66;&#x5199;&#x65B9;&#x5F0F;&#x662F;&#x5728;&#x65B9;&#x6CD5;&#x540D;&#x524D;&#x6DFB;&#x52A0;<code>get</code>&#x6216;<code>set</code>&#xFF0C;<code>getter</code>&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x65E0;&#x53C2;&#x6570;&#x800C;<code>setter</code>&#x6B63;&#x597D;&#x76F8;&#x53CD;</p>
 <pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
   <span class="hljs-built_in">String</span> name; <span class="hljs-comment">// &#x540D;&#x79F0;</span>
   <span class="hljs-keyword">final</span> <span class="hljs-built_in">int</span> damage = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x57FA;&#x7840;&#x4F24;&#x5BB3;&#x503C;</span>
@@ -570,7 +570,7 @@ main() {
   sword.damage = <span class="hljs-number">180</span>; <span class="hljs-comment">// &#x9519;&#x8BEF;&#xFF0C;damage&#x7684;setter&#x4E0D;&#x5B58;&#x5728;  </span>
 }
 </code></pre>
-<p>getter&#x548C;setter&#x5E26;&#x6765;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x66F4;&#x6539;&#x5C5E;&#x6027;&#x7684;&#x5185;&#x90E8;&#x5B9E;&#x73B0;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x7528;&#x4FEE;&#x6539;&#x5916;&#x90E8;&#x8C03;&#x7528;&#x4EE3;&#x7801;</p>
+<p><code>getter</code>&#x548C;<code>setter</code>&#x5E26;&#x6765;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x66F4;&#x6539;&#x5C5E;&#x6027;&#x7684;&#x5185;&#x90E8;&#x5B9E;&#x73B0;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x7528;&#x4FEE;&#x6539;&#x5916;&#x90E8;&#x8C03;&#x7528;&#x4EE3;&#x7801;</p>
 <pre><code class="lang-dart"><span class="hljs-comment">// &#x7248;&#x672C;1&#x7684;GreatSword</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword1</span> </span>{
   <span class="hljs-keyword">final</span> <span class="hljs-built_in">String</span> name = <span class="hljs-string">&apos;GreatSword&apos;</span>;
@@ -594,9 +594,9 @@ main() {
 }
 </code></pre>
 <h2 id="&#x5B50;&#x7C7B;">&#x5B50;&#x7C7B;</h2>
-<p>&#x4F7F;&#x7528;<code>extends</code>&#x6765;&#x521B;&#x5EFA;&#x5B50;&#x7C7B;&#xFF0C;&#x4F7F;&#x7528;<code>super</code>&#x6765;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>extends</code>&#x6765;&#x521B;&#x5EFA;&#x5B50;&#x7C7B;&#xFF0C;&#x5B50;&#x7C7B;&#x4E2D;&#x4F7F;&#x7528;<code>super</code>&#x6765;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x3002;</p>
 <p>&#x9664;&#x4E86;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7236;&#x7C7B;&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#xFF08;setter/getter&#xFF09;&#x548C;&#x65B9;&#x6CD5;&#x90FD;&#x88AB;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#xFF0C;&#x800C;&#x4E14;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x3002;</p>
-<p>&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5728;&#x6267;&#x884C;&#x524D;&#xFF0C;&#x5C06;&#x9690;&#x542B;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;<code>&#x65E0;&#x53C2;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;</code>&#xFF08;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x4E14;&#x4E0E;&#x7C7B;&#x540C;&#x540D;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x6216;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x7684;&#x90FD;&#x53EF;&#xFF09;&#x3002;</p>
+<p>&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5728;&#x6267;&#x884C;&#x524D;&#xFF0C;&#x5C06;&#x9690;&#x542B;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;<code>&#x65E0;&#x53C2;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;</code>&#xFF08;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x4E14;&#x4E0E;&#x7C7B;&#x540C;&#x540D;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF09;&#x3002;</p>
 <p>&#x5982;&#x679C;&#x7236;&#x7C7B;&#x6CA1;&#x6709;<code>&#x65E0;&#x53C2;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;</code>&#xFF0C;&#x5219;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x5728;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x4E2D;&#x901A;&#x8FC7;<code>super</code>&#x663E;&#x5F0F;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x67D0;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
 <pre><code class="lang-dart"><span class="hljs-comment">// &#x5927;&#x5251;</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
@@ -671,7 +671,7 @@ main() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"类 - Part I","level":"1.4.4","depth":2,"next":{"title":"类 - Part II","level":"1.4.5","depth":2,"path":"language/class_ii.md","ref":"language/class_ii.md","articles":[]},"previous":{"title":"函数","level":"1.4.3","depth":2,"path":"language/function.md","ref":"language/function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/class_i.md","mtime":"2018-03-19T09:27:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-19T10:10:33.859Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"类 - Part I","level":"1.4.4","depth":2,"next":{"title":"类 - Part II","level":"1.4.5","depth":2,"path":"language/class_ii.md","ref":"language/class_ii.md","articles":[]},"previous":{"title":"函数","level":"1.4.3","depth":2,"path":"language/function.md","ref":"language/function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/class_i.md","mtime":"2019-01-30T09:52:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-30T09:54:17.832Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
