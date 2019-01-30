@@ -12,7 +12,7 @@
 
 ## 地址
 
-本书提供在线阅读，内容不定期更新，地址：[https://jarontai.github.io/dart-souls](https://jarontai.github.io/dart-souls/) ；本书也可下载，内容为最新，地址：[pdf](https://www.gitbook.com/download/pdf/book/jarontai/dart-souls)，[epub](https://www.gitbook.com/download/epub/book/jarontai/dart-souls)，[mobi](https://www.gitbook.com/download/mobi/book/jarontai/dart-souls)
+本书提供在线阅读，内容不定期更新，地址：[https://jarontai.github.io/dart-souls](https://jarontai.github.io/dart-souls/) ；本书也可下载，内容为最新，地址：[pdf](https://legacy.gitbook.com/download/pdf/book/jarontai/dart-souls)，[epub](https://legacy.gitbook.com/download/epub/book/jarontai/dart-souls)，[mobi](https://legacy.gitbook.com/download/mobi/book/jarontai/dart-souls)
 
 ## 交流
 
@@ -20,7 +20,7 @@
 
 ## 关于
 
-作者：[Jaron Tai](https://github.com/jarontai) ，Dart 语言爱好者兼业余黑魂pve玩家。本书使用 [Gitbook](https://www.gitbook.com/) 编写，原始内容保存在 [Github](https://github.com/jarontai/dart-souls)。
+作者：[Jaron Tai](https://github.com/jarontai) ，Dart 语言爱好者兼业余黑魂pve玩家。本书使用 [Gitbook](https://legacy.gitbook.com/) 编写，原始内容保存在 [Github](https://github.com/jarontai/dart-souls)。
 
 ## 协议
 
