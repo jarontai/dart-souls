@@ -313,6 +313,3 @@ main() {
   print(black.extraDamage); // 50
 }
 ```
-
-
-
