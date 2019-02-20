@@ -24,7 +24,20 @@ var name = 'bob';
 String name = 'bob';
 ```
 
-因为有类型推导，以上两种声明方式的效果实际是一样的。官方推荐函数/方法内的本地变量尽量使用`var`声明。
+因为有类型推导，以上两种声明方式的效果实际是一样的。官方推荐在函数内的本地变量尽量使用`var`声明。
+
+在变量类型并不明确的场景下，可以使用`dynamic`关键字，如下：
+
+```dart
+// dynamic变量可以进行任意类型的赋值以及变量和方法的访问
+dynamic cache = 'bob';
+cache = 123;
+cache = new SomeClass();
+cache.method();
+print(cache.name);
+```
+
+注意：`dynamic`变量不会进行类型检查，它的类型安全完全由开发者自己负责!
 
 ### 默认值
 
@@ -106,7 +119,7 @@ const area = pi * 2 * 2;
 main() {
   print(pi); // 3.14
   print(area); // 12.56
-  print(name); // 先打印 getName，再打印 bob，即直到访问name时getName函数才执行
+  print(name); // 先打印 getName，再打印 bob，即直到name变量被访问时getName函数才执行
 }
 ```
 
