@@ -48,8 +48,35 @@
 
 有编程经验的开发者，对以上流程控制语句应该都不陌生，这里只对特殊的`assert`作简要说明：
 
-`assert`语句接受一个布尔表达式，如果表达式的值为`false`，抛出异常，程序退出执行，表达式为`true`则正常执行。`assert`语句默认不开启，只在`--enable-asserts`选项开启时才生效，一般用于开发阶段的代码调试和验证。
+`assert`语句接受一个布尔表达式，如果表达式的值为`false`，抛出assert异常，程序退出执行，表达式为`true`则正常执行。`assert`语句默认不开启，只在`--enable-asserts`选项开启时才生效，一般用于开发阶段的代码调试和验证。
 
-## 异常处理
+## 异常
+
+Dart的异常包含两种： `Exception`和`Error`。`Exception`表示程序逻辑执行失败，它们大都是可预料的，而且应该被捕获并进行处理。`Error`则表示程序发生了严重错误，它们大都不可预料且应该极力避免，通常是因为代码逻辑存在问题而导致。
+
+如果你熟悉Java语言，请注意：Dart的异常都是`非检查异常`(unchecked exception)，即Dart不存在需要强制进行处理的异常。
+
+### 异常抛出
+使用`throw`来抛出异常，`throw`接受任意类型的数据，或者说任意可以转换为字符串的对象都可以被作为异常抛出。在正式项目中，不建议直接抛出字符串，而应该使用dart预定义或自定义的异常。
+
+```dart
+  throw 'Exception message'; // 直接抛出字符串信息
+  throw FormatException('message'); // 抛出dart的格式化异常
+  throw ArgumentError('message'); // 抛出dart的参数错误
+  throw CustomException('message'); // 抛出自定义的异常
+```
+
+抛出的异常，如果没有被捕获，程序将退出执行并打印当前的堆栈信息，类似如下：
+
+```dart
+  Unhandled exception:
+  Exception message
+  #0      method (package:dart_test/exception_test.dart:2:5)
+  #1      main (package:dart_test/exception_test.dart:6:3)
+  #2      _startIsolate.<anonymous closure> (dart:isolate/runtime/libisolate_patch.dart:287:32)
+  #3      _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:171:12)
+```
+
+### 异常捕获
 
 TODO:
