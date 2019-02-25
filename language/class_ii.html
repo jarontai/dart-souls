@@ -364,10 +364,10 @@
                                 <h1 id="&#x7C7B;---part-ii">&#x7C7B; - Part II</h1>
 <p><em>&#x7C7B;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#x8F83;&#x591A;&#xFF0C;&#x6240;&#x4EE5;&#x5206;&#x6210;&#x4E24;&#x8282;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF0C;&#x672C;&#x8282;&#x662F;Part II&#xFF0C;&#x4E0A;&#x4E00;&#x8282;&#x662F;</em><a href="class_i.html"><em>Part I</em></a><em>&#x3002;</em></p>
 <hr>
-<p>&#x672C;&#x8282;&#x7EE7;&#x7EED;&#x8BB2;&#x89E3;&#x7C7B;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#x3002;</p>
+<p>&#x672C;&#x8282;&#x7EE7;&#x7EED;&#x8BB2;&#x89E3;&#x7C7B;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x62BD;&#x8C61;&#x7C7B;/&#x65B9;&#x6CD5;&#xFF0C;&#x63A5;&#x53E3;&#xFF0C;mixin&#x4EE5;&#x53CA;&#x679A;&#x4E3E;&#x3002;</p>
 <h2 id="&#x62BD;&#x8C61;&#x7C7B;&#x548C;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;">&#x62BD;&#x8C61;&#x7C7B;&#x548C;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;</h2>
 <p>&#x6CA1;&#x6709;&#x51FD;&#x6570;&#x4F53;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5373;&#x53EA;&#x58F0;&#x660E;&#x800C;&#x4E0D;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x88AB;&#x79F0;&#x4E3A;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x62BD;&#x8C61;&#x7C7B;&#x4E2D;&#x3002;&#x62BD;&#x8C61;&#x7C7B;&#x662F;&#x4F7F;&#x7528;<code>abstract</code>&#x5173;&#x952E;&#x5B57;&#x4FEE;&#x9970;&#x7684;&#x7C7B;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x975E;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x88AB;&#x7EE7;&#x627F;&#x4F46;&#x4E0D;&#x80FD;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x3002;</p>
-<pre><code class="lang-dart"><span class="hljs-comment">// &#x5927;&#x5251;</span>
+<pre><code class="lang-dart"><span class="hljs-comment">// &#x5927;&#x5251;&#x62BD;&#x8C61;&#x7C7B;</span>
 <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreatSword</span> </span>{
   <span class="hljs-comment">// &#x62BD;&#x8C61;&#x65B9;&#x6CD5;</span>
   upgrade();
@@ -382,7 +382,7 @@
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BastardSword</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">GreatSword</span> </span>{
   <span class="hljs-comment">// &#x5B9E;&#x73B0;&#x7236;&#x7C7B;&#x7684;&#x62BD;&#x8C61;&#x65B9;&#x6CD5; </span>
   upgrade() {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;upgrade&apos;</span>);    
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;upgrade&apos;</span>);
   }
 
   <span class="hljs-comment">// &#x91CD;&#x5199;&#x4E14;&#x4F7F;&#x7528;&#x7236;&#x7C7B;&#x5DF2;&#x6709;&#x7684;&#x5B9E;&#x73B0;</span>
@@ -392,7 +392,7 @@
 }
 </code></pre>
 <h2 id="&#x63A5;&#x53E3;">&#x63A5;&#x53E3;</h2>
-<p>Dart &#x652F;&#x6301;&#x63A5;&#x53E3;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#x7684;&#x5173;&#x952E;&#x5B57;&#x3002;Dart &#x901A;&#x8FC7;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#x6765;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#xFF0C;&#x5373;&#x6BCF;&#x4E2A;&#x7C7B;&#x90FD;&#x9690;&#x542B;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x8BE5;&#x63A5;&#x53E3;&#x5305;&#x542B;&#x5F53;&#x524D;&#x7C7B;&#x6240;&#x6709;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#xFF08;&#x5305;&#x542B;&#x901A;&#x8FC7;&#x7EE7;&#x627F;&#x548C;&#x5B9E;&#x73B0;&#x5176;&#x4ED6;&#x7C7B;&#x800C;&#x5F97;&#x6765;&#x7684;&#xFF09;&#x3002;&#x901A;&#x5E38;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x4F7F;&#x7528;&#x62BD;&#x8C61;&#x7C7B;&#x6765;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#xFF0C;&#x800C;&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x662F;&#x901A;&#x8FC7;<code>implements</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x591A;&#x4E2A;&#x63A5;&#x53E3;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;</p>
+<p>Dart &#x652F;&#x6301;&#x63A5;&#x53E3;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#x7684;&#x5173;&#x952E;&#x5B57;&#x3002;Dart &#x7684;&#x6BCF;&#x4E2A;&#x7C7B;&#x90FD;&#x9690;&#x542B;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x8BE5;&#x63A5;&#x53E3;&#x5305;&#x542B;&#x5F53;&#x524D;&#x7C7B;&#x6240;&#x6709;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#xFF08;&#x5305;&#x542B;&#x901A;&#x8FC7;&#x7EE7;&#x627F;&#x548C;&#x5B9E;&#x73B0;&#x5176;&#x4ED6;&#x7C7B;&#x800C;&#x5F97;&#x6765;&#x7684;&#xFF09;&#x3002;&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x62BD;&#x8C61;&#x7C7B;&#x6765;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#xFF0C;&#x800C;&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x662F;&#x901A;&#x8FC7;<code>implements</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x591A;&#x4E2A;&#x63A5;&#x53E3;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;</p>
 <pre><code class="lang-dart"><span class="hljs-comment">// &#x8F7B;&#x653B;&#x51FB;&#x63A5;&#x53E3;</span>
 <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Light</span> </span>{
   lightAttack();
@@ -406,11 +406,11 @@
 <span class="hljs-comment">// &#x6B66;&#x5668;&#x540C;&#x65F6;&#x5B9E;&#x73B0;&#x4E86;&#x8F7B;&#x91CD;&#x653B;&#x51FB;</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Weapon</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Light</span>, <span class="hljs-title">Heavy</span> </span>{
   lightAttack() {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;attack!&apos;</span>);
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Light attack!&apos;</span>);
   }
 
   heavyAttack() {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;attack!!!&apos;</span>);
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Heavy attack!!!&apos;</span>);
   }
 }
 </code></pre>
@@ -461,7 +461,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"类 - Part II","level":"1.4.5","depth":2,"next":{"title":"常用内置类","level":"1.4.6","depth":2,"path":"language/commons.md","ref":"language/commons.md","articles":[]},"previous":{"title":"类 - Part I","level":"1.4.4","depth":2,"path":"language/class_i.md","ref":"language/class_i.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/class_ii.md","mtime":"2019-02-25T07:38:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-25T07:40:07.145Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"类 - Part II","level":"1.4.5","depth":2,"next":{"title":"常用内置类","level":"1.4.6","depth":2,"path":"language/commons.md","ref":"language/commons.md","articles":[]},"previous":{"title":"类 - Part I","level":"1.4.4","depth":2,"path":"language/class_i.md","ref":"language/class_i.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/class_ii.md","mtime":"2019-02-25T14:21:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-25T14:32:44.456Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
