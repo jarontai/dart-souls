@@ -91,16 +91,16 @@ main() {
 闭包（_closure_）是指一个函数对象，即使不在初始作用域内，也仍然能够访问其中的变量。
 
 ```dart
-// makeSpeaker生成一个将参数跟person相连的函数
-Function makeSpeaker(String person) {
+// makePerson生成一个将参数跟person相连的函数
+Function makePerson(String person) {
   return (String words) => '$person say $words';
 }
 
 main() {
-  var bob = makeSpeaker('bob'); // person为bob
-  var john = makeSpeaker('john'); // person为john
+  var bob = makePerson('bob'); // person为bob
+  var john = makePerson('john'); // person为john
 
-  // 不在makeSpeaker内，仍然可以访问makeSpeaker的参数变量person
+  // 不在makePerson内，仍然可以访问makePerson的参数变量person
   print(bob('hi')); // bob say hi
   print(john('hello')); //  john say hello
 }

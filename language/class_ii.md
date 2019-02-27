@@ -51,8 +51,8 @@ abstract class Heavy {
   heavyAttack();
 }
 
-// 武器同时实现了轻重攻击
-class Weapon implements Light, Heavy {
+// 大剑同时实现了轻重攻击
+class GreatSword implements Light, Heavy {
   lightAttack() {
     print('Light attack!');
   }
@@ -64,7 +64,48 @@ class Weapon implements Light, Heavy {
 ```
 
 ## mixin
-TODO:
+
+`mixin`是一种特殊的专门用于复用的类，Dart 不直接支持多继承（子类继承多个父类），但通过`mixin`可以实现类似于多继承的效果。
+
+`mixin`有两种书写方式，一种是使用`class`声明一个没有父类和构造函数的类，另一种是直接使用`mixin`关键字（从Dart 2.1开始引入，为了代码的明确性，笔者倾向于直接使用`mixin`关键字）。在声明其他类时，使用`with`关键字指定一个或多个`mixin`，这些`mixin`的属性和方法就都被"混入"到当前类中，即实现了类的复用。
+
+如果需要限定`mixin`只能被特定类型使用，可以使用`on`关键字（只适用于`mixin`关键字）。`on`关键字后跟随逗号分隔的多个父类，只有这些父类的子类才能使用当前`mixin`。
+
+```dart
+// 使用class方式声明的轻攻击mixin
+class LightAttack {
+  lightAttack() {
+    print('Light attack!');
+  }
+}
+
+// 使用mixin声明的重攻击mixin
+mixin HeavyAttack {
+  heavyAttack() {
+    print('Heavy attack!');
+  }
+}
+
+// 特殊攻击方式mixin，使用on限定能够使用的类型为Weapon的子类
+mixin SpecialAttack on Weapon {
+  specialAttack() {
+    print('Special attack!');
+  }
+}
+
+// 武器基类Weapon
+abstract class Weapon {
+}
+
+// 大剑继承Weapon而且复用了LightAttack, HeavyAttack, SpecialAttack实现的方法
+class GreatSword extends Weapon with LightAttack, HeavyAttack, SpecialAttack {
+  attack() {
+    lightAttack();
+    heavyAttack();
+    specialAttack();
+  }
+}
+```
 
 ## 枚举
 TODO:
