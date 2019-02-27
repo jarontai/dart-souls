@@ -435,16 +435,16 @@ main() {
 </code></pre>
 <h2 id="&#x95ED;&#x5305;">&#x95ED;&#x5305;</h2>
 <p>&#x95ED;&#x5305;&#xFF08;<em>closure</em>&#xFF09;&#x662F;&#x6307;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x4F7F;&#x4E0D;&#x5728;&#x521D;&#x59CB;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#xFF0C;&#x4E5F;&#x4ECD;&#x7136;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x5176;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
-<pre><code class="lang-dart"><span class="hljs-comment">// makeSpeaker&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5C06;&#x53C2;&#x6570;&#x8DDF;person&#x76F8;&#x8FDE;&#x7684;&#x51FD;&#x6570;</span>
-<span class="hljs-built_in">Function</span> makeSpeaker(<span class="hljs-built_in">String</span> person) {
+<pre><code class="lang-dart"><span class="hljs-comment">// makePerson&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5C06;&#x53C2;&#x6570;&#x8DDF;person&#x76F8;&#x8FDE;&#x7684;&#x51FD;&#x6570;</span>
+<span class="hljs-built_in">Function</span> makePerson(<span class="hljs-built_in">String</span> person) {
   <span class="hljs-keyword">return</span> (<span class="hljs-built_in">String</span> words) =&gt; <span class="hljs-string">&apos;$person say $words&apos;</span>;
 }
 
 main() {
-  <span class="hljs-keyword">var</span> bob = makeSpeaker(<span class="hljs-string">&apos;bob&apos;</span>); <span class="hljs-comment">// person&#x4E3A;bob</span>
-  <span class="hljs-keyword">var</span> john = makeSpeaker(<span class="hljs-string">&apos;john&apos;</span>); <span class="hljs-comment">// person&#x4E3A;john</span>
+  <span class="hljs-keyword">var</span> bob = makePerson(<span class="hljs-string">&apos;bob&apos;</span>); <span class="hljs-comment">// person&#x4E3A;bob</span>
+  <span class="hljs-keyword">var</span> john = makePerson(<span class="hljs-string">&apos;john&apos;</span>); <span class="hljs-comment">// person&#x4E3A;john</span>
 
-  <span class="hljs-comment">// &#x4E0D;&#x5728;makeSpeaker&#x5185;&#xFF0C;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;makeSpeaker&#x7684;&#x53C2;&#x6570;&#x53D8;&#x91CF;person</span>
+  <span class="hljs-comment">// &#x4E0D;&#x5728;makePerson&#x5185;&#xFF0C;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;makePerson&#x7684;&#x53C2;&#x6570;&#x53D8;&#x91CF;person</span>
   <span class="hljs-built_in">print</span>(bob(<span class="hljs-string">&apos;hi&apos;</span>)); <span class="hljs-comment">// bob say hi</span>
   <span class="hljs-built_in">print</span>(john(<span class="hljs-string">&apos;hello&apos;</span>)); <span class="hljs-comment">//  john say hello</span>
 }
@@ -500,7 +500,7 @@ main() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"函数","level":"1.4.3","depth":2,"next":{"title":"类 - Part I","level":"1.4.4","depth":2,"path":"language/class_i.md","ref":"language/class_i.md","articles":[]},"previous":{"title":"运算符和流程控制","level":"1.4.2","depth":2,"path":"language/operators.md","ref":"language/operators.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/function.md","mtime":"2019-02-25T07:41:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-25T14:32:44.456Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"函数","level":"1.4.3","depth":2,"next":{"title":"类 - Part I","level":"1.4.4","depth":2,"path":"language/class_i.md","ref":"language/class_i.md","articles":[]},"previous":{"title":"运算符和流程控制","level":"1.4.2","depth":2,"path":"language/operators.md","ref":"language/operators.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/function.md","mtime":"2019-02-27T01:44:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-27T05:10:26.799Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
