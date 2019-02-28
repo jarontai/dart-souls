@@ -454,7 +454,19 @@ mixin SpecialAttack on Weapon {
 }
 </code></pre>
 <h2 id="&#x679A;&#x4E3E;">&#x679A;&#x4E3E;</h2>
-<p>TODO:</p>
+<p>&#x679A;&#x4E3E;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x7C7B;&#xFF0C;&#x5B83;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x56FA;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x5E38;&#x91CF;&#x503C;&#xFF0C;&#x679A;&#x4E3E;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;<code>enum</code>&#x8FDB;&#x884C;&#x58F0;&#x660E;&#x3002;</p>
+<p>&#x679A;&#x4E3E;&#x5185;&#x7684;&#x503C;&#x662F;&#x6709;&#x5E8F;&#x7684;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x7D22;&#x5F15;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>index</code>&#x5C5E;&#x6027;&#x83B7;&#x53D6;&#xFF0C;&#x800C;<code>values</code>&#x5C5E;&#x6027;&#x5219;&#x5C06;&#x5B83;&#x4EEC;&#x8F93;&#x51FA;&#x4E3A;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF08;List&#xFF09;&#x3002;</p>
+<p>&#x679A;&#x4E3E;&#x4E0D;&#x80FD;&#x88AB;&#x7EE7;&#x627F;&#x3001;&#x5B9E;&#x73B0;&#x548C;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x88AB;&#x7528;&#x4F5C;mixin&#x3002;&#x679A;&#x4E3E;&#x53EF;&#x7528;&#x4E8E;<code>switch</code>&#x8BED;&#x53E5;&#x548C;<code>for...in</code>&#x5FAA;&#x73AF;&#x3002;</p>
+<pre><code class="lang-dart"><span class="hljs-comment">// &#x65B9;&#x5411;&#x679A;&#x4E3E;&#xFF1A;&#x4E1C;&#x5357;&#x897F;&#x5317;</span>
+<span class="hljs-keyword">enum</span> Direction { north, east, south, west }
+
+printDirection() {
+  <span class="hljs-comment">// &#x901A;&#x8FC7;for...in&#x904D;&#x5386;values&#x5217;&#x8868;&#x5E76;&#x6253;&#x5370;&#x6240;&#x6709;&#x65B9;&#x5411;&#x7684;&#x7D22;&#x5F15;</span>
+  <span class="hljs-keyword">for</span> (Direction direction <span class="hljs-keyword">in</span> Direction.values) {
+    <span class="hljs-built_in">print</span>(direction.index);
+  }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -498,7 +510,7 @@ mixin SpecialAttack on Weapon {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"类 - Part II","level":"1.4.5","depth":2,"next":{"title":"常用内置类","level":"1.4.6","depth":2,"path":"language/commons.md","ref":"language/commons.md","articles":[]},"previous":{"title":"类 - Part I","level":"1.4.4","depth":2,"path":"language/class_i.md","ref":"language/class_i.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/class_ii.md","mtime":"2019-02-27T05:15:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-27T05:15:28.308Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"类 - Part II","level":"1.4.5","depth":2,"next":{"title":"常用内置类","level":"1.4.6","depth":2,"path":"language/commons.md","ref":"language/commons.md","articles":[]},"previous":{"title":"类 - Part I","level":"1.4.4","depth":2,"path":"language/class_i.md","ref":"language/class_i.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/class_ii.md","mtime":"2019-02-28T15:32:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-28T15:34:49.472Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
