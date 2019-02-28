@@ -40,7 +40,7 @@
 跟操作符一样，Dart的流程控制语句也跟大部分主流语言类似，如下：
 
 * if 、esle
-* for 循环
+* for 循环，包括普通的for循环和适用于可迭代对象的for...in循环（将在`集合`部分讲解）
 * while、do-while 循环
 * break、continue
 * switch、case

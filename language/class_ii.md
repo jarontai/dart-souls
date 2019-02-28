@@ -110,4 +110,21 @@ class GreatSword extends Weapon with LightAttack, HeavyAttack, SpecialAttack {
 ```
 
 ## 枚举
-TODO:
+
+枚举也是一种特殊的类，它专门用于表示固定数量的常量值，枚举使用关键字`enum`进行声明。
+
+枚举内的值是有序的，它们的索引可以通过`index`属性获取，而`values`属性则将它们输出为一个列表（List）。
+
+枚举不能被继承、实现和实例化，也不能被用作mixin。枚举可用于`switch`语句和`for...in`循环。
+
+```dart
+// 方向枚举：东南西北
+enum Direction { north, east, south, west }
+
+printDirection() {
+  // 通过for...in遍历values列表并打印所有方向的索引
+  for (Direction direction in Direction.values) {
+    print(direction.index);
+  }
+}
+```
