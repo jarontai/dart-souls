@@ -9,7 +9,7 @@ ________                 __      _________            .__
 
 # Dart Souls -《Dart 之魂》
 
-《Dart 之魂》，即 Dart 编程要点 \(编写中......\)
+《Dart 之魂》，即 Dart 编程要点 \(缓慢更新中......\)
 
 ## 简介
 
@@ -29,7 +29,7 @@ ________                 __      _________            .__
 
 ## 关于
 
-作者：[Jaron Tai](https://github.com/jarontai) ，Dart 语言爱好者兼业余黑魂pve玩家。本书使用 [Gitbook](https://legacy.gitbook.com/) 编写，原始内容保存在 [Github](https://github.com/jarontai/dart-souls)。
+作者：[Jaron Tai](https://github.com/jarontai) ，Dart 语言爱好者兼业余黑暗之魂玩家。本书使用 [Gitbook](https://legacy.gitbook.com/) 编写，原始内容保存在 [Github](https://github.com/jarontai/dart-souls)。
 
 ## 协议
 
