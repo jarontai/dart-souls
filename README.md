@@ -1,3 +1,4 @@
+<p align="center">
 <pre style="text-align: center;">
 ________                 __      _________            .__          
 \______ \ _____ ________/  |_   /   _____/ ____  __ __|  |   ______
@@ -6,6 +7,7 @@ ________                 __      _________            .__
 /_______  (____  /__|   |__|   /_______  /\____/|____/|____/____  >
         \/     \/                      \/                       \/ 
 </pre>
+</p>
 
 # Dart Souls -《Dart 之魂》
 
@@ -25,7 +27,7 @@ ________                 __      _________            .__
 
 ## 交流
 
-作者水平有限，书本内容难免存在错误，欢迎[指正](https://github.com/jarontai/dart-souls/issues/new)。如果希望对 Dart 进行更深入的讨论，请前往 [Dart China](http://www.dart-china.org/)。
+作者水平有限，书本内容难免存在错误，欢迎[提交issue](https://github.com/jarontai/dart-souls/issues/new)。如果希望对 Dart 进行更深入的讨论，请前往 [Dart China](http://www.dart-china.org/)。
 
 ## 关于
 
