@@ -1,4 +1,6 @@
-![logo](https://raw.github.com/jarontai/dart-souls/master/dart_souls.jpg)
+<p align="center">
+  <img width="575" height="142" src="https://raw.github.com/jarontai/dart-souls/master/dart_souls.jpg">
+</p>
 
 # Dart Souls -《Dart 之魂》
 
