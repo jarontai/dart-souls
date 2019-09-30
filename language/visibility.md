@@ -54,3 +54,33 @@ main() {
   var cls2 = lib2.Class1(); // 通过前缀访问lib2中的Class1
 }
 ```
+
+## 标准库
+
+与其他语言一样，Dart自带处理常见任务的库，即标准库。Dart 的标准库由核心库`dart:core`及其他17个库组成。
+
+`dart:core`是Dart的核心库，其中包含最基础最常用的类型，如：int，List等。
+
+`dart:core`是隐含导入的，无需使用`import`导入（反之，使用import显式导入`dart:core`会报错）。
+
+除核心库外的其他库，按照适用平台，划分为三类: 1. 通用库，可适用于服务端和Web端；2. 仅适用于服务端(VM) 3. 仅适用于Web端
+
+| 库名 | 适用平台 | 描述 |
+| :--- | :--- | :--- |
+| dart:async | 通用 | 异步编程库，包含`Future`、`Stream`等常用异步编程类型 |
+| dart:collection | 通用 | 集合支持/工具库，对`dart:core`中的集合类型（`List`、`Map`等）提供补充 |
+| dart:convert | 通用 | 转换库，用于对各种数据格式的编码/解码，如：`json`和`utf8` |
+| dart:developer | 通用 | 开发者库，提供开发者工具，如：`debugger`和`inspector` |
+| dart:math | 通用 | 数学库，提供各种数学运算相关函数 |
+| dart:typed_data | 通用 | 高效、固定长度的列表类型库 |
+| dart:io | VM | io库，提供文件、Socket等常见io操作类 |
+| dart:isolate | VM | 并发编程支持库 |
+| dart:mirrors | VM | 反射库（API不稳定） |
+| dart:html | Web | html库，提供对html元素和dom的操作等 |
+| dart:indexed_db | Web | Web端indexed_db数据库支持库 |
+| dart:js | Web | JavaScript库，支持对JavaScript对象/方法的访问 |
+| dart:js_util | Web | JavaScript交互工具库 |
+| dart:svg | Web | svg矢量图形支持库 |
+| dart:web_audio | Web | Web端音频处理库 |
+| dart:web_gl | Web | Web端3D编程支持库 |
+| dart:web_sql | Web | Web端SQL支持库（标准过时，推荐使用dart:indexed_db代替） |
