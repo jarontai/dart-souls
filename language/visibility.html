@@ -402,6 +402,107 @@ main() {
   <span class="hljs-keyword">var</span> cls2 = lib2.Class1(); <span class="hljs-comment">// &#x901A;&#x8FC7;&#x524D;&#x7F00;&#x8BBF;&#x95EE;lib2&#x4E2D;&#x7684;Class1</span>
 }
 </code></pre>
+<h2 id="&#x6807;&#x51C6;&#x5E93;">&#x6807;&#x51C6;&#x5E93;</h2>
+<p>&#x4E0E;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E00;&#x6837;&#xFF0C;Dart&#x81EA;&#x5E26;&#x5904;&#x7406;&#x5E38;&#x89C1;&#x4EFB;&#x52A1;&#x7684;&#x5E93;&#xFF0C;&#x5373;&#x6807;&#x51C6;&#x5E93;&#x3002;Dart &#x7684;&#x6807;&#x51C6;&#x5E93;&#x7531;&#x6838;&#x5FC3;&#x5E93;<code>dart:core</code>&#x53CA;&#x5176;&#x4ED6;17&#x4E2A;&#x5E93;&#x7EC4;&#x6210;&#x3002;</p>
+<p><code>dart:core</code>&#x662F;Dart&#x7684;&#x6838;&#x5FC3;&#x5E93;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x6700;&#x57FA;&#x7840;&#x6700;&#x5E38;&#x7528;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#xFF1A;int&#xFF0C;List&#x7B49;&#x3002;</p>
+<p><code>dart:core</code>&#x662F;&#x9690;&#x542B;&#x5BFC;&#x5165;&#x7684;&#xFF0C;&#x65E0;&#x9700;&#x4F7F;&#x7528;<code>import</code>&#x5BFC;&#x5165;&#xFF08;&#x53CD;&#x4E4B;&#xFF0C;&#x4F7F;&#x7528;import&#x663E;&#x5F0F;&#x5BFC;&#x5165;<code>dart:core</code>&#x4F1A;&#x62A5;&#x9519;&#xFF09;&#x3002;</p>
+<p>&#x9664;&#x6838;&#x5FC3;&#x5E93;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x5E93;&#xFF0C;&#x6309;&#x7167;&#x9002;&#x7528;&#x5E73;&#x53F0;&#xFF0C;&#x5212;&#x5206;&#x4E3A;&#x4E09;&#x7C7B;: 1. &#x901A;&#x7528;&#x5E93;&#xFF0C;&#x53EF;&#x9002;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x7AEF;&#x548C;Web&#x7AEF;&#xFF1B;2. &#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x7AEF;(VM) 3. &#x4EC5;&#x9002;&#x7528;&#x4E8E;Web&#x7AEF;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5E93;&#x540D;</th>
+<th style="text-align:left">&#x9002;&#x7528;&#x5E73;&#x53F0;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">dart:async</td>
+<td style="text-align:left">&#x901A;&#x7528;</td>
+<td style="text-align:left">&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x5E93;&#xFF0C;&#x5305;&#x542B;<code>Future</code>&#x3001;<code>Stream</code>&#x7B49;&#x5E38;&#x7528;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:collection</td>
+<td style="text-align:left">&#x901A;&#x7528;</td>
+<td style="text-align:left">&#x96C6;&#x5408;&#x652F;&#x6301;/&#x5DE5;&#x5177;&#x5E93;&#xFF0C;&#x5BF9;<code>dart:core</code>&#x4E2D;&#x7684;&#x96C6;&#x5408;&#x7C7B;&#x578B;&#xFF08;<code>List</code>&#x3001;<code>Map</code>&#x7B49;&#xFF09;&#x63D0;&#x4F9B;&#x8865;&#x5145;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:convert</td>
+<td style="text-align:left">&#x901A;&#x7528;</td>
+<td style="text-align:left">&#x8F6C;&#x6362;&#x5E93;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x5404;&#x79CD;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x7684;&#x7F16;&#x7801;/&#x89E3;&#x7801;&#xFF0C;&#x5982;&#xFF1A;<code>json</code>&#x548C;<code>utf8</code></td>
+</tr>
+<tr>
+<td style="text-align:left">dart:developer</td>
+<td style="text-align:left">&#x901A;&#x7528;</td>
+<td style="text-align:left">&#x5F00;&#x53D1;&#x8005;&#x5E93;&#xFF0C;&#x63D0;&#x4F9B;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#xFF0C;&#x5982;&#xFF1A;<code>debugger</code>&#x548C;<code>inspector</code></td>
+</tr>
+<tr>
+<td style="text-align:left">dart:math</td>
+<td style="text-align:left">&#x901A;&#x7528;</td>
+<td style="text-align:left">&#x6570;&#x5B66;&#x5E93;&#xFF0C;&#x63D0;&#x4F9B;&#x5404;&#x79CD;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x76F8;&#x5173;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:typed_data</td>
+<td style="text-align:left">&#x901A;&#x7528;</td>
+<td style="text-align:left">&#x9AD8;&#x6548;&#x3001;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x5217;&#x8868;&#x7C7B;&#x578B;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:io</td>
+<td style="text-align:left">VM</td>
+<td style="text-align:left">io&#x5E93;&#xFF0C;&#x63D0;&#x4F9B;&#x6587;&#x4EF6;&#x3001;Socket&#x7B49;&#x5E38;&#x89C1;io&#x64CD;&#x4F5C;&#x7C7B;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:isolate</td>
+<td style="text-align:left">VM</td>
+<td style="text-align:left">&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x652F;&#x6301;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:mirrors</td>
+<td style="text-align:left">VM</td>
+<td style="text-align:left">&#x53CD;&#x5C04;&#x5E93;&#xFF08;API&#x4E0D;&#x7A33;&#x5B9A;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:html</td>
+<td style="text-align:left">Web</td>
+<td style="text-align:left">html&#x5E93;&#xFF0C;&#x63D0;&#x4F9B;&#x5BF9;html&#x5143;&#x7D20;&#x548C;dom&#x7684;&#x64CD;&#x4F5C;&#x7B49;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:indexed_db</td>
+<td style="text-align:left">Web</td>
+<td style="text-align:left">Web&#x7AEF;indexed_db&#x6570;&#x636E;&#x5E93;&#x652F;&#x6301;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:js</td>
+<td style="text-align:left">Web</td>
+<td style="text-align:left">JavaScript&#x5E93;&#xFF0C;&#x652F;&#x6301;&#x5BF9;JavaScript&#x5BF9;&#x8C61;/&#x65B9;&#x6CD5;&#x7684;&#x8BBF;&#x95EE;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:js_util</td>
+<td style="text-align:left">Web</td>
+<td style="text-align:left">JavaScript&#x4EA4;&#x4E92;&#x5DE5;&#x5177;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:svg</td>
+<td style="text-align:left">Web</td>
+<td style="text-align:left">svg&#x77E2;&#x91CF;&#x56FE;&#x5F62;&#x652F;&#x6301;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:web_audio</td>
+<td style="text-align:left">Web</td>
+<td style="text-align:left">Web&#x7AEF;&#x97F3;&#x9891;&#x5904;&#x7406;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:web_gl</td>
+<td style="text-align:left">Web</td>
+<td style="text-align:left">Web&#x7AEF;3D&#x7F16;&#x7A0B;&#x652F;&#x6301;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">dart:web_sql</td>
+<td style="text-align:left">Web</td>
+<td style="text-align:left">Web&#x7AEF;SQL&#x652F;&#x6301;&#x5E93;&#xFF08;&#x6807;&#x51C6;&#x8FC7;&#x65F6;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;dart:indexed_db&#x4EE3;&#x66FF;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -445,7 +546,7 @@ main() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"库与可见性","level":"1.4.6","depth":2,"next":{"title":"常用类型","level":"1.4.7","depth":2,"path":"language/commons.md","ref":"language/commons.md","articles":[]},"previous":{"title":"类 - Part II","level":"1.4.5","depth":2,"path":"language/class_ii.md","ref":"language/class_ii.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/visibility.md","mtime":"2019-09-17T08:06:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-17T08:19:45.225Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"库与可见性","level":"1.4.6","depth":2,"next":{"title":"常用类型","level":"1.4.7","depth":2,"path":"language/commons.md","ref":"language/commons.md","articles":[]},"previous":{"title":"类 - Part II","level":"1.4.5","depth":2,"path":"language/class_ii.md","ref":"language/class_ii.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"language/visibility.md","mtime":"2019-09-30T03:57:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-30T03:59:19.055Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
