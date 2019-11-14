@@ -18,6 +18,22 @@
 
 本书提供在线阅读，内容不定期更新，地址：[https://jarontai.github.io/dart-souls](https://jarontai.github.io/dart-souls/) ；本书也可下载，内容为最新，地址：[pdf](https://legacy.gitbook.com/download/pdf/book/jarontai/dart-souls)，[epub](https://legacy.gitbook.com/download/epub/book/jarontai/dart-souls)，[mobi](https://legacy.gitbook.com/download/mobi/book/jarontai/dart-souls)
 
+因为国内访问github.io并不稳定，以下也列出各小节的原文地址，方便直接查看：
+
+* [前言](https://github.com/jarontai/dart-souls/blob/master/foreword.md)
+* [准备](https://github.com/jarontai/dart-souls/blob/master/setup.md)
+* [语言](https://github.com/jarontai/dart-souls/blob/master/language/index.md)
+  * [变量与基本类型](https://github.com/jarontai/dart-souls/blob/master/language/basics.md)
+  * [运算符和流程控制](https://github.com/jarontai/dart-souls/blob/master/language/operators.md)
+  * [函数](https://github.com/jarontai/dart-souls/blob/master/language/function.md)
+  * [类 - Part I](https://github.com/jarontai/dart-souls/blob/master/language/class_i.md)
+  * [类 - Part II](https://github.com/jarontai/dart-souls/blob/master/language/class_ii.md)
+  * [库与可见性](https://github.com/jarontai/dart-souls/blob/master/language/visibility.md)
+  * [集合与泛型](https://github.com/jarontai/dart-souls/blob/master/language/collections.md)
+  * 异步 - TODO
+* Pub - TODO
+* Server - TODO
+
 ## 交流
 
 作者水平有限，书本内容难免存在错误，欢迎[提交issue](https://github.com/jarontai/dart-souls/issues/new)。如果希望对 Dart 进行更深入的讨论，请前往 [Dart China](http://www.dart-china.org/)。
