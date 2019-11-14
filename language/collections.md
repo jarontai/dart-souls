@@ -1,12 +1,12 @@
-# 常用类型
+# 集合与泛型
 
-除了[变量与基本类型](/language/basics.md)介绍的基本类型，Dart 标准库还提供了很多其他类型，本章将挑选部分常用类型进行讲解。
+除了[变量与基本类型](/language/basics.md)介绍的基本类型，Dart 标准库还提供了很多其他类型，比如最常用的集合类型（Collections）。
+
+泛型（Generics）可以提高类型安全并减少重复代码，而集合类型几乎都支持泛型，所以本章也将对它进行讲解。
 
 ## 集合
 
-Dart 的集合类型主要包括：`List`，`Map` 和 `Set`。
-
-注意：Dart 的集合类型都支持泛型，相关内容将在[泛型](/language/generics.md)进行讲解。
+Dart 的集合类型主要是来自 `dart:core` 库的 `List` 、`Set` 和 `Map`。
 
 ### List
 
@@ -80,5 +80,18 @@ for (var game in gameMap.values) {
 }
 ```
 
-### TODO: 更多类型
-### TODO: the spread operator (...) and the null-aware spread operator (...?),
+
+
+
+
+## 泛型
+
+泛型（Generics）即泛化的类型，就是参数化的类型，Dart 标准库中的很多类型都支持泛型，集合类型是其中的代表。
+
+### 语法
+
+与其他很多支持泛型的语言一样（如：Java，C#），Dart 的泛型写法也是在类型名称后添加 `<类型参数1, 类型参数2, ...>`，比如: `var gameList = new List<String>()`。
+
+注意：如果对象是通过字面量形式声明，类型参数则必须写在前面，比如：`var scoreMap = new <String, int>{}`。
+
+TODO: 
