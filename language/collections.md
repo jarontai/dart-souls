@@ -2,7 +2,7 @@
 
 除了[变量与基本类型](/language/basics.md)介绍的基本类型，Dart 标准库还提供了很多其他类型，比如最常用的集合类型（Collections）。
 
-泛型（Generics）可以提高类型安全并减少重复代码，而集合类型几乎都支持泛型，所以本章也将对它进行讲解。
+泛型（Generics）可以提高类型安全并减少重复代码，而集合类型几乎都支持泛型，所以本节也将对它进行简要介绍。
 
 ## 集合
 
@@ -84,10 +84,20 @@ for (var game in gameMap.values) {
 
 泛型（Generics）即泛化的类型，就是参数化的类型，Dart 标准库中的很多类型都支持泛型，集合类型是其中的代表。
 
-### 语法
+### 使用
 
 与其他很多支持泛型的语言一样（如：Java，C#），Dart 的泛型写法也是在类型名称后添加 `<类型参数1, 类型参数2, ...>`，比如: `var gameList = new List<String>()`。
 
-注意：如果对象是通过字面量形式声明，类型参数则必须写在前面，比如：`var scoreMap = new <String, int>{}`。
+如果对象是通过字面量形式声明，类型参数则必须写在字面量前面，比如：`var scoreMap = new <String, int>{}`。
 
-TODO: 
+使用泛型的类将获得类型安全，在集合类型中的表现就是不能向其中添加除泛型参数之外的类型。
+
+```dart
+var gameSet = new Set<String>(); // 字符串Set
+gameSet.add('Dark Souls'); // OK
+gameSet.add(123); // 添加数字，编译报错
+```
+
+注意：不添加类型参数的情况下，类型参数一般会被推断为`dynamic`，表示不对类型进行限制
+
+// TODO: 更多内容
