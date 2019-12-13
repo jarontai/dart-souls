@@ -127,5 +127,3 @@ Dart的异常包含两种： `Exception`和`Error`。`Exception`表示程序逻�
     rethrow; // 重新抛出当前捕获的异常对象 e
   }
 ```
-
-### TODO: the spread operator (...) and the null-aware spread operator (...?),

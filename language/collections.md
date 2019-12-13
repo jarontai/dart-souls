@@ -80,10 +80,6 @@ for (var game in gameMap.values) {
 }
 ```
 
-
-
-
-
 ## 泛型
 
 泛型（Generics）即泛化的类型，就是参数化的类型，Dart 标准库中的很多类型都支持泛型，集合类型是其中的代表。
