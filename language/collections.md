@@ -86,15 +86,31 @@ for (var game in gameMap.values) {
 
 Dart 标准库中的很多类型都支持泛型，而集合类型是其中的代表。
 
-### 泛型类型
+### 定义和使用
 
-与其他很多支持泛型的语言一样（如：Java，C#），Dart 的泛型也是在类型名称后添加 `<类型参数1, 类型参数2, ...>`:
+与其他很多支持泛型的语言一样（如：Java，C#），Dart 泛型的定义和使用，都是在类型名称后添加 `<类型参数1, 类型参数2, ...>`。
 
-注意：如果类型可以通过字面量形式声明，类型参数必须写在字面量前面
+在定义泛型类时，类型参数通常使用E, T, S, K 和 V 等字母表示；而在泛型类被实例化时，类型参数需要填入实际的类型。
+
+如果需要限定类型参数的范围，可以使用`<T extends BaseType, ...>`的形式定义类型参数，即表示本类型只接受`BaseType`类或其子类。
+
+注意：如果泛型类是通过字面量形式创建，类型参数必须写在字面量前面
 
 ```dart
-var gameList = new List<String>(); // 构造函数
-var scoreMap = new <String, int>{}; // 字面量
+// 自定义泛型类
+class Game {}
+
+class GameLibrary<T extends Game> {
+  List<T> gameList;
+}
+
+// 使用泛型类
+var gameList = new List<String>();
+var scoreMap = <String, int>{}; // 字面量
+
+// var gameLibrary = new GameLibrary<String>(); // 错误
+var gameLibrary = new GameLibrary<Game>(); // ok
+
 ```
 
 使用泛型的类将获得类型安全，在集合类型中的表现就是不能向其中添加除泛型参数之外的类型
@@ -109,4 +125,4 @@ gameSet.add(123); // 添加数字，编译报错
 
 ### 泛型方法
 
-// TODO
+Dart 也支持泛型方法，
