@@ -12,15 +12,17 @@
 
 #### 方式一
 
-使用社区维护的安装器：[www.gekorm.com/dart-windows](http://www.gekorm.com/dart-windows/)
-
-#### 方式二
-
 安装 windows 下的包管理器：[Chocolatey](https://chocolatey.org/) ，然后在命令行下执行
 
 ```bash
-choco install dart-sdk -version <版本号>
+choco install dart-sdk // 安装
+choco upgrade dart-sdk // 卸载
 ```
+
+#### 方式二
+
+使用社区维护的安装器（.exe格式)：[www.gekorm.com/dart-windows](http://www.gekorm.com/dart-windows/)
+
 
 ### Mac 系统
 
@@ -91,7 +93,7 @@ SDK 下载链接模板:
 
 * &lt;stable/dev&gt; - 选择稳定/开发版，可选项：stable，dev
 
-* &lt;release&gt; - 版本号，比如：1.16.1, 1.16.0-dev.1.0
+* &lt;release&gt; - 版本号，比如：2.5.2, 2.1.0.9-dev-2
 
 * &lt;platform&gt; - 平台，可选项：windows, macos, linux
 
@@ -99,11 +101,10 @@ SDK 下载链接模板:
 
 地址示例：
 
-> [https://storage.googleapis.com/dart-archive/channels/stable/release/1.11.1/sdk/dartsdk-windows-ia32-release.zip](https://storage.googleapis.com/dart-archive/channels/stable/release/1.11.1/sdk/dartsdk-windows-ia32-release.zip)
+> [https://storage.googleapis.com/dart-archive/channels/stable/release/2.9.2/sdk/dartsdk-windows-x64-release.zip](https://storage.googleapis.com/dart-archive/channels/stable/release/2.9.2/sdk/dartsdk-windows-x64-release.zip)
 >
-> [https://storage.googleapis.com/dart-archive/channels/stable/release/1.12.0/sdk/dartsdk-macos-x64-release.zip](https://storage.googleapis.com/dart-archive/channels/stable/release/1.12.0/sdk/dartsdk-macos-x64-release.zip)
->
-> [https://storage.googleapis.com/dart-archive/channels/dev/release/1.13.0-dev.0.0/sdk/dartsdk-linux-ia32-release.zip](https://storage.googleapis.com/dart-archive/channels/dev/release/1.13.0-dev.0.0/sdk/dartsdk-linux-ia32-release.zip)
+> [https://storage.googleapis.com/dart-archive/channels/stable/release/2.9.2/sdk/dartsdk-macos-x64-release.zip](https://storage.googleapis.com/dart-archive/channels/stable/release/2.9.2/sdk/dartsdk-macos-x64-release.zip)
+
 
 ### 安装
 
