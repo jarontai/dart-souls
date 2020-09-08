@@ -2,11 +2,13 @@
 
 《Dart 之魂》，即 Dart 编程要点，是一本介绍 Dart 编程的开源小书，目标是用简单的文字归纳 Dart 的主要知识点。本书面向的读者是具备一定编程经验，希望快速上手 Dart 的开发者。本书定位为入门级，想深入学习 Dart，你需要查阅 Dart [官网](https://dart.dev/)或其他进阶书籍。
 
-## 访问
+## 地址
 
-本书提供gitbook在线阅读，内容不定期更新，地址：[https://jarontai.github.io/dart-souls](https://jarontai.github.io/dart-souls/) 
+本书提供gitbook格式在线阅读，内容不定期更新，地址：[https://jarontai.github.io/dart-souls](https://jarontai.github.io/dart-souls/) 
 
-以下是各小节的md原文，内容最新，可以在浏览器中直接查看：
+## 原文
+
+以下是存储在Github的MarkDown原文，有需要的可以直接点击查看：
 
 * [前言](https://github.com/jarontai/dart-souls/blob/master/foreword.md)
 * [准备](https://github.com/jarontai/dart-souls/blob/master/setup.md)
@@ -19,8 +21,6 @@
   * [库与可见性](https://github.com/jarontai/dart-souls/blob/master/language/visibility.md)
   * [集合与泛型](https://github.com/jarontai/dart-souls/blob/master/language/collections.md)
   * [异步](https://github.com/jarontai/dart-souls/blob/master/language/async.md)
-* Pub - TODO
-* Server - TODO
 
 ## 关于
 
