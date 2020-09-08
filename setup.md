@@ -16,7 +16,8 @@
 
 ```bash
 choco install dart-sdk // 安装
-choco upgrade dart-sdk // 卸载
+choco upgrade dart-sdk // 更新
+choco uninstall dart-sdk // 卸载
 ```
 
 #### 方式二
